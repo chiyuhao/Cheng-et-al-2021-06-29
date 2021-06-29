@@ -1,0 +1,77 @@
+Cluster,ID,Description,GeneRatio,BgRatio,pvalue,p.adjust,qvalue,geneID,Count
+Human,GO:0044238,primary metabolic process ,137/3295,427/23328,9.29E-13,9.29E-13,9.29E-13,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Human,GO:0071704,organic substance metabolic process ,137/3295,427/23328,8.21E-12,8.21E-12,8.21E-12,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Human,GO:0008152,metabolic process,137/3295,427/23328,9.26E-11,9.26E-11,9.26E-11,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Human,GO:0006807,nitrogen compound metabolic process,137/3295,427/23328,2.15E-10,2.15E-10,2.15E-10,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Human,GO:1901360,organic cyclic compound metabolic process,137/3295,427/23328,2.56E-10,2.56E-10,2.56E-10,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Human,GO:0044237,cellular metabolic process,137/3295,427/23328,2.83E-10,2.83E-10,2.83E-10,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Human,GO:0043170,macromolecule metabolic process,137/3295,427/23328,1.02E-09,1.02E-09,1.02E-09,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Human,GO:0080090,regulation of primary metabolic process,137/3295,427/23328,3.32E-09,3.32E-09,3.32E-09,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Human,GO:0031323,regulation of cellular metabolic process,137/3295,427/23328,5.62E-09,5.62E-09,5.62E-09,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Human,GO:0007623,circadian rhythm,137/3295,427/23328,5.73E-09,5.73E-09,5.73E-09,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Mouse,GO:0007606,sensory perception of chemical stimulus,137/3295,427/23328,2.63E-48,2.63E-48,2.63E-48,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Mouse,GO:0007608,sensory perception of smell,137/3295,427/23328,1.10E-46,1.10E-46,1.10E-46,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Mouse,GO:0044237,cellular metabolic process,137/3295,427/23328,8.87E-41,8.87E-41,8.87E-41,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Mouse,GO:0008152,metabolic process,137/3295,427/23328,7.61E-38,7.61E-38,7.61E-38,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Mouse,GO:0007600,sensory perception,137/3295,427/23328,8.39E-38,8.39E-38,8.39E-38,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Mouse,GO:0071704,organic substance metabolic process,137/3295,427/23328,2.42E-37,2.42E-37,2.42E-37,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Mouse,GO:0044238,primary metabolic process,137/3295,427/23328,4.39E-36,4.39E-36,4.39E-36,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Mouse,GO:0007186,G protein-coupled receptor signaling pathway,137/3295,427/23328,9.44E-34,9.44E-34,9.44E-34,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Mouse,GO:0050877,nervous system process,137/3295,427/23328,1.65E-33,1.65E-33,1.65E-33,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Mouse,GO:0006807,nitrogen compound metabolic process,137/3295,427/23328,3.54E-33,3.54E-33,3.54E-33,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Fly,GO:0006091,generation of precursor metabolites and energy,137/3295,427/23328,7.99E-08,7.99E-08,7.99E-08,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Fly,GO:0046034,ATP metabolic process,137/3295,427/23328,9.67E-07,9.67E-07,9.67E-07,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Fly,GO:0007602,phototransduction,137/3295,427/23328,8.26E-06,8.26E-06,8.26E-06,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Fly,GO:0065008,regulation of biological quality,137/3295,427/23328,9.17E-06,9.17E-06,9.17E-06,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Fly,GO:0042592,homeostatic process,137/3295,427/23328,1.52E-05,1.52E-05,1.52E-05,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Fly,GO:0015980,energy derivation by oxidation of organic compounds,137/3295,427/23328,1.91E-05,1.91E-05,1.91E-05,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Fly,GO:0009583,detection of light stimulus,137/3295,427/23328,2.09E-05,2.09E-05,2.09E-05,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Fly,GO:0055114,oxidation-reduction process,137/3295,427/23328,2.67E-05,2.67E-05,2.67E-05,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Fly,GO:0045333,cellular respiration,137/3295,427/23328,2.88E-05,2.88E-05,2.88E-05,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Fly,GO:0022900,electron transport chain,137/3295,427/23328,3.13E-05,3.13E-05,3.13E-05,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Yeast,GO:0022613,ribonucleoprotein complex biogenesis,137/3295,427/23328,8.10E-25,8.10E-25,8.10E-25,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Yeast,GO:0042254,ribosome biogenesis,137/3295,427/23328,5.02E-23,5.02E-23,5.02E-23,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Yeast,GO:0016072,rRNA metabolic process,137/3295,427/23328,5.04E-20,5.04E-20,5.04E-20,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Yeast,GO:0006364,rRNA processing,137/3295,427/23328,9.91E-19,9.91E-19,9.91E-19,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Yeast,GO:0034470,ncRNA processing,137/3295,427/23328,5.73E-16,5.73E-16,5.73E-16,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Yeast,GO:0032543,mitochondrial translation,137/3295,427/23328,2.76E-15,2.76E-15,2.76E-15,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Yeast,GO:0140053,mitochondrial gene expression,137/3295,427/23328,2.86E-15,2.86E-15,2.86E-15,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Yeast,GO:0042274,ribosomal small subunit biogenesis,137/3295,427/23328,1.22E-14,1.22E-14,1.22E-14,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Yeast,GO:0006396,RNA processing,137/3295,427/23328,1.82E-14,1.82E-14,1.82E-14,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Yeast,GO:0002181,cytoplasmic translation,137/3295,427/23328,4.29E-14,4.29E-14,4.29E-14,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Neurospora,GO:0005975,carbohydrate metabolic process,137/3295,427/23328,5.77E-07,5.77E-07,5.77E-07,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Neurospora,GO:0019566,arabinose metabolic process,137/3295,427/23328,6.13E-05,6.13E-05,6.13E-05,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Neurospora,GO:0016052,carbohydrate catabolic process,137/3295,427/23328,3.47E-04,3.47E-04,3.47E-04,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Neurospora,GO:0019321,pentose metabolic process,137/3295,427/23328,6.53E-04,6.53E-04,6.53E-04,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Neurospora,GO:0005976,polysaccharide metabolic process,137/3295,427/23328,1.30E-03,1.30E-03,1.30E-03,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Neurospora,GO:0008152,metabolic process,137/3295,427/23328,1.32E-03,1.32E-03,1.32E-03,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Neurospora,GO:0071704,organic substance metabolic process,137/3295,427/23328,1.43E-03,1.43E-03,1.43E-03,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Neurospora,GO:0046373,L-arabinose metabolic process,137/3295,427/23328,1.45E-03,1.45E-03,1.45E-03,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Neurospora,GO:0030497,fatty acid elongation,137/3295,427/23328,2.55E-03,2.55E-03,2.55E-03,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Neurospora,GO:0042761,very long-chain fatty acid biosynthetic process,137/3295,427/23328,3.94E-03,3.94E-03,3.94E-03,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Arabidopsis,GO:0009987,cellular process,137/3295,427/23328,1.53E-19,1.53E-19,1.53E-19,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Arabidopsis,GO:0050896,response to stimulus ,137/3295,427/23328,5.23E-19,5.23E-19,5.23E-19,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Arabidopsis,GO:0008152,metabolic process,137/3295,427/23328,9.08E-17,9.08E-17,9.08E-17,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Arabidopsis,GO:0044237,cellular metabolic process,137/3295,427/23328,7.21E-16,7.21E-16,7.21E-16,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Arabidopsis,GO:0042221,response to chemical,137/3295,427/23328,1.11E-15,1.11E-15,1.11E-15,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Arabidopsis,GO:0009628,response to abiotic stimulus,137/3295,427/23328,6.85E-15,6.85E-15,6.85E-15,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Arabidopsis,GO:0044281,small molecule metabolic process ,137/3295,427/23328,1.22E-14,1.22E-14,1.22E-14,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Arabidopsis,GO:0009058,biosynthetic process,137/3295,427/23328,1.85E-14,1.85E-14,1.85E-14,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Arabidopsis,GO:0071704,organic substance metabolic process ,137/3295,427/23328,2.10E-14,2.10E-14,2.10E-14,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Arabidopsis,GO:1901576,organic substance biosynthetic process ,137/3295,427/23328,5.74E-14,5.74E-14,5.74E-14,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Green alga,GO:0043604,amide biosynthetic process,137/3295,427/23328,6.30E-08,6.30E-08,6.30E-08,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Green alga,GO:0043043,peptide biosynthetic process,137/3295,427/23328,2.99E-07,2.99E-07,2.99E-07,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Green alga,GO:0043603,cellular amide metabolic process ,137/3295,427/23328,3.01E-07,3.01E-07,3.01E-07,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Green alga,GO:0006412,translation,137/3295,427/23328,3.94E-07,3.94E-07,3.94E-07,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Green alga,GO:0006518,peptide metabolic process,137/3295,427/23328,2.32E-06,2.32E-06,2.32E-06,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Green alga,GO:0090304,nucleic acid metabolic process,137/3295,427/23328,1.94E-05,1.94E-05,1.94E-05,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Green alga,GO:0007017,microtubule-based process,137/3295,427/23328,3.93E-05,3.93E-05,3.93E-05,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Green alga,GO:0006139,nucleobase-containing compound metabolic process,137/3295,427/23328,6.71E-05,6.71E-05,6.71E-05,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Green alga,GO:0071840,cellular component organization or biogenesis,137/3295,427/23328,8.04E-05,8.04E-05,8.04E-05,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Green alga,GO:0006725,cellular aromatic compound metabolic process,137/3295,427/23328,1.23E-04,1.23E-04,1.23E-04,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Cyanobacteria,GO:0046148,pigment biosynthetic process,137/3295,427/23328,1.93E-03,1.93E-03,1.93E-03,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Cyanobacteria,GO:0042440,pigment metabolic process,137/3295,427/23328,2.76E-03,2.76E-03,2.76E-03,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Cyanobacteria,GO:0006779,porphyrin-containing compound biosynthetic process,137/3295,427/23328,5.56E-03,5.56E-03,5.56E-03,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Cyanobacteria,GO:0006778,porphyrin-containing compound metabolic process,137/3295,427/23328,8.05E-03,8.05E-03,8.05E-03,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Cyanobacteria,GO:0015995,chlorophyll biosynthetic process,137/3295,427/23328,8.91E-03,8.91E-03,8.91E-03,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137
+Cyanobacteria,GO:0015994,chlorophyll metabolic process,137/3295,427/23328,8.91E-03,8.91E-03,8.91E-03,Rfk/Atic/Acsl3/Nme7/Kmo/Parp1/Rd3/Pid1/Dtymk/,137

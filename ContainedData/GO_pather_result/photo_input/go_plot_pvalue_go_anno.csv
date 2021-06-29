@@ -1,0 +1,38 @@
+category,ID,term,count,genes,logFC,adj_pval,zscore
+BP,GO:0044238,primary metabolic process,1,Human,2,9.29E-13,9.29E-13
+BP,GO:0071704,organic substance metabolic process,1,Human,2,8.21E-12,8.21E-12
+BP,GO:0008152,metabolic process,1,Human,2,9.26E-11,9.26E-11
+BP,GO:0006807,nitrogen compound metabolic process,1,Human,2,2.15E-10,2.15E-10
+BP,GO:1901360,organic cyclic compound metabolic process,1,Human,2,2.56E-10,2.56E-10
+BP,GO:0007606,sensory perception of chemical stimulus,1,Mouse,2,2.63E-48,2.63E-48
+BP,GO:0007608,sensory perception of smell,1,Mouse,2,1.10E-46,1.10E-46
+BP,GO:0044237,cellular metabolic process,1,Mouse,2,8.87E-41,8.87E-41
+BP,GO:0007600,sensory perception,1,Mouse,2,8.39E-38,8.39E-38
+BP,GO:0006091,generation of precursor metabolites and energy,1,Fly,2,7.99E-08,7.99E-08
+BP,GO:0046034,ATP metabolic process,1,Fly,2,9.67E-07,9.67E-07
+BP,GO:0007602,phototransduction,1,Fly,2,8.26E-06,8.26E-06
+BP,GO:0065008,regulation of biological quality,1,Fly,2,9.17E-06,9.17E-06
+BP,GO:0042592,homeostatic process,1,Fly,2,1.52E-05,1.52E-05
+BP,GO:0022613,ribonucleoprotein complex biogenesis,1,Yeast,2,8.10E-25,8.10E-25
+BP,GO:0042254,ribosome biogenesis,1,Yeast,2,5.02E-23,5.02E-23
+BP,GO:0016072,rRNA metabolic process,1,Yeast,2,5.04E-20,5.04E-20
+BP,GO:0006364,rRNA processing,1,Yeast,2,9.91E-19,9.91E-19
+BP,GO:0034470,ncRNA processing,1,Yeast,2,5.73E-16,5.73E-16
+BP,GO:0005975,carbohydrate metabolic process,1,Neurospora,2,5.77E-07,5.77E-07
+BP,GO:0019566,arabinose metabolic process,1,Neurospora,2,6.13E-05,6.13E-05
+BP,GO:0016052,carbohydrate catabolic process,1,Neurospora,2,3.47E-04,3.47E-04
+BP,GO:0019321,pentose metabolic process,1,Neurospora,2,6.53E-04,6.53E-04
+BP,GO:0005976,polysaccharide metabolic process,1,Neurospora,2,1.30E-03,1.30E-03
+BP,GO:0009987,cellular process,1,Arabidopsis,2,1.53E-19,1.53E-19
+BP,GO:0050896,response to stimulus,1,Arabidopsis,2,5.23E-19,5.23E-19
+BP,GO:0042221,response to chemical,1,Arabidopsis,2,1.11E-15,1.11E-15
+BP,GO:0043604,amide biosynthetic process,1,Green alga,2,6.30E-08,6.30E-08
+BP,GO:0043043,peptide biosynthetic process,1,Green alga,2,2.99E-07,2.99E-07
+BP,GO:0043603,cellular amide metabolic process,1,Green alga,2,3.01E-07,3.01E-07
+BP,GO:0006412,translation,1,Green alga,2,3.94E-07,3.94E-07
+BP,GO:0006518,peptide metabolic process,1,Green alga,2,2.32E-06,2.32E-06
+BP,GO:0046148,pigment biosynthetic process,1,Cyanobacteria,2,1.93E-03,1.93E-03
+BP,GO:0042440,pigment metabolic process,1,Cyanobacteria,2,2.76E-03,2.76E-03
+BP,GO:0006779,porphyrin-containing compound biosynthetic process,1,Cyanobacteria,2,5.56E-03,5.56E-03
+BP,GO:0006778,porphyrin-containing compound metabolic process,1,Cyanobacteria,2,8.05E-03,8.05E-03
+BP,GO:0015995,chlorophyll biosynthetic process,1,Cyanobacteria,2,8.91E-03,8.91E-03

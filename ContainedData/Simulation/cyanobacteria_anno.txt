@@ -1,0 +1,619 @@
+SYNY3|Gene=BAA18097|UniProtKB=P74024	hoxF	Hydrogenase subunit;hoxF;ortholog	NADH-QUINONE OXIDOREDUCTASE SUBUNIT F (PTHR43578:SF3)		Synechocystis
+SYNY3|Gene=BAA10577|UniProtKB=Q55822	cobW	CobW protein;cobW;ortholog	COBW DOMAIN PROTEIN (AFU_ORTHOLOGUE AFUA_4G07990) (PTHR13748:SF62)		Synechocystis
+SYNY3|Gene=glgP|UniProtKB=P73546	glgP	Alpha-1,4 glucan phosphorylase;glgP;ortholog	GLYCOGEN PHOSPHORYLASE (PTHR11468:SF3)	glycosyltransferase(PC00111)	Synechocystis
+SYNY3|EnsemblGenome=BAA10105|UniProtKB=P52208	gnd	6-phosphogluconate dehydrogenase, decarboxylating;gnd;ortholog	6-PHOSPHOGLUCONATE DEHYDROGENASE, DECARBOXYLATING (PTHR11811:SF25)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA17461|UniProtKB=P73421	recQ	ATP-dependent DNA helicase RecQ;recQ;ortholog	BLOOM SYNDROME PROTEIN (PTHR13710:SF105)	DNA helicase(PC00011)	Synechocystis
+SYNY3|EnsemblGenome=BAA10114|UniProtKB=Q55607	chlB	Light-independent protochlorophyllide reductase subunit B;chlB;ortholog	LIGHT-INDEPENDENT PROTOCHLOROPHYLLIDE REDUCTASE SUBUNIT B (PTHR33712:SF7)		Synechocystis
+SYNY3|EnsemblGenome=BAA18030|UniProtKB=P73962	menA	2-carboxy-1,4-naphthoquinone phytyltransferase;menA;ortholog	UBIA PRENYLTRANSFERASE DOMAIN-CONTAINING PROTEIN 1 (PTHR13929:SF0)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA18028|UniProtKB=P73960	leuB	3-isopropylmalate dehydrogenase;leuB;ortholog	3-ISOPROPYLMALATE DEHYDROGENASE (PTHR42979:SF1)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|Gene=BAA10302|UniProtKB=Q55164	natA	Conserved component of ABC transporter for natural amino acids;natA;ortholog	CONSERVED COMPONENT OF ABC TRANSPORTER FOR NATURAL AMINO ACIDS (PTHR45772:SF9)		Synechocystis
+SYNY3|Gene=BAA16726|UniProtKB=P72719	bcp	Bacterioferritin comigratory protein;bcp;ortholog	BACTERIOFERRITIN COMIGRATORY PROTEIN (PTHR42852:SF10)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA10774|UniProtKB=P52965	nifJ	Putative pyruvate-flavodoxin oxidoreductase;nifJ;ortholog	PYRUVATE-FLAVODOXIN OXIDOREDUCTASE-RELATED (PTHR32154:SF0)	reductase(PC00198)	Synechocystis
+SYNY3|EnsemblGenome=BAA17229|UniProtKB=P73203	cpcC1	Phycobilisome 32.1 kDa linker polypeptide, phycocyanin-associated, rod 1;cpcC1;ortholog	PHYCOBILISOME 32.1 KDA LINKER POLYPEPTIDE, PHYCOCYANIN-ASSOCIATED, ROD 2 (PTHR34011:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA10059|UniProtKB=P22358	dnaK	Chaperone protein dnaK2;dnaK2;ortholog	STRESS-70 PROTEIN, MITOCHONDRIAL (PTHR19375:SF184)		Synechocystis
+SYNY3|EnsemblGenome=BAA10371|UniProtKB=Q55729	metS	Methionine--tRNA ligase;metG;ortholog	METHIONINE--TRNA LIGASE, MITOCHONDRIAL (PTHR43326:SF1)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|EnsemblGenome=BAA18477|UniProtKB=Q59975	aroA	3-phosphoshikimate 1-carboxyvinyltransferase;aroA;ortholog	PENTAFUNCTIONAL AROM POLYPEPTIDE (PTHR21090:SF5)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA17918|UniProtKB=Q55281	mntA	Manganese transport system ATP-binding protein MntA;mntA;ortholog	METAL TRANSPORT SYSTEM ATP-BINDING PROTEIN TM_0124-RELATED (PTHR42734:SF5)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|Gene=BAA17154|UniProtKB=P73128	sqdB	Sulfolipid biosynthesis protein SqdB;sqdB;ortholog	UDP-SULFOQUINOVOSE SYNTHASE, CHLOROPLASTIC (PTHR43000:SF10)		Synechocystis
+SYNY3|EnsemblGenome=BAA16863|UniProtKB=P72848	hemF	Oxygen-dependent coproporphyrinogen-III oxidase;hemF;ortholog	OXYGEN-DEPENDENT COPROPORPHYRINOGEN-III OXIDASE, MITOCHONDRIAL (PTHR10755:SF0)	oxidase(PC00175)	Synechocystis
+SYNY3|EnsemblGenome=BAA17567|UniProtKB=P73527	ribH	6,7-dimethyl-8-ribityllumazine synthase;ribH;ortholog	6,7-DIMETHYL-8-RIBITYLLUMAZINE SYNTHASE (PTHR21058:SF0)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA10837|UniProtKB=Q59992	trpB	Tryptophan synthase beta chain;trpB;ortholog	TRYPTOPHAN SYNTHASE (PTHR48077:SF3)		Synechocystis
+SYNY3|Gene=BAA16731|UniProtKB=P75023	ctpB	Carboxyl-terminal protease;ctpB;ortholog	CARBOXYL-TERMINAL-PROCESSING PEPTIDASE 1, CHLOROPLASTIC (PTHR32060:SF22)	serine protease(PC00203)	Synechocystis
+SYNY3|EnsemblGenome=BAA18306|UniProtKB=P74214	ffh	Signal recognition particle protein;ffh;ortholog	SIGNAL RECOGNITION PARTICLE 54 KDA PROTEIN, CHLOROPLASTIC (PTHR11564:SF7)	RNA binding protein(PC00031)	Synechocystis
+SYNY3|Gene=BAA17540|UniProtKB=P73500	pntB	NAD(P) transhydrogenase subunit beta;pntB;ortholog	NAD(P) TRANSHYDROGENASE SUBUNIT BETA (PTHR44758:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18494|UniProtKB=P74397	priA	Primosomal protein N';priA;ortholog	PRIMOSOMAL PROTEIN N' (PTHR30580:SF0)		Synechocystis
+SYNY3|EnsemblGenome=BAA10121|UniProtKB=P48957	rpl20	50S ribosomal protein L20;rplT;ortholog	39S RIBOSOMAL PROTEIN L20, MITOCHONDRIAL (PTHR10986:SF12)	ribosomal protein(PC00202)	Synechocystis
+SYNY3|Gene=BAA17899|UniProtKB=P73842	folC	Folyl-polyglutamate synthetase;folC;ortholog	DIHYDROFOLATE SYNTHETASE-RELATED (PTHR11136:SF0)	ligase(PC00142)	Synechocystis
+SYNY3|Gene=BAA17541|UniProtKB=P73501	pmbA	PmbA protein;pmbA;ortholog	METALLOPROTEASE PMBA (PTHR43421:SF1)	protease(PC00190)	Synechocystis
+SYNY3|EnsemblGenome=BAA10833|UniProtKB=Q55486	argS	Arginine--tRNA ligase;argS;ortholog	ARGININE--TRNA LIGASE, CYTOPLASMIC-RELATED (PTHR11956:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA17627|UniProtKB=P26287	petA	Cytochrome f;petA;ortholog	CYTOCHROME F (PTHR33288:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA10262|UniProtKB=Q59977	gltA	Citrate synthase;gltA;ortholog	CITRATE SYNTHASE, PEROXISOMAL (PTHR11739:SF4)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA18627|UniProtKB=P74782	pyrD	Dihydroorotate dehydrogenase (quinone);pyrD;ortholog	DIHYDROOROTATE DEHYDROGENASE (QUINONE), MITOCHONDRIAL (PTHR48109:SF4)		Synechocystis
+SYNY3|EnsemblGenome=BAA16696|UniProtKB=P72689	infB	Translation initiation factor IF-2;infB;ortholog	TRANSLATION INITIATION FACTOR IF-2, MITOCHONDRIAL (PTHR43381:SF5)	translation initiation factor(PC00224)	Synechocystis
+SYNY3|EnsemblGenome=BAA18633|UniProtKB=P80505	gap2	Glyceraldehyde-3-phosphate dehydrogenase 2;gap2;ortholog	GLYCERALDEHYDE-3-PHOSPHATE DEHYDROGENASE 2 (PTHR43148:SF2)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA18190|UniProtKB=P74104	ribA	Riboflavin biosynthesis protein RibBA;ribBA;ortholog	3,4-DIHYDROXY-2-BUTANONE 4-PHOSPHATE SYNTHASE (PTHR21327:SF18)		Synechocystis
+SYNY3|EnsemblGenome=BAA16800|UniProtKB=P72785	malQ	4-alpha-glucanotransferase;malQ;ortholog	4-ALPHA-GLUCANOTRANSFERASE DPE1, CHLOROPLASTIC/AMYLOPLASTIC (PTHR32438:SF5)		Synechocystis
+SYNY3|Gene=icfA|UniProtKB=Q55136	icfA	Carbonic anhydrase;icfA;ortholog	CARBONIC ANHYDRASE 2 (PTHR11002:SF17)	dehydratase(PC00091)	Synechocystis
+SYNY3|Gene=BAA17565|UniProtKB=P73525	cbbZp	Phosphoglycolate phosphatase;cbbZp;ortholog	PHOSPHOGLYCOLATE PHOSPHATASE (PTHR43434:SF13)	phosphatase(PC00181)	Synechocystis
+SYNY3|EnsemblGenome=BAA10882|UniProtKB=P26524	ndhE	NAD(P)H-quinone oxidoreductase subunit 4L;ndhE;ortholog	NAD(P)H-QUINONE OXIDOREDUCTASE SUBUNIT 4L, CHLOROPLASTIC-RELATED (PTHR11434:SF16)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA10831|UniProtKB=Q55484	lysA	Diaminopimelate decarboxylase;lysA;ortholog	DIAMINOPIMELATE DECARBOXYLASE 1, CHLOROPLASTIC-RELATED (PTHR43727:SF2)	decarboxylase(PC00089)	Synechocystis
+SYNY3|EnsemblGenome=BAA17312|UniProtKB=P20804	acpP	Acyl carrier protein;acpP;ortholog	ACYL CARRIER PROTEIN (PTHR20863:SF28)	transfer/carrier protein(PC00219)	Synechocystis
+SYNY3|EnsemblGenome=BAA16588|UniProtKB=P72588	lig	DNA ligase;ligA;ortholog	BRCT DOMAIN-CONTAINING PROTEIN (PTHR23389:SF9)	DNA binding protein(PC00009)	Synechocystis
+SYNY3|EnsemblGenome=BAA18192|UniProtKB=P74106	hisF	Imidazole glycerol phosphate synthase subunit HisF;hisF;ortholog	IMIDAZOLE GLYCEROL PHOSPHATE SYNTHASE HISHF (PTHR21235:SF2)	lyase(PC00144)	Synechocystis
+SYNY3|EnsemblGenome=BAA17345|UniProtKB=P73316	rps19	30S ribosomal protein S19;rpsS;ortholog	37S RIBOSOMAL PROTEIN S19, MITOCHONDRIAL (PTHR11880:SF8)	ribosomal protein(PC00202)	Synechocystis
+SYNY3|EnsemblGenome=BAA10432|UniProtKB=Q55781	ftrV	Ferredoxin-thioredoxin reductase, variable chain;ftrV;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA17939|UniProtKB=P27724	ndhH	NAD(P)H-quinone oxidoreductase subunit H;ndhH;ortholog	NADH DEHYDROGENASE [UBIQUINONE] IRON-SULFUR PROTEIN 2, MITOCHONDRIAL (PTHR11993:SF10)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA17491|UniProtKB=P73451	nrtB	Nitrate import permease protein NrtB;nrtB;ortholog	NITRATE IMPORT PERMEASE PROTEIN NRTB (PTHR30151:SF7)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|Gene=BAA17478|UniProtKB=P73438	hypE	Hydrogenase expression/formation protein HypE;hypE;ortholog	CARBAMOYL DEHYDRATASE HYPE (PTHR30303:SF0)		Synechocystis
+SYNY3|Gene=rfbB|UniProtKB=Q55420	rfbB	dTDP-glucose 4,6-dehydratase;rfbB;ortholog	DTDP-GLUCOSE 4,6-DEHYDRATASE 2 (PTHR43000:SF27)		Synechocystis
+SYNY3|Gene=BAA18770|UniProtKB=P74654	ama	N-acyl-L-amino acid amidohydrolase;ama;ortholog	METALLOPEPTIDASE, PUTATIVE (AFU_ORTHOLOGUE AFUA_6G09600)-RELATED (PTHR11014:SF63)	metalloprotease(PC00153)	Synechocystis
+SYNY3|Gene=BAA17913|UniProtKB=P73854	lacG	Lactose transport system permease protein LacG;lacG;ortholog	LACTOSE TRANSPORT SYSTEM PERMEASE PROTEIN LACG (PTHR43744:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA10149|UniProtKB=Q57038	petB	Cytochrome b6;petB;ortholog	CYTOCHROME B (PTHR19271:SF16)		Synechocystis
+SYNY3|EnsemblGenome=BAA17700|UniProtKB=P73655	trpS	Tryptophan--tRNA ligase;trpS;ortholog	TRYPTOPHAN--TRNA LIGASE, MITOCHONDRIAL (PTHR43766:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17929|UniProtKB=P73867	kdpB	Potassium-transporting ATPase ATP-binding subunit;kdpB;ortholog	POTASSIUM-TRANSPORTING ATPASE ATP-BINDING SUBUNIT (PTHR43743:SF1)	primary active transporter(PC00068)	Synechocystis
+SYNY3|EnsemblGenome=BAA10210|UniProtKB=P49057	guaA	GMP synthase [glutamine-hydrolyzing];guaA;ortholog	GMP SYNTHASE [GLUTAMINE-HYDROLYZING] (PTHR11922:SF2)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA17803|UniProtKB=Q55336	purT	Formate-dependent phosphoribosylglycinamide formyltransferase;purT;ortholog	FORMATE-DEPENDENT PHOSPHORIBOSYLGLYCINAMIDE FORMYLTRANSFERASE (PTHR43055:SF1)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA18488|UniProtKB=P74391	radA	DNA repair protein RadA;radA;ortholog	DNA REPAIR PROTEIN RADA-LIKE PROTEIN (PTHR32472:SF10)	DNA binding protein(PC00009)	Synechocystis
+SYNY3|EnsemblGenome=BAA10366|UniProtKB=Q55725	menD	2-succinyl-5-enolpyruvyl-6-hydroxy-3-cyclohexene-1-carboxylate synthase;menD;ortholog	PROTEIN PHYLLO, CHLOROPLASTIC (PTHR42916:SF1)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA10297|UniProtKB=P53383	mrp	Iron-sulfur cluster carrier protein;mrp;ortholog	IRON-SULFUR PROTEIN NUBPL (PTHR42961:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA18828|UniProtKB=P74709	surE	5'-nucleotidase SurE;surE;ortholog	5'/3'-NUCLEOTIDASE SURE (PTHR30457:SF12)		Synechocystis
+SYNY3|Gene=BAA18529|UniProtKB=P74429	ycf39	Ycf39 gene product;ycf39;ortholog	OS08G0553800 PROTEIN (PTHR47128:SF2)		Synechocystis
+SYNY3|Gene=BAA10281|UniProtKB=Q55145	chlG	Chlorophyll a synthase;chlG;ortholog	CHLOROPHYLL SYNTHASE, CHLOROPLASTIC (PTHR42723:SF1)	acyltransferase(PC00042)	Synechocystis
+SYNY3|EnsemblGenome=BAA16712|UniProtKB=P72705	ycf4	Photosystem I assembly protein Ycf4;ycf4;ortholog	PHOTOSYSTEM I ASSEMBLY PROTEIN YCF4 (PTHR33288:SF4)		Synechocystis
+SYNY3|EnsemblGenome=BAA16809|UniProtKB=P72794	cysH	Phosphoadenosine phosphosulfate reductase;cysH;ortholog	PHOSPHOADENOSINE PHOSPHOSULFATE REDUCTASE (PTHR46509:SF1)	nucleotidyltransferase(PC00174)	Synechocystis
+SYNY3|EnsemblGenome=BAA16758|UniProtKB=P72743	ubiX	Flavin prenyltransferase UbiX;ubiX;ortholog	FLAVIN PRENYLTRANSFERASE PAD1, MITOCHONDRIAL (PTHR43374:SF1)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA18762|UniProtKB=P74646	KaiC	Circadian clock protein kinase KaiC;kaiC;ortholog	UPF0273 PROTEIN TM_0370 (PTHR43637:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18067|UniProtKB=P77969	hemB	Delta-aminolevulinic acid dehydratase;hemB;ortholog	DELTA-AMINOLEVULINIC ACID DEHYDRATASE (PTHR11458:SF0)	dehydratase(PC00091)	Synechocystis
+SYNY3|EnsemblGenome=BAA10185|UniProtKB=Q55665	hemL	Glutamate-1-semialdehyde 2,1-aminomutase;hemL;ortholog	GLUTAMATE-1-SEMIALDEHYDE 2,1-AMINOMUTASE 1, CHLOROPLASTIC-RELATED (PTHR43713:SF3)	mutase(PC00160)	Synechocystis
+SYNY3|Gene=BAA18265|UniProtKB=P74176	hlyB	HlyB family;hlyB;ortholog	HLYB FAMILY (PTHR24221:SF157)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|Gene=BAA17434|UniProtKB=P73394	ndhD3	NADH dehydrogenase subunit 4;ndhD3;ortholog	NADH-UBIQUINONE OXIDOREDUCTASE CHAIN 4 (PTHR43507:SF1)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA18123|UniProtKB=P27372	ndhL	NAD(P)H-quinone oxidoreductase subunit L;ndhL;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA18754|UniProtKB=P74638	accA	Acetyl-coenzyme A carboxylase carboxyl transferase subunit alpha;accA;ortholog	ACETYL-COENZYME A CARBOXYLASE CARBOXYL TRANSFERASE SUBUNIT ALPHA (PTHR42853:SF3)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA10479|UniProtKB=Q55389	ftrC	Ferredoxin-thioredoxin reductase, catalytic chain;ftrC;ortholog	FERREDOXIN-THIOREDOXIN REDUCTASE CATALYTIC CHAIN, CHLOROPLASTIC (PTHR35113:SF1)		Synechocystis
+SYNY3|Gene=pilT|UniProtKB=P74463	pilT	Twitching motility protein;pilT;ortholog	TWITCHING MOTILITY PROTEIN (PTHR30486:SF12)		Synechocystis
+SYNY3|EnsemblGenome=BAA18390|UniProtKB=P74296	pheT	Phenylalanine--tRNA ligase beta subunit;pheT;ortholog	PHENYLALANINE--TRNA LIGASE BETA SUBUNIT (PTHR10947:SF0)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|Gene=rfbC|UniProtKB=P74488	rfbC	dTDP-4-dehydrorhamnose 3,5-epimerase;rfbC;ortholog	DTDP-4-DEHYDRORHAMNOSE 3,5-EPIMERASE (PTHR21047:SF2)	epimerase/racemase(PC00096)	Synechocystis
+SYNY3|EnsemblGenome=BAA16810|UniProtKB=P72795	hrcA	Heat-inducible transcription repressor HrcA;hrcA;ortholog	HEAT-INDUCIBLE TRANSCRIPTION REPRESSOR HRCA (PTHR34824:SF1)		Synechocystis
+SYNY3|Gene=BAA16902|UniProtKB=P72886	rfbG	CDP-glucose-4,6-dehydratase;rfbG;ortholog	SUGAR DEHYDRATASE/EPIMERASE YFNG-RELATED (PTHR43245:SF10)	oxidoreductase(PC00176);transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA17321|UniProtKB=P73293	rps9	30S ribosomal protein S9;rpsI;ortholog	28S RIBOSOMAL PROTEIN S9, MITOCHONDRIAL (PTHR21569:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10132|UniProtKB=Q55621	purF	Amidophosphoribosyltransferase;purF;ortholog	AMIDOPHOSPHORIBOSYLTRANSFERASE (PTHR11907:SF0)	transferase(PC00220)	Synechocystis
+SYNY3|Gene=rfbA|UniProtKB=P74731	rfbA	Transport permease protein;rfbA;ortholog	TRANSPORT PERMEASE PROTEIN (PTHR30413:SF11)		Synechocystis
+SYNY3|Gene=BAA10312|UniProtKB=Q55172	purN	Phosphoribosylglycinamide formyltransferase;purN;ortholog	TRIFUNCTIONAL PURINE BIOSYNTHETIC PROTEIN ADENOSINE-3 (PTHR43369:SF2)	transferase(PC00220)	Synechocystis
+SYNY3|Gene=BAA10218|UniProtKB=Q55689	rfbA	Glucose-1-phosphate thymidylyltransferase;rfbA;ortholog	ZGC:136439 (PTHR42883:SF2)	nucleotidyltransferase(PC00174)	Synechocystis
+SYNY3|EnsemblGenome=BAA18689|UniProtKB=P74582	acnB	Aconitate hydratase B;acnB;ortholog	ACONITATE HYDRATASE B (PTHR43160:SF4)	hydratase(PC00120)	Synechocystis
+SYNY3|Gene=BAA17219|UniProtKB=P73193	spoIID	Sporulation protein SpoIID;spoIID;ortholog	STAGE II SPORULATION PROTEIN D (PTHR30032:SF4)		Synechocystis
+SYNY3|EnsemblGenome=BAA10483|UniProtKB=Q55393	dfa1	Diflavin flavoprotein A 1;dfa1;ortholog	DIFLAVIN FLAVOPROTEIN A 2-RELATED (PTHR32145:SF11)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA10451|UniProtKB=Q55369	moaA	GTP 3',8-cyclase;moaA;ortholog	MOLYBDENUM COFACTOR BIOSYNTHESIS PROTEIN 1 (PTHR22960:SF0)		Synechocystis
+SYNY3|Gene=BAA18467|UniProtKB=P74372	PgsA	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase;pgsA;ortholog	CARDIOLIPIN SYNTHASE (CMP-FORMING) (PTHR14269:SF11)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA10085|UniProtKB=Q54697	psbI	Photosystem II reaction center protein I;psbI;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA16871|UniProtKB=P72856	dnaN	Beta sliding clamp;dnaN;ortholog	BETA SLIDING CLAMP (PTHR30478:SF0)	DNA-directed DNA polymerase(PC00018)	Synechocystis
+SYNY3|EnsemblGenome=BAA18018|UniProtKB=P73951	fabH	3-oxoacyl-[acyl-carrier-protein] synthase 3;fabH;ortholog	3-OXOACYL-[ACYL-CARRIER-PROTEIN] SYNTHASE III, CHLOROPLASTIC (PTHR43091:SF1)	acetyltransferase(PC00038)	Synechocystis
+SYNY3|Gene=BAA17771|UniProtKB=P73723	sdhB	Succinate dehydrogenase iron-sulfur subunit;sdhB;ortholog	FUMARATE REDUCTASE IRON-SULFUR SUBUNIT (PTHR43551:SF2)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA17488|UniProtKB=P73448	narB	Nitrate reductase;narB;ortholog	FORMATE DEHYDROGENASE H (PTHR11615:SF289)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|Gene=fur|UniProtKB=P74739	fur	Ferric uptake regulation protein;fur;ortholog	FERRIC UPTAKE REGULATION PROTEIN (PTHR33202:SF19)	winged helix/forkhead transcription factor(PC00246)	Synechocystis
+SYNY3|EnsemblGenome=BAA18679|UniProtKB=P74572	proC	Pyrroline-5-carboxylate reductase;proC;ortholog	PYRROLINE-5-CARBOXYLATE REDUCTASE 2 (PTHR11645:SF0)		Synechocystis
+SYNY3|EnsemblGenome=BAA17284|UniProtKB=P73257	argH	Argininosuccinate lyase;argH;ortholog	ARGININOSUCCINATE LYASE (PTHR43814:SF1)	lyase(PC00144)	Synechocystis
+SYNY3|EnsemblGenome=BAA17683|UniProtKB=P73638	cpcE	Phycocyanobilin lyase subunit alpha;cpcE;ortholog	PHYCOCYANOBILIN LYASE SUBUNIT ALPHA (PTHR12697:SF24)		Synechocystis
+SYNY3|EnsemblGenome=BAA16644|UniProtKB=P72642	dapB	4-hydroxy-tetrahydrodipicolinate reductase;dapB;ortholog	4-HYDROXY-TETRAHYDRODIPICOLINATE REDUCTASE 1, CHLOROPLASTIC-RELATED (PTHR20836:SF0)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA18685|UniProtKB=P74578	nadA	Quinolinate synthase A;nadA;ortholog	QUINOLINATE SYNTHASE, CHLOROPLASTIC (PTHR30573:SF0)	transferase(PC00220)	Synechocystis
+SYNY3|Gene=BAA10274|UniProtKB=Q55139	gst	Glutathione S-transferase;gst;ortholog	GLUTATHIONE S-TRANSFERASE RHO (PTHR43900:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA18807|UniProtKB=P74689	ilvD	Dihydroxy-acid dehydratase;ilvD;ortholog	DIHYDROXY-ACID DEHYDRATASE, MITOCHONDRIAL (PTHR21000:SF5)	dehydratase(PC00091)	Synechocystis
+SYNY3|EnsemblGenome=BAA17768|UniProtKB=P73720	opcA	Putative OxPP cycle protein OpcA;opcA;ortholog	OXPP CYCLE PROTEIN OPCA-RELATED (PTHR38658:SF1)		Synechocystis
+SYNY3|Gene=BAA10410|UniProtKB=Q55763	lytB	Amidase enhancer;lytB;ortholog	STAGE II SPORULATION PROTEIN D (PTHR30032:SF4)		Synechocystis
+SYNY3|EnsemblGenome=BAA18344|UniProtKB=P74250	gpx1	Hydroperoxy fatty acid reductase gpx1;gpx1;ortholog	PHOSPHOLIPID HYDROPEROXIDE GLUTATHIONE PEROXIDASE (PTHR11592:SF78)	peroxidase(PC00180)	Synechocystis
+SYNY3|EnsemblGenome=BAA18760|UniProtKB=P74644	KaiA	Circadian clock protein KaiA;kaiA;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA17864|UniProtKB=P73810	topA	DNA topoisomerase 1;topA;ortholog	DNA TOPOISOMERASE, TYPE IA, CORE (PTHR42785:SF1)	DNA binding protein(PC00009)	Synechocystis
+SYNY3|EnsemblGenome=BAA17910|UniProtKB=P73851	aspS	Aspartate--tRNA(Asp/Asn) ligase;aspS;ortholog	ASPARTATE--TRNA LIGASE, MITOCHONDRIAL (PTHR22594:SF5)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|Gene=BAA18443|UniProtKB=P74349	pilT	Twitching mobility protein;pilT;ortholog	TWITCHING MOBILITY PROTEIN (PTHR30486:SF6)		Synechocystis
+SYNY3|EnsemblGenome=BAA17356|UniProtKB=P73326	argB	Acetylglutamate kinase;argB;ortholog	N-ACETYLGLUTAMATE SYNTHASE, MITOCHONDRIAL (PTHR23342:SF0)		Synechocystis
+SYNY3|EnsemblGenome=BAA10623|UniProtKB=P52231	trxA,trx	Thioredoxin;trxA;ortholog	GEO12009P1 (PTHR45663:SF11)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA10870|UniProtKB=Q55513	dapA	4-hydroxy-tetrahydrodipicolinate synthase;dapA;ortholog	4-HYDROXY-2-OXOGLUTARATE ALDOLASE, MITOCHONDRIAL (PTHR12128:SF15)	lyase(PC00144)	Synechocystis
+SYNY3|EnsemblGenome=BAA18668|UniProtKB=P74561	hisA	1-(5-phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino] imidazole-4-carboxamide isomerase;hisA;ortholog	1-(5-PHOSPHORIBOSYL)-5-[(5-PHOSPHORIBOSYLAMINO)METHYLIDENEAMINO] IMIDAZOLE-4-CARBOXAMIDE ISOMERASE (PTHR43090:SF2)	isomerase(PC00135)	Synechocystis
+SYNY3|EnsemblGenome=BAA17944|UniProtKB=P73881	dfp	Coenzyme A biosynthesis bifunctional protein CoaBC;coaBC;ortholog	PHOSPHOPANTOTHENOYLCYSTEINE DECARBOXYLASE (PTHR14359:SF6)	decarboxylase(PC00089)	Synechocystis
+SYNY3|EnsemblGenome=BAA10058|UniProtKB=P54261	gcvT	Aminomethyltransferase;gcvT;ortholog	AMINOMETHYLTRANSFERASE, MITOCHONDRIAL (PTHR43757:SF2)	methyltransferase(PC00155)	Synechocystis
+SYNY3|EnsemblGenome=BAA16658|UniProtKB=P72656	rne	Ribonuclease E/G-like protein;rne;ortholog	RIBONUCLEASE G (PTHR30001:SF0)		Synechocystis
+SYNY3|EnsemblGenome=BAA16983|UniProtKB=P72965	thiE	Thiamine-phosphate synthase;thiE;ortholog	THIAMINE BIOSYNTHETIC BIFUNCTIONAL ENZYME (PTHR20857:SF15)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA18298|UniProtKB=P74207	leuD	3-isopropylmalate dehydratase small subunit;leuD;ortholog	3-ISOPROPYLMALATE DEHYDRATASE SMALL SUBUNIT (PTHR43345:SF5)	dehydratase(PC00091)	Synechocystis
+SYNY3|EnsemblGenome=BAA16991|UniProtKB=P72973	nhaS4	Na(+)/H(+) antiporter NhaS4;nhaS4;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA18539|UniProtKB=P74438	pyrC	Dihydroorotase;pyrC;ortholog	DIHYDROOROTASE (PTHR43137:SF1)	hydrolase(PC00121)	Synechocystis
+SYNY3|EnsemblGenome=BAA17080|UniProtKB=P73058	hisD	Histidinol dehydrogenase 1;hisD1;ortholog	HISTIDINE BIOSYNTHESIS TRIFUNCTIONAL PROTEIN (PTHR21256:SF2)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|Gene=BAA10129|UniProtKB=Q55618	ycf38	Transport permease protein;ycf38;ortholog	TRANSPORT PERMEASE PROTEIN (PTHR43077:SF9)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|EnsemblGenome=BAA10079|UniProtKB=P48576	leuA	2-isopropylmalate synthase;leuA;ortholog	2-ISOPROPYLMALATE SYNTHASE 1, CHLOROPLASTIC (PTHR10277:SF9)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA10458|UniProtKB=P05429	psbB	Photosystem II CP47 reaction center protein;psbB;ortholog	PHOTOSYSTEM II CP43 REACTION CENTER PROTEIN (PTHR33180:SF7)		Synechocystis
+SYNY3|Gene=BAA16909|UniProtKB=P72893	rfbE	Perosamine synthetase;rfbE;ortholog	UDP-4-AMINO-4-DEOXY-L-ARABINOSE--OXOGLUTARATE AMINOTRANSFERASE (PTHR30244:SF3)	transaminase(PC00216)	Synechocystis
+SYNY3|EnsemblGenome=BAA17807|UniProtKB=P73755	trmU	tRNA-specific 2-thiouridylase MnmA;mnmA;ortholog	MITOCHONDRIAL TRNA-SPECIFIC 2-THIOURIDYLASE 1 (PTHR11933:SF5)	RNA methyltransferase(PC00033)	Synechocystis
+SYNY3|EnsemblGenome=BAA18653|UniProtKB=Q01895	cysT	Sulfate transport system permease protein CysT;cysT;ortholog	SULFATE TRANSPORT SYSTEM PERMEASE PROTEIN CYST (PTHR30406:SF8)		Synechocystis
+SYNY3|EnsemblGenome=BAA18775|UniProtKB=P74657	murG	UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase;murG;ortholog	GLYCOSYLTRANSFERASE (PTHR21015:SF22)	glycosyltransferase(PC00111)	Synechocystis
+SYNY3|EnsemblGenome=BAA18339|UniProtKB=Q55087	chlP	Geranylgeranyl diphosphate reductase;chlP;ortholog	CONDITIONED MEDIUM FACTOR RECEPTOR 1 (PTHR42685:SF4)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|Gene=BAA16695|UniProtKB=P72688	nusA	Transcription termination/antitermination protein NusA;nusA;ortholog	TRANSCRIPTION TERMINATION/ANTITERMINATION PROTEIN NUSA (PTHR22648:SF0)	RNA processing factor(PC00147)	Synechocystis
+SYNY3|Gene=BAA10298|UniProtKB=Q55160	accC	Biotin carboxylase;accC;ortholog	BIOTIN CARBOXYLASE, CHLOROPLASTIC (PTHR48095:SF2)		Synechocystis
+SYNY3|Gene=BAA10138|UniProtKB=P74788	ycf33	Ycf33 gene product;ycf33;ortholog			Synechocystis
+SYNY3|Gene=BAA17784|UniProtKB=P73736	amiA	N-acetylmuramoyl-L-alanine amidase;amiA;ortholog	N-ACETYLMURAMOYL-L-ALANINE AMIDASE AMIB (PTHR30404:SF0)	hydrolase(PC00121)	Synechocystis
+SYNY3|EnsemblGenome=BAA16739|UniProtKB=P27182	atpE	ATP synthase subunit c;atpE;ortholog	ATP SYNTHASE, SUBUNIT C, ISOFORM A (PTHR10031:SF0)	ATP synthase(PC00002)	Synechocystis
+SYNY3|EnsemblGenome=BAA18450|UniProtKB=P74355	smpB	SsrA-binding protein;smpB;ortholog	SSRA-BINDING PROTEIN (PTHR30308:SF2)	translation factor(PC00223)	Synechocystis
+SYNY3|Gene=cpcG|UniProtKB=P73093	cpcG	Phycobilisome rod-core linker polypeptide CpcG;cpcG;ortholog	PHYCOBILISOME 32.1 KDA LINKER POLYPEPTIDE, PHYCOCYANIN-ASSOCIATED, ROD 2 (PTHR34011:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA10807|UniProtKB=Q55463	cmpD	Bicarbonate transport ATP-binding protein CmpD;cmpD;ortholog	BICARBONATE TRANSPORT ATP-BINDING PROTEIN CMPD (PTHR42788:SF14)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|EnsemblGenome=BAA18139|UniProtKB=P74063	ycf3	Photosystem I assembly protein Ycf3;ycf3;ortholog	TETRATRICOPEPTIDE REPEAT PROTEIN 5 (PTHR26312:SF87)		Synechocystis
+SYNY3|EnsemblGenome=BAA10279|UniProtKB=Q55143	dgkA	Probable diacylglycerol kinase;dgkA;ortholog	DIACYLGLYCEROL KINASE (PTHR34299:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10617|UniProtKB=Q55860	cobQ	Cobyric acid synthase;cobQ;ortholog	COBYRIC ACID SYNTHASE (PTHR21343:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17681|UniProtKB=P73636	rps6	30S ribosomal protein S6;rpsF;ortholog	28S RIBOSOMAL PROTEIN S6, MITOCHONDRIAL (PTHR21011:SF1)	ribosomal protein(PC00202)	Synechocystis
+SYNY3|EnsemblGenome=BAA18384|UniProtKB=P74290	fpg	Formamidopyrimidine-DNA glycosylase;mutM;ortholog	ENDONUCLEASE 8-LIKE 1 (PTHR22993:SF9)	DNA glycosylase(PC00010)	Synechocystis
+SYNY3|Gene=BAA16585|UniProtKB=P72586	rfbD	GDP-mannose 4,6-dehydratase;rfbD;ortholog	GDP-MANNOSE 4,6 DEHYDRATASE (PTHR43715:SF1)	dehydratase(PC00091)	Synechocystis
+SYNY3|EnsemblGenome=BAA18651|UniProtKB=Q01903	sbpA	Sulfate-binding protein;sbpA;ortholog	SULFATE-BINDING PROTEIN (PTHR30368:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA17848|UniProtKB=P37294	pys	15-cis-phytoene synthase;crtB;ortholog	BIFUNCTIONAL LYCOPENE CYCLASE/PHYTOENE SYNTHASE (PTHR31480:SF0)		Synechocystis
+SYNY3|EnsemblGenome=BAA16997|UniProtKB=P72978	ccsA	Cytochrome c biogenesis protein CcsA;ccsA;ortholog	CYTOCHROME B/B6 PROTEIN-RELATED (PTHR30071:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17410|UniProtKB=Q05971	groES	10 kDa chaperonin;groS;ortholog	10 KDA CHAPERONIN (PTHR10772:SF24)	chaperonin(PC00073)	Synechocystis
+SYNY3|Gene=BAA16773|UniProtKB=P72758	ccmM	Carbon dioxide concentrating mechanism protein CcmM;ccmM;ortholog	CARBON DIOXIDE CONCENTRATING MECHANISM PROTEIN CCMM (PTHR43360:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10884|UniProtKB=P26525	ndhI	NAD(P)H-quinone oxidoreductase subunit I;ndhI;ortholog	NAD(P)H-QUINONE OXIDOREDUCTASE SUBUNIT I, CHLOROPLASTIC (PTHR47275:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18533|UniProtKB=Q55247	glnB	Nitrogen regulatory protein P-II;glnB;ortholog	NITROGEN REGULATORY PROTEIN P-II HOMOLOG (PTHR30115:SF11)	protein-binding activity modulator(PC00095)	Synechocystis
+SYNY3|EnsemblGenome=BAA17762|UniProtKB=P73715	nth	Endonuclease III;nth;ortholog	ENDONUCLEASE III (PTHR10359:SF18)		Synechocystis
+SYNY3|EnsemblGenome=BAA16864|UniProtKB=P72849	ho1	Heme oxygenase 1;pbsA1;ortholog	HEME OXYGENASE (PTHR10720:SF0)		Synechocystis
+SYNY3|EnsemblGenome=BAA10606|UniProtKB=Q55850	queA	S-adenosylmethionine:tRNA ribosyltransferase-isomerase;queA;ortholog	S-ADENOSYLMETHIONINE:TRNA RIBOSYLTRANSFERASE-ISOMERASE (PTHR30307:SF0)	isomerase(PC00135)	Synechocystis
+SYNY3|EnsemblGenome=BAA18285|UniProtKB=P19125	ndhJ	NAD(P)H-quinone oxidoreductase subunit J;ndhJ;ortholog	NADH DEHYDROGENASE [UBIQUINONE] IRON-SULFUR PROTEIN 3, MITOCHONDRIAL (PTHR10884:SF14)		Synechocystis
+SYNY3|EnsemblGenome=BAA10523|UniProtKB=P54225	hemH	Ferrochelatase;hemH;ortholog	FERROCHELATASE, MITOCHONDRIAL (PTHR11108:SF1)	lyase(PC00144)	Synechocystis
+SYNY3|EnsemblGenome=BAA10815|UniProtKB=Q55469	murE	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase;murE;ortholog	UDP-N-ACETYLMURAMOYL-L-ALANYL-D-GLUTAMATE--2,6-DIAMINOPIMELATE LIGASE MURE HOMOLOG, CHLOROPLASTIC (PTHR23135:SF4)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA17578|UniProtKB=P73538	bioB	Biotin synthase;bioB;ortholog	BIOTIN SYNTHASE, MITOCHONDRIAL (PTHR22976:SF2)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA17227|UniProtKB=P73201	serS	Serine--tRNA ligase;serS;ortholog	SERINE--TRNA LIGASE (PTHR43697:SF1)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|EnsemblGenome=BAA17075|UniProtKB=P15819	psbK	Photosystem II reaction center protein K;psbK;ortholog	PHOTOSYSTEM II REACTION CENTER PROTEIN K (PTHR35325:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA16734|UniProtKB=P17253	atpG	ATP synthase gamma chain;atpG;ortholog	ATP SYNTHASE GAMMA CHAIN 1, CHLOROPLASTIC (PTHR11693:SF23)	ATP synthase(PC00002)	Synechocystis
+SYNY3|EnsemblGenome=BAA18469|UniProtKB=P74374	recN	DNA repair protein RecN;recN;ortholog	DNA REPAIR PROTEIN RECN (PTHR11059:SF0)		Synechocystis
+SYNY3|EnsemblGenome=BAA18654|UniProtKB=P74547	cysW	Sulfate transport system permease protein CysW;cysW;ortholog	SULFATE TRANSPORT SYSTEM PERMEASE PROTEIN CYSW (PTHR30406:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18462|UniProtKB=P74367	psb27	Photosystem II lipoprotein Psb27;psb27;ortholog	PHOTOSYSTEM II REPAIR PROTEIN PSB27-H1, CHLOROPLASTIC (PTHR34041:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10342|UniProtKB=Q55200	sphX	Protein SphX;sphX;ortholog	PROTEIN SPHX (PTHR30570:SF1)		Synechocystis
+SYNY3|Gene=BAA10252|UniProtKB=Q55120	accB	Biotin carboxyl carrier protein of acetyl-CoA carboxylase;accB;ortholog	BIOTIN CARBOXYL CARRIER PROTEIN OF ACETYL-COA CARBOXYLASE 1, CHLOROPLASTIC (PTHR43416:SF4)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA16812|UniProtKB=P72797	tal	Transaldolase;tal;ortholog	TRANSALDOLASE (PTHR10683:SF18)		Synechocystis
+SYNY3|Gene=BAA16660|UniProtKB=P72658	mutT	Mutator MutT protein;mutT;ortholog	8-OXO-DGTP DIPHOSPHATASE (PTHR47707:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17799|UniProtKB=P09193	psbC	Photosystem II CP43 reaction center protein;psbC;ortholog	PHOTOSYSTEM II CP43 REACTION CENTER PROTEIN (PTHR33180:SF7)		Synechocystis
+SYNY3|Gene=BAA10091|UniProtKB=Q55586	sphS	Regulation of the phosphate regulon;sphS;ortholog	SENSOR HISTIDINE KINASE GLRK (PTHR42878:SF7)	histidine kinase receptor of two-component system(PC00265)	Synechocystis
+SYNY3|EnsemblGenome=BAA10150|UniProtKB=P27589	petD	Cytochrome b6-f complex subunit 4;petD;ortholog	CYTOCHROME B (PTHR19271:SF16)		Synechocystis
+SYNY3|EnsemblGenome=BAA16688|UniProtKB=P19569	psaD	Photosystem I reaction center subunit II;psaD;ortholog	PHOTOSYSTEM I REACTION CENTER SUBUNIT II-1, CHLOROPLASTIC-RELATED (PTHR31982:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA10099|UniProtKB=Q55593	tmk	Thymidylate kinase;tmk;ortholog	THYMIDYLATE KINASE (PTHR10344:SF4)	nucleotide kinase(PC00172)	Synechocystis
+SYNY3|EnsemblGenome=BAA18655|UniProtKB=P74548	cysA	Sulfate/thiosulfate import ATP-binding protein CysA;cysA;ortholog	SULFATE/THIOSULFATE IMPORT ATP-BINDING PROTEIN CYSA (PTHR43514:SF1)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|EnsemblGenome=BAA10355|UniProtKB=Q55714	cobS	Adenosylcobinamide-GDP ribazoletransferase;cobS;ortholog	ADENOSYLCOBINAMIDE-GDP RIBAZOLETRANSFERASE (PTHR34148:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18459|UniProtKB=Q55318	petH	Ferredoxin--NADP reductase;petH;ortholog	FERREDOXIN--NADP REDUCTASE, LEAF ISOZYME 2, CHLOROPLASTIC-RELATED (PTHR43314:SF19)		Synechocystis
+SYNY3|EnsemblGenome=BAA10521|UniProtKB=Q55422	purM	Phosphoribosylformylglycinamidine cyclo-ligase;purM;ortholog	TRIFUNCTIONAL PURINE BIOSYNTHETIC PROTEIN ADENOSINE-3 (PTHR10520:SF12)	ligase(PC00142);transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA17630|UniProtKB=P26286	psbN	Protein PsbN;psbN;ortholog	PROTEIN PSBN (PTHR35326:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA16646|UniProtKB=P72644	purL	Phosphoribosylformylglycinamidine synthase subunit PurL;purL;ortholog	PHOSPHORIBOSYLFORMYLGLYCINAMIDINE SYNTHASE SUBUNIT PURL (PTHR43555:SF1)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA16587|UniProtKB=P72587	speA	Biosynthetic arginine decarboxylase 2;speA2;ortholog	ARGININE DECARBOXYLASE 1-RELATED (PTHR43295:SF1)	decarboxylase(PC00089)	Synechocystis
+SYNY3|EnsemblGenome=BAA17159|UniProtKB=P73133	argD	Acetylornithine aminotransferase;argD;ortholog	ACETYLORNITHINE AMINOTRANSFERASE, MITOCHONDRIAL (PTHR11986:SF79)	transaminase(PC00216)	Synechocystis
+SYNY3|EnsemblGenome=BAA17325|UniProtKB=P73297	rpoA	DNA-directed RNA polymerase subunit alpha;rpoA;ortholog	DNA-DIRECTED RNA POLYMERASE SUBUNIT ALPHA (PTHR32108:SF0)		Synechocystis
+SYNY3|Gene=petF|UniProtKB=P74449	petF	Ferredoxin;petF;ortholog			Synechocystis
+SYNY3|Gene=BAA10027|UniProtKB=Q55532	ribC	Riboflavin synthase alpha chain;ribC;ortholog	RIBOFLAVIN SYNTHASE (PTHR21098:SF0)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA16738|UniProtKB=P27183	atpG	ATP synthase subunit b';atpG;ortholog	ATP SYNTHASE SUBUNIT B (PTHR33445:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA16866|UniProtKB=P72851	rpl28	50S ribosomal protein L28;rpmB;ortholog	50S RIBOSOMAL PROTEIN L28, CHLOROPLASTIC (PTHR13528:SF6)	ribosomal protein(PC00202)	Synechocystis
+SYNY3|EnsemblGenome=BAA10357|UniProtKB=Q55716	glyQ	Glycine--tRNA ligase alpha subunit;glyQ;ortholog			Synechocystis
+SYNY3|Gene=BAA16857|UniProtKB=P72842	glcE	Glycolate oxidase subunit GlcE;glcE;ortholog	GLYCOLATE OXIDASE SUBUNIT GLCE (PTHR11748:SF103)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA10309|UniProtKB=Q55170	uvrB	UvrABC system protein B;uvrB;ortholog	UVRABC SYSTEM PROTEIN B (PTHR24029:SF0)	exodeoxyribonuclease(PC00098)	Synechocystis
+SYNY3|EnsemblGenome=BAA18474|UniProtKB=P10549	psbO	Photosystem II manganese-stabilizing polypeptide;psbO;ortholog	OXYGEN-EVOLVING ENHANCER PROTEIN 1-2, CHLOROPLASTIC (PTHR34058:SF2)		Synechocystis
+SYNY3|Gene=sdhB|UniProtKB=Q55431	sdhB	Succinate dehydrogenase iron-sulfur subunit;sdhB;ortholog	SUCCINATE DEHYDROGENASE [UBIQUINONE] IRON-SULFUR SUBUNIT, MITOCHONDRIAL (PTHR11921:SF29)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA17268|UniProtKB=P73241	pacS	Probable copper-transporting ATPase PacS;pacS;ortholog	ATP7, ISOFORM B (PTHR43520:SF8)	primary active transporter(PC00068)	Synechocystis
+SYNY3|Gene=BAA10186|UniProtKB=Q55666	mltA	Membrane-bound lytic transglycosylase A;mltA;ortholog	MEMBRANE-BOUND LYTIC MUREIN TRANSGLYCOSYLASE A (PTHR30124:SF0)	glycosidase(PC00110)	Synechocystis
+SYNY3|EnsemblGenome=BAA10792|UniProtKB=P54691	ilvE	Probable branched-chain-amino-acid aminotransferase;ilvE;ortholog	BRANCHED-CHAIN-AMINO-ACID AMINOTRANSFERASE-RELATED (PTHR42743:SF4)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA10856|UniProtKB=Q55504	glmU	Bifunctional protein GlmU;glmU;ortholog	BIFUNCTIONAL PROTEIN GLMU (PTHR43584:SF3)	nucleotidyltransferase(PC00174)	Synechocystis
+SYNY3|EnsemblGenome=BAA10557|UniProtKB=P54899	argC	N-acetyl-gamma-glutamyl-phosphate reductase;argC;ortholog	N-ACETYL-GAMMA-GLUTAMYL-PHOSPHATE REDUCTASE (PTHR32338:SF8)		Synechocystis
+SYNY3|Gene=glgX|UniProtKB=P73608	glgX	Glycogen operon protein GlgX;glgX;ortholog	ISOAMYLASE 1, CHLOROPLASTIC (PTHR43002:SF1)	amylase(PC00048)	Synechocystis
+SYNY3|Gene=BAA16818|UniProtKB=P72803	dnaJ	DnaJ protein;dnaJ;ortholog			Synechocystis
+SYNY3|Gene=BAA18438|UniProtKB=P74344	moeB	Molybdopterin biosynthesis MoeB protein;moeB;ortholog	UBIQUITIN-LIKE MODIFIER-ACTIVATING ENZYME ATG7 (PTHR10953:SF3)	ubiquitin-protein ligase(PC00234)	Synechocystis
+SYNY3|EnsemblGenome=BAA17588|UniProtKB=P73548	cdsA	Phosphatidate cytidylyltransferase;cdsA;ortholog	PHOSPHATIDATE CYTIDYLYLTRANSFERASE 5, CHLOROPLASTIC (PTHR47101:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17273|UniProtKB=P73246	nadD	Probable nicotinate-nucleotide adenylyltransferase;nadD;ortholog	NICOTINAMIDE/NICOTINIC ACID MONONUCLEOTIDE ADENYLYLTRANSFERASE 2 (PTHR12039:SF0)	nucleotidyltransferase(PC00174)	Synechocystis
+SYNY3|EnsemblGenome=BAA18623|UniProtKB=P74519	lipB	Octanoyltransferase;lipB;ortholog	OCTANOYLTRANSFERASE LIP2P, CHLOROPLASTIC-RELATED (PTHR10993:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA17709|UniProtKB=P73664	sfsA	Sugar fermentation stimulation protein homolog;sfsA;ortholog	SUGAR FERMENTATION STIMULATION PROTEIN A (PTHR30545:SF2)	helix-turn-helix transcription factor(PC00116)	Synechocystis
+SYNY3|EnsemblGenome=BAA18516|UniProtKB=P74416	gcvP	Glycine dehydrogenase (decarboxylating);gcvP;ortholog	GLYCINE DEHYDROGENASE (DECARBOXYLATING), MITOCHONDRIAL (PTHR11773:SF1)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|Gene=BAA17040|UniProtKB=P73020	chlH	Mg-chelatase subunit ChlH;chlH;ortholog	MAGNESIUM-CHELATASE SUBUNIT CHLH, CHLOROPLASTIC (PTHR44119:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18417|UniProtKB=P74323	ispD	2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase;ispD;ortholog	2-C-METHYL-D-ERYTHRITOL 4-PHOSPHATE CYTIDYLYLTRANSFERASE, CHLOROPLASTIC (PTHR32125:SF4)		Synechocystis
+SYNY3|EnsemblGenome=BAA18218|UniProtKB=P74132	hemN	Oxygen-independent coproporphyrinogen III oxidase;hemN;ortholog	OXYGEN-INDEPENDENT COPROPORPHYRINOGEN III OXIDASE (PTHR13932:SF6)	oxidase(PC00175)	Synechocystis
+SYNY3|EnsemblGenome=BAA17492|UniProtKB=P73452	nrtA	Nitrate/nitrite binding protein NrtA;nrtA;ortholog	NITRATE/NITRITE BINDING PROTEIN NRTA (PTHR30024:SF7)		Synechocystis
+SYNY3|EnsemblGenome=BAA17446|UniProtKB=P73406	ccmK3	Carbon dioxide-concentrating mechanism protein CcmK homolog 3;ccmK3;ortholog	CARBON DIOXIDE-CONCENTRATING MECHANISM PROTEIN CCMK HOMOLOG 4 (PTHR33941:SF13)		Synechocystis
+SYNY3|Gene=BAA17836|UniProtKB=P73784	norA	Quinolene resistance protein NorA;norA;ortholog	QUINOLENE RESISTANCE PROTEIN NORA (PTHR23531:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10764|UniProtKB=Q55983	tgt	Queuine tRNA-ribosyltransferase;tgt;ortholog	QUEUINE TRNA-RIBOSYLTRANSFERASE (PTHR46499:SF1)		Synechocystis
+SYNY3|Gene=BAA16982|UniProtKB=P72964	ycf45	Ycf45 protein;ycf45;ortholog	P-LOOP CONTAINING NUCLEOSIDE TRIPHOSPHATE HYDROLASES SUPERFAMILY PROTEIN (PTHR20953:SF14)		Synechocystis
+SYNY3|EnsemblGenome=BAA17451|UniProtKB=P73411	zwf	Glucose-6-phosphate 1-dehydrogenase;zwf;ortholog	GLUCOSE-6-PHOSPHATE 1-DEHYDROGENASE (PTHR23429:SF0)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA18027|UniProtKB=P77968	sodB	Superoxide dismutase [Fe];sodB;ortholog	SUPEROXIDE DISMUTASE [FE] 2, CHLOROPLASTIC (PTHR42769:SF3)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA17328|UniProtKB=P73300	rpl36	50S ribosomal protein L36;rpmJ;ortholog	50S RIBOSOMAL PROTEIN L36, CHLOROPLASTIC (PTHR42888:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17614|UniProtKB=P73574	fabG	3-oxoacyl-[acyl-carrier-protein] reductase;fabG;ortholog	3-OXOACYL-[ACYL-CARRIER-PROTEIN] REDUCTASE (PTHR42760:SF40)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA18857|UniProtKB=P74737	recA	Protein RecA;recA;ortholog	MITOCHONDRIAL DNA REPAIR PROTEIN RECA HOMOLOG (PTHR45900:SF1)	DNA strand-pairing protein(PC00016)	Synechocystis
+SYNY3|EnsemblGenome=BAA10559|UniProtKB=Q55806	thrS	Threonine--tRNA ligase;thrS;ortholog	FI05224P (PTHR11451:SF46)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|EnsemblGenome=BAA17034|UniProtKB=P73014	rpl32	50S ribosomal protein L32;rpmF;ortholog	50S RIBOSOMAL PROTEIN L32, CHLOROPLASTIC (PTHR36083:SF1)		Synechocystis
+SYNY3|Gene=BAA10777|UniProtKB=Q55994	modA	Molybdate-binding periplasmic protein;modA;ortholog	MOLYBDATE-BINDING PROTEIN MODA (PTHR30632:SF0)		Synechocystis
+SYNY3|EnsemblGenome=BAA18666|UniProtKB=P29107	ilvC	Ketol-acid reductoisomerase (NADP(+));ilvC;ortholog	KETOL-ACID REDUCTOISOMERASE, MITOCHONDRIAL (PTHR21371:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18738|UniProtKB=P54384	leuC	3-isopropylmalate dehydratase large subunit;leuC;ortholog	3-ISOPROPYLMALATE DEHYDRATASE (PTHR43822:SF9)		Synechocystis
+SYNY3|EnsemblGenome=BAA16838|UniProtKB=P72823	ndhD2	NAD(P)H-quinone oxidoreductase chain 4-2;ndhD2;ortholog	NAD(P)H-QUINONE OXIDOREDUCTASE CHAIN 4-2 (PTHR43507:SF8)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA10399|UniProtKB=P54902	proA	Gamma-glutamyl phosphate reductase 1;proA1;ortholog	DELTA-1-PYRROLINE-5-CARBOXYLATE SYNTHASE (PTHR11063:SF8)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|Gene=BAA17789|UniProtKB=P73741	rimI	Ribosomal-protein-alanine acetyltransferase;rimI;ortholog	GCN5-RELATED N-ACETYLTRANSFERASE (PTHR43617:SF20)	acetyltransferase(PC00038)	Synechocystis
+SYNY3|EnsemblGenome=BAA18431|UniProtKB=P80507	ppa	Inorganic pyrophosphatase;ppa;ortholog	SOLUBLE INORGANIC PYROPHOSPHATASE 2 (PTHR10286:SF0)	pyrophosphatase(PC00196)	Synechocystis
+SYNY3|EnsemblGenome=BAA17629|UniProtKB=P14835	psbH	Photosystem II reaction center protein H;psbH;ortholog	PHOTOSYSTEM II REACTION CENTER PROTEIN H (PTHR34469:SF4)		Synechocystis
+SYNY3|EnsemblGenome=BAA16718|UniProtKB=P72711	cobK	Cobalt-precorrin-6A reductase;cbiJ;ortholog	COBALT-PRECORRIN-6A REDUCTASE (PTHR36925:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18669|UniProtKB=P74562	nadB	L-aspartate oxidase;nadB;ortholog	L-ASPARTATE OXIDASE, CHLOROPLASTIC (PTHR42716:SF2)	oxidase(PC00175)	Synechocystis
+SYNY3|EnsemblGenome=BAA17420|UniProtKB=P36265	nusG	Transcription termination/antitermination protein NusG;nusG;ortholog	TRANSCRIPTION TERMINATION/ANTITERMINATION PROTEIN NUSG (PTHR30265:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA10092|UniProtKB=Q57417	accD	Acetyl-coenzyme A carboxylase carboxyl transferase subunit beta;accD;ortholog	ACETYL-COENZYME A CARBOXYLASE CARBOXYL TRANSFERASE SUBUNIT BETA, CHLOROPLASTIC (PTHR42995:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA16737|UniProtKB=P27181	atpF	ATP synthase subunit b;atpF;ortholog	ATP SYNTHASE SUBUNIT B, CHLOROPLASTIC (PTHR34264:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA18001|UniProtKB=P73935	apt	Adenine phosphoribosyltransferase;apt;ortholog	ADENINE PHOSPHORIBOSYLTRANSFERASE (PTHR32315:SF3)		Synechocystis
+SYNY3|Gene=BAA10063|UniProtKB=Q55562	hemD	Uroporphyrin-III synthase;hemD;ortholog	UROPORPHYRINOGEN-III C-METHYLTRANSFERASE (PTHR45790:SF3)	methyltransferase(PC00155)	Synechocystis
+SYNY3|EnsemblGenome=BAA18635|UniProtKB=P74529	murB	UDP-N-acetylenolpyruvoylglucosamine reductase;murB;ortholog	UDP-N-ACETYLENOLPYRUVOYLGLUCOSAMINE REDUCTASE (PTHR21071:SF4)		Synechocystis
+SYNY3|EnsemblGenome=BAA17421|UniProtKB=P38382	secE	Protein translocase subunit SecE;secE;ortholog	PROTEIN TRANSLOCASE SUBUNIT SECE (PTHR33910:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10291|UniProtKB=Q59978	grpE	Protein GrpE;grpE;ortholog	GRPE PROTEIN HOMOLOG, MITOCHONDRIAL (PTHR21237:SF23)	primary active transporter(PC00068)	Synechocystis
+SYNY3|EnsemblGenome=BAA18270|UniProtKB=P74181	ggt	Glutathione hydrolase proenzyme;ggt;ortholog	GLUTATHIONE HYDROLASE PROENZYME (PTHR43199:SF3)	protease(PC00190)	Synechocystis
+SYNY3|Gene=merR|UniProtKB=Q55949	merR	Nitrilase;merR;ortholog	NITRILASE (AFU_ORTHOLOGUE AFUA_6G13450) (PTHR46044:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA18108|UniProtKB=P29256	psaF	Photosystem I reaction center subunit III;psaF;ortholog	PHOTOSYSTEM I REACTION CENTER SUBUNIT III, CHLOROPLASTIC (PTHR34939:SF1)		Synechocystis
+SYNY3|Gene=BAA10157|UniProtKB=Q55641	rnd	Ribonuclease D;rnd;ortholog	RIBONUCLEASE D (PTHR43040:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10380|UniProtKB=Q55738	gyrA	DNA gyrase subunit A;gyrA;ortholog	DNA GYRASE SUBUNIT A, CHLOROPLASTIC/MITOCHONDRIAL (PTHR43493:SF5)	DNA topoisomerase(PC00017)	Synechocystis
+SYNY3|Gene=ycf22|UniProtKB=Q55628	ycf22	Ycf22 protein;ycf22;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA17398|UniProtKB=P73367	aroQ	3-dehydroquinate dehydratase;aroQ;ortholog	CATABOLIC 3-DEHYDROQUINASE (PTHR21272:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA10301|UniProtKB=Q55163	fmt	Methionyl-tRNA formyltransferase;fmt;ortholog	TRANSFERASE, PUTATIVE-RELATED (PTHR11138:SF5)	methyltransferase(PC00155)	Synechocystis
+SYNY3|EnsemblGenome=BAA18536|UniProtKB=P74435	trpF	N-(5'-phosphoribosyl)anthranilate isomerase;trpF;ortholog	N-(5'-PHOSPHORIBOSYL)ANTHRANILATE ISOMERASE (PTHR42894:SF1)	isomerase(PC00135)	Synechocystis
+SYNY3|EnsemblGenome=BAA17007|UniProtKB=P72988	lpxC	UDP-3-O-acyl-N-acetylglucosamine deacetylase;lpxC;ortholog	UDP-3-O-ACYL-N-ACETYLGLUCOSAMINE DEACETYLASE 1, MITOCHONDRIAL-RELATED (PTHR33694:SF1)		Synechocystis
+SYNY3|Gene=BAA18159|UniProtKB=P74081	pcnB	PolyA polymerase;pcnB;ortholog	POLYA POLYMERASE (PTHR47788:SF1)		Synechocystis
+SYNY3|Gene=BAA17186|UniProtKB=P73160	cydB	Cytochrome oxidase d subunit II;cydB;ortholog	CYTOCHROME BD2 SUBUNIT II (PTHR43141:SF4)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA17329|UniProtKB=P73301	infA	Translation initiation factor IF-1;infA;ortholog	TRANSLATION INITIATION FACTOR IF-1, CHLOROPLASTIC (PTHR33370:SF1)		Synechocystis
+SYNY3|Gene=BAA17355|UniProtKB=P73325	srrA	SrrA;srrA;ortholog	SRRA (PTHR43649:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA18252|UniProtKB=P74163	pyrB	Aspartate carbamoyltransferase;pyrB;ortholog	ASPARTATE CARBAMOYLTRANSFERASE, CHLOROPLASTIC (PTHR11405:SF16)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA18011|UniProtKB=P33779	ntcA	Global nitrogen regulator;ntcA;ortholog	GLOBAL NITROGEN REGULATOR (PTHR24567:SF31)	winged helix/forkhead transcription factor(PC00246)	Synechocystis
+SYNY3|EnsemblGenome=BAA10101|UniProtKB=Q55595	gloA	Probable lactoylglutathione lyase;gloA;ortholog	LACTOYLGLUTATHIONE LYASE (PTHR46036:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA10429|UniProtKB=Q55778	gltX	Glutamate--tRNA ligase;gltX;ortholog	GLUTAMATE--TRNA LIGASE, MITOCHONDRIAL-RELATED (PTHR43311:SF2)	ligase(PC00142)	Synechocystis
+SYNY3|Gene=BAA10517|UniProtKB=Q55419	moxR	MoxR protein;moxR;ortholog	MOXR PROTEIN (PTHR11603:SF132)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA10661|UniProtKB=Q55899	minE	Putative cell division topological specificity factor;minE;ortholog	CELL DIVISION TOPOLOGICAL SPECIFICITY FACTOR HOMOLOG, CHLOROPLASTIC (PTHR33404:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA18400|UniProtKB=P74306	zds	Zeta-carotene desaturase;crtQ;ortholog	LYSINE-SPECIFIC HISTONE DEMETHYLASE 1A (PTHR10742:SF397)	oxidase(PC00175)	Synechocystis
+SYNY3|EnsemblGenome=BAA18110|UniProtKB=P74035	rimM	Ribosome maturation factor RimM;rimM;ortholog	RIBOSOME MATURATION FACTOR RIMM (PTHR33692:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17364|UniProtKB=P73334	rpoC2	DNA-directed RNA polymerase subunit beta';rpoC2;ortholog	DNA-DIRECTED RNA POLYMERASE III SUBUNIT RPC1 (PTHR19376:SF32)	DNA-directed RNA polymerase(PC00019)	Synechocystis
+SYNY3|EnsemblGenome=BAA10137|UniProtKB=Q55625	rbfA	Ribosome-binding factor A;rbfA;ortholog	RIBOSOME-BINDING FACTOR A, CHLOROPLASTIC-RELATED (PTHR33515:SF1)		Synechocystis
+SYNY3|Gene=hisB|UniProtKB=Q55796	hisB	D,D-heptose 1,7-bisphosphate phosphatase;hisB;ortholog	D-GLYCERO-BETA-D-MANNO-HEPTOSE-1,7-BISPHOSPHATE 7-PHOSPHATASE (PTHR42891:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17422|UniProtKB=P36239	rpl19	50S ribosomal protein L19;rplS;ortholog	39S RIBOSOMAL PROTEIN L19, MITOCHONDRIAL (PTHR15680:SF9)	ribosomal protein(PC00202)	Synechocystis
+SYNY3|Gene=BAA10266|UniProtKB=P72573	ycf40	Ycf40 protein;ycf40;ortholog	SULFUR CARRIER PROTEIN THIS (PTHR34472:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10042|UniProtKB=Q55544	apcE	Phycobiliprotein ApcE;apcE;ortholog	PHYCOBILIPROTEIN APCE (PTHR34011:SF6)		Synechocystis
+SYNY3|Gene=BAA17126|UniProtKB=P73100	comE	ComE;comEc;ortholog	RECOMBINATION PROTEIN 2 (PTHR30619:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17878|UniProtKB=P73821	serA	D-3-phosphoglycerate dehydrogenase;serA;ortholog	FORMATE DEHYDROGENASE 1 (PTHR42938:SF9)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA10295|UniProtKB=Q55158	ribD	Riboflavin biosynthesis protein RibD;ribD;ortholog	RIBOFLAVIN BIOSYNTHESIS PROTEIN PYRD, CHLOROPLASTIC (PTHR11079:SF162)		Synechocystis
+SYNY3|EnsemblGenome=BAA17323|UniProtKB=P73295	truA	tRNA pseudouridine synthase A;truA;ortholog	TRNA PSEUDOURIDINE SYNTHASE-LIKE 1 (PTHR11142:SF0)	lyase(PC00144)	Synechocystis
+SYNY3|EnsemblGenome=BAA18171|UniProtKB=P45450	murF	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase;murF;ortholog	UDP-N-ACETYLMURAMOYL-TRIPEPTIDE--D-ALANYL-D-ALANINE LIGASE (PTHR43024:SF1)	ligase(PC00142)	Synechocystis
+SYNY3|Gene=BAA16645|UniProtKB=P72643	trx	Thioredoxin;trx;ortholog	GEO12009P1 (PTHR45663:SF11)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA10073|UniProtKB=P52981	glgB	1,4-alpha-glucan branching enzyme GlgB;glgB;ortholog	1,4-ALPHA-GLUCAN-BRANCHING ENZYME (PTHR43651:SF3)	amylase(PC00048)	Synechocystis
+SYNY3|Gene=BAA16772|UniProtKB=P72757	ccmN	CcmN protein;ccmN;ortholog			Synechocystis
+SYNY3|Gene=BAA17209|UniProtKB=P73183	hliA	High light-inducible protein;hliA;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA10847|UniProtKB=Q55497	argF	Ornithine carbamoyltransferase;argF;ortholog	ORNITHINE CARBAMOYLTRANSFERASE, MITOCHONDRIAL (PTHR45753:SF3)		Synechocystis
+SYNY3|Gene=BAA17143|UniProtKB=P73117	ftsI	Penicillin-binding protein;ftsI;ortholog	PEPTIDOGLYCAN D,D-TRANSPEPTIDASE FTSI (PTHR30627:SF1)	hydrolase(PC00121)	Synechocystis
+SYNY3|Gene=BAA17404|UniProtKB=P73373	pmgA	PmgA;pmgA;ortholog	ANTI-SIGMA-F FACTOR RSBW (PTHR35526:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA16751|UniProtKB=P72736	folK	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase;folK;ortholog	2-AMINO-4-HYDROXY-6-HYDROXYMETHYLDIHYDROPTERIDINE PYROPHOSPHOKINASE (PTHR43071:SF1)		Synechocystis
+SYNY3|Gene=bcp|UniProtKB=P72697	bcp	Bacterioferritin comigratory protein;bcp;ortholog	THIOREDOXIN-DEPENDENT PEROXIDE REDUCTASE, MITOCHONDRIAL (PTHR42801:SF4)	peroxidase(PC00180)	Synechocystis
+SYNY3|EnsemblGenome=BAA17511|UniProtKB=P73471	purC	Phosphoribosylaminoimidazole-succinocarboxamide synthase;purC;ortholog	MULTIFUNCTIONAL PROTEIN ADE2 (PTHR43599:SF3)	lyase(PC00144);ligase(PC00142)	Synechocystis
+SYNY3|Gene=BAA17351|UniProtKB=P73322	ycf21	Ycf21 gene product;ycf21;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA17720|UniProtKB=P77966	gyrB	DNA gyrase subunit B;gyrB;ortholog	DNA GYRASE SUBUNIT B, MITOCHONDRIAL (PTHR45866:SF1)	DNA topoisomerase(PC00017)	Synechocystis
+SYNY3|EnsemblGenome=BAA10192|UniProtKB=P54206	rbcS	Ribulose bisphosphate carboxylase small chain;cbbS;ortholog			Synechocystis
+SYNY3|Gene=BAA16664|UniProtKB=P72662	cysM	Cysteine synthase;cysM;ortholog	CYSTEINE SYNTHASE 1 (PTHR10314:SF211)	lyase(PC00144)	Synechocystis
+SYNY3|Gene=hlyB|UniProtKB=P74652	hlyB	Haemolysin secretion ATP-binding protein;hlyB;ortholog	ABC TRANSPORTER (PTHR24221:SF483)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|EnsemblGenome=BAA17093|UniProtKB=P09191	psbF	Cytochrome b559 subunit beta;psbF;ortholog	CYTOCHROME B559 SUBUNIT BETA-RELATED (PTHR33391:SF9)		Synechocystis
+SYNY3|EnsemblGenome=BAA18322|UniProtKB=P74228	fus	Elongation factor G 2;fusB;ortholog	RIBOSOME-RELEASING FACTOR 2, MITOCHONDRIAL (PTHR43261:SF1)	translation elongation factor(PC00222)	Synechocystis
+SYNY3|EnsemblGenome=BAA16957|UniProtKB=P72940	cysC	Probable adenylyl-sulfate kinase;cysC;ortholog	SULFATE ADENYLYLTRANSFERASE (PTHR42700:SF1)	nucleotidyltransferase(PC00174)	Synechocystis
+SYNY3|EnsemblGenome=BAA10762|UniProtKB=Q55982	pdxA	4-hydroxythreonine-4-phosphate dehydrogenase;pdxA;ortholog	D-THREONATE 4-PHOSPHATE DEHYDROGENASE (PTHR30004:SF6)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA17713|UniProtKB=P73668	murD	UDP-N-acetylmuramoylalanine--D-glutamate ligase;murD;ortholog	UDP-N-ACETYLMURAMOYLALANINE--D-GLUTAMATE LIGASE (PTHR43692:SF1)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA17447|UniProtKB=P73407	ccmK4	Carbon dioxide-concentrating mechanism protein CcmK homolog 4;ccmK4;ortholog	CARBON DIOXIDE-CONCENTRATING MECHANISM PROTEIN CCMK HOMOLOG 4 (PTHR33941:SF13)		Synechocystis
+SYNY3|Gene=hliA|UniProtKB=P72932	hliA	High light inducible protein;hliA;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA17005|UniProtKB=P72986	psaM	Photosystem I reaction center subunit XII;psaM;ortholog			Synechocystis
+SYNY3|Gene=BAA18781|UniProtKB=P74663	ppx	Exopolyphosphatase;ppx;ortholog	RETROGRADE REGULATION PROTEIN 2 (PTHR30005:SF0)	phosphatase(PC00181)	Synechocystis
+SYNY3|EnsemblGenome=BAA17331|UniProtKB=P77964	secY	Protein translocase subunit SecY;secY;ortholog	PREPROTEIN TRANSLOCASE SUBUNIT SCY2, CHLOROPLASTIC (PTHR10906:SF2)	transporter(PC00227)	Synechocystis
+SYNY3|EnsemblGenome=BAA10021|UniProtKB=Q55526	era	GTPase Era;era;ortholog	GTPASE ERA-LIKE, CHLOROPLASTIC (PTHR42698:SF2)	RNA binding protein(PC00031)	Synechocystis
+SYNY3|Gene=BAA17222|UniProtKB=P73196	lig	DNA ligase;lig;ortholog	BRCT DOMAIN-CONTAINING PROTEIN (PTHR23389:SF9)	DNA binding protein(PC00009)	Synechocystis
+SYNY3|EnsemblGenome=BAA10249|UniProtKB=Q55117	menC	o-succinylbenzoate synthase;menC;ortholog	O-SUCCINYLBENZOATE SYNTHASE (PTHR48073:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA17094|UniProtKB=Q55354	psbL	Photosystem II reaction center protein L;psbL;ortholog	CYTOCHROME B559 SUBUNIT BETA-RELATED (PTHR33391:SF9)		Synechocystis
+SYNY3|EnsemblGenome=BAA17365|UniProtKB=P77965	rpoB	DNA-directed RNA polymerase subunit beta;rpoB;ortholog	DNA-DIRECTED RNA POLYMERASE SUBUNIT BETA (PTHR20856:SF20)	DNA-directed RNA polymerase(PC00019)	Synechocystis
+SYNY3|EnsemblGenome=BAA17055|UniProtKB=P77961	glnA	Glutamine synthetase;glnA;ortholog	LENGSIN (PTHR43407:SF1)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA18622|UniProtKB=P74518	lrtA	Ribosome hibernation promotion factor;hpf;ortholog	30S RIBOSOMAL PROTEIN (PTHR33231:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18512|UniProtKB=Q55013	psbV	Cytochrome c-550;psbV;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA10849|UniProtKB=Q55499	ssb	Single-stranded DNA-binding protein 1;ssb;ortholog	SINGLE-STRANDED DNA-BINDING PROTEIN 1 (PTHR10302:SF19)	DNA binding protein(PC00009)	Synechocystis
+SYNY3|EnsemblGenome=BAA18861|UniProtKB=P74741	purH	Bifunctional purine biosynthesis protein PurH;purH;ortholog	BIFUNCTIONAL PURINE BIOSYNTHESIS PROTEIN PURH (PTHR11692:SF0)	hydrolase(PC00121);transferase(PC00220)	Synechocystis
+SYNY3|Gene=BAA16698|UniProtKB=P72691	glgX	Glycogen operon protein GlgX;glgX;ortholog	ISOAMYLASE 1, CHLOROPLASTIC (PTHR43002:SF1)	amylase(PC00048)	Synechocystis
+SYNY3|EnsemblGenome=BAA17790|UniProtKB=Q55081	phrA	Deoxyribodipyrimidine photo-lyase;phrA;ortholog	(6-4)-PHOTOLYASE, ISOFORM A (PTHR11455:SF9)	DNA photolyase(PC00014)	Synechocystis
+SYNY3|Gene=BAA10625|UniProtKB=Q55866	ycf36	Ycf36 protein;ycf36;ortholog	PROTEIN CONSERVED IN THE GREEN LINEAGE AND DIATOMS 27, CHLOROPLASTIC (PTHR34214:SF3)		Synechocystis
+SYNY3|Gene=BAA10628|UniProtKB=Q55869	aroH	Chorismate mutase AroH;aroH;ortholog	CHORISMATE MUTASE AROH (PTHR21164:SF0)	mutase(PC00160)	Synechocystis
+SYNY3|Gene=BAA16900|UniProtKB=P72884	rfbB	ABC transporter;rfbB;ortholog	TEICHOIC ACIDS EXPORT ATP-BINDING PROTEIN TAGH (PTHR46743:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA16845|UniProtKB=P72830	pfkA	ATP-dependent 6-phosphofructokinase 1;pfkA1;ortholog	ATP-DEPENDENT 6-PHOSPHOFRUCTOKINASE 1 (PTHR13697:SF52)	carbohydrate kinase(PC00065)	Synechocystis
+SYNY3|EnsemblGenome=BAA18383|UniProtKB=P12975	psaE	Photosystem I reaction center subunit IV;psaE;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA10465|UniProtKB=P74770	bioF	Putative 8-amino-7-oxononanoate synthase;bioF;ortholog	LD36009P (PTHR13693:SF3)	transaminase(PC00216)	Synechocystis
+SYNY3|EnsemblGenome=BAA16661|UniProtKB=P72659	pnp	Polyribonucleotide nucleotidyltransferase;pnp;ortholog	POLYRIBONUCLEOTIDE NUCLEOTIDYLTRANSFERASE 1, MITOCHONDRIAL (PTHR11252:SF0)	nucleotidyltransferase(PC00174)	Synechocystis
+SYNY3|EnsemblGenome=BAA18492|UniProtKB=P74395	nusB	Transcription antitermination protein NusB;nusB;ortholog	ANTITERMINATION NUSB DOMAIN-CONTAINING PROTEIN (PTHR11078:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA10311|UniProtKB=P72575	psbX	Photosystem II reaction center X protein;psbX;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA17847|UniProtKB=P29273	pds	Phytoene dehydrogenase;pds;ortholog	15-CIS-PHYTOENE DESATURASE, CHLOROPLASTIC/CHROMOPLASTIC (PTHR42923:SF4)	oxidase(PC00175)	Synechocystis
+SYNY3|Gene=BAA18821|UniProtKB=P74702	htpG	Chaperone protein HtpG;htpG;ortholog	ENDOPLASMIN (PTHR11528:SF97)	Hsp90 family chaperone(PC00028)	Synechocystis
+SYNY3|EnsemblGenome=BAA10508|UniProtKB=P48958	rpl33	50S ribosomal protein L33;rpmG;ortholog	50S RIBOSOMAL PROTEIN L33, CHLOROPLASTIC (PTHR43168:SF2)		Synechocystis
+SYNY3|Gene=BAA18786|UniProtKB=P74668	degT	Pleiotropic regulatory protein;degT;ortholog	3-OXO-GLUCOSE-6-PHOSPHATE:GLUTAMATE AMINOTRANSFERASE (PTHR30244:SF34)	transaminase(PC00216)	Synechocystis
+SYNY3|EnsemblGenome=BAA17376|UniProtKB=P73345	smf	Protein Smf;smf;ortholog	PROTEIN SMF (PTHR43022:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10036|UniProtKB=P32422	psaC	Photosystem I iron-sulfur center;psaC;ortholog	PHOTOSYSTEM I IRON-SULFUR CENTER (PTHR24960:SF55)		Synechocystis
+SYNY3|EnsemblGenome=BAA18875|UniProtKB=P74755	hisIE	Histidine biosynthesis bifunctional protein HisIE;hisI;ortholog	HISTIDINE BIOSYNTHESIS BIFUNCTIONAL PROTEIN HISIE (PTHR42945:SF4)	hydrolase(PC00121)	Synechocystis
+SYNY3|Gene=BAA18676|UniProtKB=P74569	lysC	Aspartate kinase;lysC;ortholog	ASPARTOKINASE (PTHR21499:SF3)	amino acid kinase(PC00045)	Synechocystis
+SYNY3|EnsemblGenome=BAA17861|UniProtKB=P73807	hisC	Histidinol-phosphate aminotransferase;hisC;ortholog	HISTIDINOL-PHOSPHATE AMINOTRANSFERASE (PTHR42885:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA10660|UniProtKB=Q55898	ppk	Polyphosphate kinase;ppk;ortholog	POLYPHOSPHATE KINASE (PTHR30218:SF0)	kinase(PC00137)	Synechocystis
+SYNY3|EnsemblGenome=BAA10117|UniProtKB=P15729	glcP	Glucose transport protein;gtr;ortholog	PLASTIDIC GLUCOSE TRANSPORTER 4 (PTHR48022:SF2)		Synechocystis
+SYNY3|Gene=BAA18783|UniProtKB=P74665	gst1	Glutathione S-transferase;gst1;ortholog	MALEYLACETOACETATE ISOMERASE (PTHR42673:SF4)		Synechocystis
+SYNY3|EnsemblGenome=BAA10391|UniProtKB=Q55746	lpxA	Acyl-[acyl-carrier-protein]--UDP-N-acetylglucosamine O-acyltransferase;lpxA;ortholog	ACYL-[ACYL-CARRIER-PROTEIN]--UDP-N-ACETYLGLUCOSAMINE O-ACYLTRANSFERASE, MITOCHONDRIAL-RELATED (PTHR43480:SF1)	acetyltransferase(PC00038)	Synechocystis
+SYNY3|EnsemblGenome=BAA18557|UniProtKB=P74456	rrf	Ribosome-recycling factor;frr;ortholog	MITOCHONDRIAL RIBOSOME RECYCLING FACTOR (PTHR20982:SF3)	translation release factor(PC00225)	Synechocystis
+SYNY3|Gene=ycf39|UniProtKB=P74029	ycf39	Ycf39 protein;ycf39;ortholog	ISOFLAVONE REDUCTASE FAMILY PROTEIN (AFU_ORTHOLOGUE AFUA_1G12510) (PTHR15020:SF11)	reductase(PC00198)	Synechocystis
+SYNY3|EnsemblGenome=BAA10328|UniProtKB=Q55187	pheS	Phenylalanine--tRNA ligase alpha subunit;pheS;ortholog	PHENYLALANINE--TRNA LIGASE, MITOCHONDRIAL (PTHR11538:SF41)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|Gene=BAA17049|UniProtKB=P73029	ycf22	Ycf22 protein;ycf22;ortholog	PROTEIN TRIGALACTOSYLDIACYLGLYCEROL 2, CHLOROPLASTIC (PTHR34675:SF1)		Synechocystis
+SYNY3|Gene=BAA10822|UniProtKB=Q55476	slt	Soluble lytic transglycosylase;slt;ortholog	SOLUBLE LYTIC MUREIN TRANSGLYCOSYLASE (PTHR37423:SF2)		Synechocystis
+SYNY3|Gene=ctaC|UniProtKB=Q06474	ctaC	Cytochrome c oxidase subunit 2;ctaC;ortholog	CYTOCHROME C OXIDASE SUBUNIT 2 (PTHR22888:SF9)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA17302|UniProtKB=P73274	leuS	Leucine--tRNA ligase;leuS;ortholog	LEUCINE--TRNA LIGASE, MITOCHONDRIAL-RELATED (PTHR43740:SF2)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|EnsemblGenome=BAA17415|UniProtKB=P23353	aroC	Chorismate synthase;aroC;ortholog	CHORISMATE SYNTHASE (PTHR21085:SF0)	lyase(PC00144)	Synechocystis
+SYNY3|EnsemblGenome=BAA10516|UniProtKB=Q55418	dnaB	Replicative DNA helicase;dnaB;ortholog	REPLICATIVE DNA HELICASE (PTHR30153:SF2)	DNA helicase(PC00011)	Synechocystis
+SYNY3|EnsemblGenome=BAA17877|UniProtKB=P73820	prmA	Ribosomal protein L11 methyltransferase;prmA;ortholog	ELECTRON TRANSFER FLAVOPROTEIN BETA SUBUNIT LYSINE METHYLTRANSFERASE (PTHR43648:SF1)	methyltransferase(PC00155)	Synechocystis
+SYNY3|EnsemblGenome=BAA18826|UniProtKB=P74707	prfA	Peptide chain release factor 1;prfA;ortholog	PEPTIDE CHAIN RELEASE FACTOR APG3, CHLOROPLASTIC (PTHR43804:SF4)	translation release factor(PC00225)	Synechocystis
+SYNY3|EnsemblGenome=BAA10261|UniProtKB=Q55128	aat,aspC	Aspartate aminotransferase;aspC;ortholog	ASPARTATE AMINOTRANSFERASE (PTHR46383:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17496|UniProtKB=P73456	ftsZ	Cell division protein FtsZ;ftsZ;ortholog	MITOCHONDRIAL DIVISION PROTEIN FSZA (PTHR30314:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA17801|UniProtKB=P49995	dnaA	Chromosomal replication initiator protein DnaA;dnaA;ortholog	CHROMOSOMAL REPLICATION INITIATOR PROTEIN DNAA (PTHR30050:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA18699|UniProtKB=P74591	aroE	Shikimate dehydrogenase (NADP(+));aroE;ortholog	BIFUNCTIONAL 3-DEHYDROQUINATE DEHYDRATASE/SHIKIMATE DEHYDROGENASE, CHLOROPLASTIC (PTHR21089:SF1)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|Gene=BAA18680|UniProtKB=P74573	lim17	LIM17 protein;lim17;ortholog	ALKALINE/NEUTRAL INVERTASE CINV1 (PTHR31916:SF28)		Synechocystis
+SYNY3|EnsemblGenome=BAA18282|UniProtKB=P74193	thrC	Threonine synthase;thrC;ortholog	THREONINE SYNTHASE 1, CHLOROPLASTIC (PTHR10314:SF5)	lyase(PC00144)	Synechocystis
+SYNY3|Gene=BAA18734|UniProtKB=P74625	cpcG	Phycobilisome rod-core linker polypeptide CpcG;cpcG;ortholog	PHYCOBILISOME 32.1 KDA LINKER POLYPEPTIDE, PHYCOCYANIN-ASSOCIATED, ROD 2 (PTHR34011:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA10580|UniProtKB=Q59987	por	Light-dependent protochlorophyllide reductase;por;ortholog	PROTOCHLOROPHYLLIDE REDUCTASE A, CHLOROPLASTIC (PTHR44419:SF9)		Synechocystis
+SYNY3|EnsemblGenome=BAA17609|UniProtKB=P49433	gap1	Glyceraldehyde-3-phosphate dehydrogenase 1;gap1;ortholog	GLYCERALDEHYDE-3-PHOSPHATE DEHYDROGENASE-RELATED (PTHR10836:SF76)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA18229|UniProtKB=P74143	dnaG	DNA primase;dnaG;ortholog	DNA PRIMASE (PTHR30313:SF2)	primase(PC00189)	Synechocystis
+SYNY3|Gene=BAA18510|UniProtKB=P77970	glnN	Glutamate--ammonia ligase;glnN;ortholog	TYPE-3 GLUTAMINE SYNTHETASE (PTHR42974:SF1)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA18785|UniProtKB=P74667	dapF	Diaminopimelate epimerase;dapF;ortholog	DIAMINOPIMELATE EPIMERASE, CHLOROPLASTIC (PTHR31689:SF0)		Synechocystis
+SYNY3|Gene=BAA17536|UniProtKB=P73496	pntA	Pyridine nucleotide transhydrogenase alpha subunit;pntA;ortholog	NICOTINAMIDE NUCLEOTIDE TRANSHYDROGENASE (PTHR10160:SF19)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|Gene=BAA10256|UniProtKB=Q55124	glcD	Glycolate oxidase subunit GlcD;glcD;ortholog	GLYCOLATE OXIDASE SUBUNIT GLCD (PTHR42934:SF1)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA18147|UniProtKB=P74071	rps2	30S ribosomal protein S2;rpsB;ortholog	28S RIBOSOMAL PROTEIN S2, MITOCHONDRIAL (PTHR12534:SF0)	ribosomal protein(PC00202)	Synechocystis
+SYNY3|EnsemblGenome=BAA17620|UniProtKB=P73580	uvrC	UvrABC system protein C;uvrC;ortholog	UVRABC SYSTEM PROTEIN C (PTHR30562:SF1)	endodeoxyribonuclease(PC00093)	Synechocystis
+SYNY3|EnsemblGenome=BAA16811|UniProtKB=P72796	aroK	Shikimate kinase;aroK;ortholog	SHIKIMATE KINASE 1, CHLOROPLASTIC (PTHR21087:SF16)	kinase(PC00137)	Synechocystis
+SYNY3|EnsemblGenome=BAA17705|UniProtKB=P73660	hemC	Porphobilinogen deaminase;hemC;ortholog	PORPHOBILINOGEN DEAMINASE (PTHR11557:SF0)	deaminase(PC00088)	Synechocystis
+SYNY3|Gene=BAA17728|UniProtKB=P73682	mbpA	Site-specific DNA-methyltransferase (adenine-specific);mbpA;ortholog	DNA ADENINE METHYLASE (PTHR30481:SF3)	DNA methyltransferase(PC00013)	Synechocystis
+SYNY3|EnsemblGenome=BAA17092|UniProtKB=P09190	psbE	Cytochrome b559 subunit alpha;psbE;ortholog	CYTOCHROME B559 SUBUNIT BETA-RELATED (PTHR33391:SF9)		Synechocystis
+SYNY3|EnsemblGenome=BAA18634|UniProtKB=P74528	murC	UDP-N-acetylmuramate--L-alanine ligase;murC;ortholog	UDP-N-ACETYLMURAMATE--L-ALANINE LIGASE (PTHR43445:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA10829|UniProtKB=Q55482	uppS	Isoprenyl transferase;uppS;ortholog	DEHYDRODOLICHYL DIPHOSPHATE SYNTHASE COMPLEX SUBUNIT DHDDS (PTHR10291:SF0)	acyltransferase(PC00042)	Synechocystis
+SYNY3|EnsemblGenome=BAA17483|UniProtKB=P73443	lysS	Lysine--tRNA ligase;lysS;ortholog	LYSINE--TRNA LIGASE (PTHR42918:SF9)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|EnsemblGenome=BAA18242|UniProtKB=Q55005	rnpA	Ribonuclease P protein component;rnpA;ortholog	RIBONUCLEASE P PROTEIN COMPONENT (PTHR33992:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18361|UniProtKB=P74267	rpl27	50S ribosomal protein L27;rpmA;ortholog	39S RIBOSOMAL PROTEIN L27, MITOCHONDRIAL (PTHR15893:SF0)	ribosomal protein(PC00202)	Synechocystis
+SYNY3|Gene=BAA10322|UniProtKB=Q55182	menE	O-succinylbenzoic acid--CoA ligase;menE;ortholog	2-SUCCINYLBENZOATE--COA LIGASE (PTHR43272:SF52)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA10350|UniProtKB=Q57396	ruvB	Holliday junction ATP-dependent DNA helicase RuvB;ruvB;ortholog	HOLLIDAY JUNCTION ATP-DEPENDENT DNA HELICASE RUVB (PTHR42848:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18326|UniProtKB=P74232	purD	Phosphoribosylamine--glycine ligase;purD;ortholog	PHOSPHORIBOSYLAMINE--GLYCINE LIGASE, CHLOROPLASTIC (PTHR43472:SF1)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA17341|UniProtKB=P73312	rpl29	50S ribosomal protein L29;rpmC;ortholog	50S RIBOSOMAL PROTEIN L29, CHLOROPLASTIC (PTHR10916:SF0)	ribosomal protein(PC00202)	Synechocystis
+SYNY3|EnsemblGenome=BAA10119|UniProtKB=Q55611	secF	Protein translocase subunit SecF;secF;ortholog	PROTEIN TRANSLOCASE SUBUNIT SECF (PTHR30081:SF8)		Synechocystis
+SYNY3|EnsemblGenome=BAA17663|UniProtKB=P73618	deoC	Deoxyribose-phosphate aldolase;deoC;ortholog	ALDOLASE, PUTATIVE (AFU_ORTHOLOGUE AFUA_3G06590)-RELATED (PTHR10889:SF1)	aldolase(PC00044)	Synechocystis
+SYNY3|EnsemblGenome=BAA18244|UniProtKB=P74155	yidC	Membrane protein insertase YidC;yidC;ortholog	ALBINO3-LIKE PROTEIN 1, CHLOROPLASTIC (PTHR12428:SF14)	transporter(PC00227)	Synechocystis
+SYNY3|EnsemblGenome=BAA10145|UniProtKB=Q59994	tpi	Triosephosphate isomerase;tpiA;ortholog	TRIOSEPHOSPHATE ISOMERASE (PTHR21139:SF2)	isomerase(PC00135)	Synechocystis
+SYNY3|Gene=BAA10023|UniProtKB=Q55528	ams1	Alpha-mannosidase;ams1;ortholog	ALPHA-MANNOSIDASE 2C1 (PTHR46017:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17738|UniProtKB=P28463	hemA	Glutamyl-tRNA reductase;hemA;ortholog	GLUTAMYL-TRNA REDUCTASE 1, CHLOROPLASTIC (PTHR43120:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA16872|UniProtKB=P77960	trpA	Tryptophan synthase alpha chain;trpA;ortholog	TRYPTOPHAN SYNTHASE ALPHA CHAIN, CHLOROPLASTIC (PTHR43406:SF1)	lyase(PC00144)	Synechocystis
+SYNY3|Gene=BAA10191|UniProtKB=Q55670	rbcX	Uncharacterized protein;rbcX;ortholog	CHAPERONIN-LIKE RBCX PROTEIN 2, CHLOROPLASTIC (PTHR33791:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10885|UniProtKB=P26522	ndhA	NAD(P)H-quinone oxidoreductase subunit 1;ndhA;ortholog	NADH-UBIQUINONE OXIDOREDUCTASE CHAIN 1 (PTHR11432:SF3)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA10804|UniProtKB=Q55461	cmpB	Bicarbonate transport system permease protein CmpB;cmpB;ortholog	NITRATE IMPORT PERMEASE PROTEIN NRTB (PTHR30151:SF7)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|Gene=BAA17558|UniProtKB=P73518	recJ	Single-strand-DNA-specific exonuclease RecJ;recJ;ortholog	SINGLE-STRANDED-DNA-SPECIFIC EXONUCLEASE RECJ (PTHR30255:SF2)	exodeoxyribonuclease(PC00098)	Synechocystis
+SYNY3|EnsemblGenome=BAA17354|UniProtKB=P46445	petJ	Cytochrome c6;petJ;ortholog	CYTOCHROME C6, CHLOROPLASTIC (PTHR34688:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA17931|UniProtKB=P73869	kdpC	Potassium-transporting ATPase KdpC subunit;kdpC;ortholog	POTASSIUM-TRANSPORTING ATPASE KDPC SUBUNIT (PTHR30042:SF2)		Synechocystis
+SYNY3|Gene=pcnB|UniProtKB=Q55428	pcnB	PolyA polymerase;pcnB;ortholog	MULTIFUNCTIONAL CCA PROTEIN (PTHR47545:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18774|UniProtKB=Q55330	psaI	Photosystem I reaction center subunit VIII;psaI;ortholog	PHOTOSYSTEM I REACTION CENTER SUBUNIT VIII (PTHR35775:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA17318|UniProtKB=P73290	purA	Adenylosuccinate synthetase;purA;ortholog	ADENYLOSUCCINATE SYNTHETASE (PTHR11846:SF0)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA18241|UniProtKB=Q55004	rpl34	50S ribosomal protein L34;rpmH;ortholog	39S RIBOSOMAL PROTEIN L34, MITOCHONDRIAL (PTHR14503:SF4)		Synechocystis
+SYNY3|Gene=thrC|UniProtKB=P73711	thrC	Threonine synthase;thrC;ortholog	LP08712P (PTHR48078:SF6)		Synechocystis
+SYNY3|EnsemblGenome=BAA16890|UniProtKB=P72874	infC	Translation initiation factor IF-3;infC;ortholog	TRANSLATION INITIATION FACTOR IF-3, MITOCHONDRIAL (PTHR10938:SF0)	translation initiation factor(PC00224)	Synechocystis
+SYNY3|EnsemblGenome=BAA17551|UniProtKB=P73511	glgP	Glycogen phosphorylase;glgP;ortholog	GLYCOGEN PHOSPHORYLASE (PTHR11468:SF3)	glycosyltransferase(PC00111)	Synechocystis
+SYNY3|EnsemblGenome=BAA18746|UniProtKB=P28372	chlN	Light-independent protochlorophyllide reductase subunit N;chlN;ortholog	LIGHT-INDEPENDENT PROTOCHLOROPHYLLIDE REDUCTASE SUBUNIT N (PTHR39429:SF3)		Synechocystis
+SYNY3|Gene=aspC|UniProtKB=Q55679	aspC	Aspartate aminotransferase;aspC;ortholog	LL-DIAMINOPIMELATE AMINOTRANSFERASE (PTHR42832:SF3)	transaminase(PC00216)	Synechocystis
+SYNY3|EnsemblGenome=BAA18522|UniProtKB=P74422	ntcB	Probable nitrogen assimilation transcriptional activator;ntcB;ortholog	NITROGEN ASSIMILATION TRANSCRIPTIONAL ACTIVATOR-RELATED (PTHR30419:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA10450|UniProtKB=Q55368	moeA	Molybdopterin molybdenumtransferase;moeA;ortholog	GEPHYRIN (PTHR10192:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA17691|UniProtKB=P73646	thrB	Homoserine kinase;thrB;ortholog	HOMOSERINE KINASE (PTHR20861:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18266|UniProtKB=P74177	rpoC1	DNA-directed RNA polymerase subunit gamma;rpoC1;ortholog	DNA-DIRECTED RNA POLYMERASE SUBUNIT BETA' (PTHR19376:SF54)	DNA-directed RNA polymerase(PC00019)	Synechocystis
+SYNY3|EnsemblGenome=BAA18395|UniProtKB=P74301	nadC	Probable nicotinate-nucleotide pyrophosphorylase [carboxylating];nadC;ortholog	NICOTINATE-NUCLEOTIDE PYROPHOSPHORYLASE [CARBOXYLATING] (PTHR32179:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA18658|UniProtKB=P74551	apcF	Allophycocyanin subunit beta-18;apcF;ortholog	ALLOPHYCOCYANIN BETA CHAIN (PTHR34011:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA10770|UniProtKB=Q55988	pfkA	ATP-dependent 6-phosphofructokinase 2;pfkA2;ortholog	ATP-DEPENDENT 6-PHOSPHOFRUCTOKINASE 1 (PTHR13697:SF52)	carbohydrate kinase(PC00065)	Synechocystis
+SYNY3|EnsemblGenome=BAA17948|UniProtKB=Q55274	isiA	Iron stress-induced chlorophyll-binding protein;isiA;ortholog	PHOTOSYSTEM II CP43 REACTION CENTER PROTEIN (PTHR33180:SF7)		Synechocystis
+SYNY3|Gene=BAA10314|UniProtKB=Q55174	ycf46	Ycf46 protein;ycf46;ortholog	YCF46 PROTEIN (PTHR42960:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10173|UniProtKB=Q55653	hisS	Histidine--tRNA ligase;hisS;ortholog	HISTIDINE--TRNA LIGASE (PTHR43707:SF4)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|EnsemblGenome=BAA10662|UniProtKB=Q55900	minD	Septum site-determining protein MinD;minD;ortholog	SEPTUM SITE-DETERMINING PROTEIN MIND HOMOLOG, CHLOROPLASTIC-RELATED (PTHR43384:SF6)		Synechocystis
+SYNY3|EnsemblGenome=BAA10656|UniProtKB=Q55894	thiC	Phosphomethylpyrimidine synthase;thiC;ortholog	PHOSPHOMETHYLPYRIMIDINE SYNTHASE, CHLOROPLASTIC (PTHR30557:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10189|UniProtKB=Q55669	ctpA	Carboxyl-terminal-processing protease;ctpA;ortholog	CARBOXYL-TERMINAL-PROCESSING PEPTIDASE 1, CHLOROPLASTIC (PTHR32060:SF22)	serine protease(PC00203)	Synechocystis
+SYNY3|EnsemblGenome=BAA16984|UniProtKB=P72966	btpA	Photosystem I biogenesis protein BtpA;btpA;ortholog	ZGC:162297 (PTHR21381:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA18468|UniProtKB=P74373	dfa3	Putative diflavin flavoprotein A 3;dfa3;ortholog	DIFLAVIN FLAVOPROTEIN A 2-RELATED (PTHR32145:SF11)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA17452|UniProtKB=P73412	uvrA	UvrABC system protein A;uvrA;ortholog	UVRABC SYSTEM PROTEIN A (PTHR43152:SF3)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|EnsemblGenome=BAA18146|UniProtKB=P74070	tsf	Elongation factor Ts;tsf;ortholog	ELONGATION FACTOR TS, MITOCHONDRIAL (PTHR11741:SF0)	translation elongation factor(PC00222)	Synechocystis
+SYNY3|EnsemblGenome=BAA16960|UniProtKB=P72943	sun	Probable ribosomal RNA small subunit methyltransferase B;rsmB;ortholog	RIBOSOMAL RNA SMALL SUBUNIT METHYLTRANSFERASE B-RELATED (PTHR22807:SF53)		Synechocystis
+SYNY3|Gene=BAA18594|UniProtKB=P74492	xthA	Exodeoxyribonuclease III;xthA;ortholog	EXODEOXYRIBONUCLEASE III (PTHR43250:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA10706|UniProtKB=Q55940	ziaR	Transcriptional repressor SmtB homolog;ziaR;ortholog	TRANSCRIPTIONAL REPRESSOR SMTB HOMOLOG (PTHR43132:SF6)		Synechocystis
+SYNY3|Gene=BAA10703|UniProtKB=Q55938	merR	Mercuric resistance operon regulatory protein precorrin isomerase;merR;ortholog	COBALT-PRECORRIN-8 METHYLMUTASE (PTHR43588:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18107|UniProtKB=Q55329	psaJ	Photosystem I reaction center subunit IX;psaJ;ortholog	PHOTOSYSTEM I REACTION CENTER SUBUNIT IX (PTHR36082:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA10537|UniProtKB=Q55435	coaD	Phosphopantetheine adenylyltransferase;coaD;ortholog	PHOSPHOPANTETHEINE ADENYLYLTRANSFERASE (PTHR21342:SF1)	acetyltransferase(PC00038)	Synechocystis
+SYNY3|Gene=BAA16841|UniProtKB=P72826	ycf19	Ycf19 protein;ycf19;ortholog	YLMG HOMOLOG PROTEIN 2, CHLOROPLASTIC (PTHR33219:SF1)		Synechocystis
+SYNY3|Gene=BAA18569|UniProtKB=P74468	pepP	Aminopeptidase P;pepP;ortholog	XAA-PRO AMINOPEPTIDASE 3 (PTHR43226:SF4)	metalloprotease(PC00153)	Synechocystis
+SYNY3|Gene=BAA18179|UniProtKB=Q79EF3	act	Acetyltransferase;act;ortholog	ACETYLTRANSFERASE YVOF-RELATED (PTHR43300:SF6)	acetyltransferase(PC00038)	Synechocystis
+SYNY3|Gene=BAA16903|UniProtKB=P72887	rfbC	dTDP-6-deoxy-L-mannose-dehydrogenase;rfbC;ortholog	DTDP-6-DEOXY-L-MANNOSE-DEHYDROGENASE (PTHR21047:SF3)	epimerase/racemase(PC00096)	Synechocystis
+SYNY3|Gene=BAA16634|UniProtKB=P72632	rffM	UDP-N-acetyl-D-mannosaminuronic acid transferase;rffM;ortholog	UDP-N-ACETYL-D-MANNOSAMINURONIC ACID TRANSFERASE (PTHR34136:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA18424|UniProtKB=P74330	cysS	Cysteine--tRNA ligase;cysS;ortholog	CYSTEINE--TRNA LIGASE, CYTOPLASMIC (PTHR10890:SF3)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|EnsemblGenome=BAA17598|UniProtKB=P73558	gatA	Glutamyl-tRNA(Gln) amidotransferase subunit A;gatA;ortholog	GLUTAMYL-TRNA(GLN) AMIDOTRANSFERASE SUBUNIT A (PTHR11895:SF151)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA18523|UniProtKB=P74423	alaS	Alanine--tRNA ligase;alaS;ortholog	ALANINE--TRNA LIGASE, MITOCHONDRIAL (PTHR11777:SF9)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|Gene=BAA17882|UniProtKB=P73825	thiL	Acetyl-CoA acetyltransferase;phaA;ortholog	TRIFUNCTIONAL ENZYME SUBUNIT BETA, MITOCHONDRIAL (PTHR18919:SF153)	acyltransferase(PC00042)	Synechocystis
+SYNY3|Gene=BAA16690|UniProtKB=P72683	crtE	Geranylgeranyl pyrophosphate synthase;crtE;ortholog	FARNESYL DIPHOSPHATE SYNTHASE (PTHR43281:SF1)	acyltransferase(PC00042)	Synechocystis
+SYNY3|EnsemblGenome=BAA17090|UniProtKB=P73068	rub	Rubredoxin;rub;ortholog	RUBREDOXIN (PTHR47627:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17928|UniProtKB=P73866	kdpA	Potassium-transporting ATPase potassium-binding subunit;kdpA;ortholog	POTASSIUM-TRANSPORTING ATPASE POTASSIUM-BINDING SUBUNIT (PTHR30607:SF2)	primary active transporter(PC00068)	Synechocystis
+SYNY3|EnsemblGenome=BAA18841|UniProtKB=P77973	argG	Argininosuccinate synthase;argG;ortholog	ARGININOSUCCINATE SYNTHASE (PTHR11587:SF2)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA10883|UniProtKB=P26523	ndhG	NAD(P)H-quinone oxidoreductase chain 6;ndhG;ortholog	NADH-UBIQUINONE OXIDOREDUCTASE CHAIN 6 (PTHR33269:SF5)		Synechocystis
+SYNY3|Gene=BAA10182|UniProtKB=Q55662	clpC	ATP-dependent Clp protease regulatory subunit;clpC;ortholog	CHAPERONE PROTEIN CLPD, CHLOROPLASTIC (PTHR43572:SF4)		Synechocystis
+SYNY3|EnsemblGenome=BAA16847|UniProtKB=Q55332	psbU	Photosystem II 12 kDa extrinsic protein;psbU;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA18745|UniProtKB=P28373	chlL	Light-independent protochlorophyllide reductase iron-sulfur ATP-binding protein;chlL;ortholog	LIGHT-INDEPENDENT PROTOCHLOROPHYLLIDE REDUCTASE IRON-SULFUR ATP-BINDING PROTEIN (PTHR42864:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA10866|UniProtKB=Q55510	clpX	ATP-dependent Clp protease ATP-binding subunit ClpX;clpX;ortholog	ATP-DEPENDENT CLP PROTEASE ATP-BINDING SUBUNIT CLPX-LIKE, MITOCHONDRIAL (PTHR48102:SF7)		Synechocystis
+SYNY3|EnsemblGenome=BAA17438|UniProtKB=P29255	psaB	Photosystem I P700 chlorophyll a apoprotein A2;psaB;ortholog	PHOTOSYSTEM I P700 CHLOROPHYLL A APOPROTEIN A2 (PTHR30128:SF65)		Synechocystis
+SYNY3|EnsemblGenome=BAA17722|UniProtKB=P73676	psbY	Photosystem II protein Y;psbY;ortholog			Synechocystis
+SYNY3|Gene=BAA16831|UniProtKB=P72816	birA	Biotin [acetyl-CoA-carboxylase] ligase;birA;ortholog	HOLOCARBOXYLASE SYNTHETASE (BIOTIN-(PROPRIONYL-COA-CARBOXYLASE (ATP-HYDROLYSING)) LIGASE) (PTHR12835:SF5)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA10270|UniProtKB=Q55135	purU	Formyltetrahydrofolate deformylase;purU;ortholog	FORMYLTETRAHYDROFOLATE DEFORMYLASE 1, MITOCHONDRIAL (PTHR42706:SF1)	hydrolase(PC00121)	Synechocystis
+SYNY3|EnsemblGenome=BAA10863|UniProtKB=Q55508	trpC	Indole-3-glycerol phosphate synthase;trpC;ortholog	TRYPTOPHAN BIOSYNTHESIS PROTEIN TRPCF (PTHR22854:SF2)	isomerase(PC00135)	Synechocystis
+SYNY3|Gene=BAA17145|UniProtKB=P73119	glcF	Glycolate oxidase subunit (Fe-S) protein;glcF;ortholog	GLYCOLATE OXIDASE IRON-SULFUR SUBUNIT (PTHR32479:SF17)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA17293|UniProtKB=P73265	nrtD	Nitrate import ATP-binding protein NrtD;nrtD;ortholog	NITRATE IMPORT ATP-BINDING PROTEIN NRTD (PTHR42788:SF13)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|EnsemblGenome=BAA10861|UniProtKB=Q55506	ruvC	Crossover junction endodeoxyribonuclease RuvC;ruvC;ortholog	CROSSOVER JUNCTION ENDODEOXYRIBONUCLEASE RUVC (PTHR30194:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA10855|UniProtKB=Q55503	hisG	ATP phosphoribosyltransferase;hisG;ortholog	ATP PHOSPHORIBOSYLTRANSFERASE (PTHR21403:SF4)	glycosyltransferase(PC00111)	Synechocystis
+SYNY3|Gene=BAA17919|UniProtKB=Q79EF9	mntC	Mn transporter MntC;mntC;ortholog	MANGANESE ABC TRANSPORTER SUBSTRATE-BINDING LIPOPROTEIN (PTHR42953:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA16724|UniProtKB=P72717	petN	Cytochrome b6-f complex subunit 8;petN;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA10806|UniProtKB=Q55462	cmpC	Bicarbonate transport ATP-binding protein CmpC;cmpC;ortholog	ALIPHATIC SULFONATES IMPORT ATP-BINDING PROTEIN SSUB (PTHR42788:SF7)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|EnsemblGenome=BAA18436|UniProtKB=P74342	folB	Probable dihydroneopterin aldolase;folB;ortholog	DIHYDRONEOPTERIN ALDOLASE 1-RELATED (PTHR42844:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17917|UniProtKB=Q55282	mntB	Manganese transport system membrane protein MntB;mntB;ortholog	HIGH-AFFINITY ZINC UPTAKE SYSTEM MEMBRANE PROTEIN ZNUB (PTHR30477:SF13)		Synechocystis
+SYNY3|Gene=ctaD|UniProtKB=Q06473	ctaD	Cytochrome c oxidase subunit 1;ctaD;ortholog	CYTOCHROME C OXIDASE SUBUNIT 1 (PTHR10422:SF18)	oxidase(PC00175)	Synechocystis
+SYNY3|EnsemblGenome=BAA10207|UniProtKB=Q55681	recG	ATP-dependent DNA helicase RecG;recG;ortholog	ATP-DEPENDENT DNA HELICASE HOMOLOG RECG, CHLOROPLASTIC (PTHR47964:SF1)		Synechocystis
+SYNY3|Gene=rffM|UniProtKB=P74183	rffM	UDP-N-acetyl-D-mannosaminuronic acid transferase;rffM;ortholog	UDP-N-ACETYL-D-MANNOSAMINURONIC ACID TRANSFERASE (PTHR34136:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA16740|UniProtKB=P27178	atpB	ATP synthase subunit a;atpB;ortholog	ATP SYNTHASE SUBUNIT A, CHLOROPLASTIC (PTHR42823:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA18283|UniProtKB=P19045	ndhC	NAD(P)H-quinone oxidoreductase subunit 3;ndhC;ortholog	NAD(P)H-QUINONE OXIDOREDUCTASE SUBUNIT 3, CHLOROPLASTIC (PTHR11058:SF12)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA18269|UniProtKB=P74180	ftsW	Probable peptidoglycan glycosyltransferase FtsW;ftsW;ortholog	PEPTIDOGLYCAN GLYCOSYLTRANSFERASE FTSW-RELATED (PTHR30474:SF2)		Synechocystis
+SYNY3|Gene=BAA18657|UniProtKB=P74550	chrA	Chromate transport protein;chrA;ortholog	CHROMATE ION TRANSPORTER (EUROFUNG) (PTHR33567:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA18558|UniProtKB=P74457	pyrH	Uridylate kinase;pyrH;ortholog	AMINO ACID KINASE FAMILY PROTEIN (PTHR42833:SF4)	nucleotide kinase(PC00172)	Synechocystis
+SYNY3|EnsemblGenome=BAA16689|UniProtKB=P20170	trpE	Anthranilate synthase component 1;trpE;ortholog	ANTHRANILATE SYNTHASE COMPONENT 1 (PTHR11236:SF9)		Synechocystis
+SYNY3|EnsemblGenome=BAA18393|UniProtKB=P74299	ppc	Phosphoenolpyruvate carboxylase;ppc;ortholog	PHOSPHOENOLPYRUVATE CARBOXYLASE 4 (PTHR30523:SF6)	lyase(PC00144)	Synechocystis
+SYNY3|EnsemblGenome=BAA18761|UniProtKB=P74645	KaiB	Circadian clock protein KaiB;kaiB;ortholog	KAIB-LIKE PROTEIN 1 (PTHR41709:SF2)		Synechocystis
+SYNY3|Gene=BAA16823|UniProtKB=P72808	pheA	Prephenate dehydratase;pheA;ortholog	PREPHENATE DEHYDRATASE-RELATED (PTHR21022:SF0)	dehydratase(PC00091)	Synechocystis
+SYNY3|EnsemblGenome=BAA17281|UniProtKB=Q46363	zam	Acetazolamide conferring resistance protein zam;zam;ortholog	DIS3-LIKE EXONUCLEASE 2 (PTHR23355:SF9)	exoribonuclease(PC00099)	Synechocystis
+SYNY3|EnsemblGenome=BAA17275|UniProtKB=P73248	folP	Dihydropteroate synthase;folP;ortholog	FOLIC ACID SYNTHESIS PROTEIN FOL1 (PTHR20941:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17821|UniProtKB=P73769	mutS	DNA mismatch repair protein MutS;mutS;ortholog	DNA MISMATCH REPAIR PROTEIN MSH1, MITOCHONDRIAL (PTHR11361:SF130)	DNA binding protein(PC00009)	Synechocystis
+SYNY3|EnsemblGenome=BAA18458|UniProtKB=P37101	prk	Phosphoribulokinase;prk;ortholog	ATP-DEPENDENT KINASE YFH7 (PTHR10285:SF164)	nucleotide kinase(PC00172)	Synechocystis
+SYNY3|Gene=BAA10476|UniProtKB=Q55387	natB	Periplasmic binding protein of ABC transporter for natural amino acids;natB;ortholog	OS09G0428600 PROTEIN (PTHR30483:SF6)		Synechocystis
+SYNY3|Gene=BAA10341|UniProtKB=Q55199	pstS	Phosphate-binding protein;pstS;ortholog	PHOSPHATE-BINDING PROTEIN PSTS (PTHR42996:SF1)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|Gene=nrtD|UniProtKB=P73449	nrtD	Nitrate transport protein NrtD;nrtD;ortholog	BICARBONATE TRANSPORT ATP-BINDING PROTEIN CMPD (PTHR42788:SF14)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|EnsemblGenome=BAA10196|UniProtKB=Q57310	lpxB	Lipid-A-disaccharide synthase;lpxB;ortholog	LIPID-A-DISACCHARIDE SYNTHASE (PTHR30372:SF0)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA10199|UniProtKB=Q55673	murZ	UDP-N-acetylglucosamine 1-carboxyvinyltransferase;murA;ortholog	UDP-N-ACETYLGLUCOSAMINE 1-CARBOXYVINYLTRANSFERASE (PTHR43783:SF1)	transferase(PC00220)	Synechocystis
+SYNY3|Gene=BAA18741|UniProtKB=Q79EE4	ggtA	ATP-binding subunit of an ABC-type osmolyte transporter;ggtA;ortholog	MALTODEXTRIN IMPORT ATP-BINDING PROTEIN MSMX (PTHR43875:SF1)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|EnsemblGenome=BAA18749|UniProtKB=P77972	eno	Enolase;eno;ortholog	ENOLASE (PTHR11902:SF1)	lyase(PC00144)	Synechocystis
+SYNY3|EnsemblGenome=BAA18321|UniProtKB=P74227	tufA	Elongation factor Tu;tuf;ortholog	ELONGATION FACTOR TU, CHLOROPLASTIC (PTHR43721:SF5)	translation elongation factor(PC00222)	Synechocystis
+SYNY3|EnsemblGenome=BAA10869|UniProtKB=Q55512	asd	Aspartate-semialdehyde dehydrogenase;asd;ortholog	DEHYDROGENASE, PUTATIVE-RELATED (PTHR46278:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA16735|UniProtKB=P27179	atpA	ATP synthase subunit alpha;atpA;ortholog	ATP SYNTHASE SUBUNIT ALPHA, CHLOROPLASTIC (PTHR48082:SF5)		Synechocystis
+SYNY3|Gene=BAA16901|UniProtKB=P72885	rfbF	Alpha-D-glucose-1-phosphate cytidylyltransferase;rfbF;ortholog	GLUCOSE-1-PHOSPHATE CYTIDYLYLTRANSFERASE (PTHR47183:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10868|UniProtKB=Q55511	tig	Trigger factor;tig;ortholog	TRIGGER FACTOR-LIKE PROTEIN TIG, CHLOROPLASTIC (PTHR30560:SF3)	chaperone(PC00072)	Synechocystis
+SYNY3|EnsemblGenome=BAA10347|UniProtKB=Q55709	secA	Protein translocase subunit SecA;secA;ortholog	SI:DKEY-187J14.7-RELATED (PTHR30612:SF0)	transporter(PC00227)	Synechocystis
+SYNY3|Gene=BAA17058|UniProtKB=P73037	ytfC	Peptidyl-prolyl cis-trans isomerase;ytfC;ortholog	FKBP-TYPE PEPTIDYL-PROLYL CIS-TRANS ISOMERASE FKPA (PTHR43811:SF43)		Synechocystis
+SYNY3|EnsemblGenome=BAA17876|UniProtKB=Q01950	apcC	Phycobilisome 7.8 kDa linker polypeptide, allophycocyanin-associated, core;apcC;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA10169|UniProtKB=P48949	rps21	30S ribosomal protein S21;rpsU;ortholog	30S RIBOSOMAL PROTEIN S21 (PTHR21109:SF16)	ribosomal protein(PC00202)	Synechocystis
+SYNY3|EnsemblGenome=BAA17228|UniProtKB=P73202	cpcD	Phycobilisome 8.9 kDa linker polypeptide, phycocyanin-associated, rod;cpcD;ortholog			Synechocystis
+SYNY3|Gene=BAA17088|UniProtKB=P73066	ycf23	Ycf23 protein;ycf23;ortholog	OS05G0565400 PROTEIN (PTHR36895:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10449|UniProtKB=Q55367	cynS	Cyanate hydratase;cynS;ortholog	CYANATE HYDRATASE (PTHR34186:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA16775|UniProtKB=P72760	ccmK1	Carbon dioxide-concentrating mechanism protein CcmK homolog 1;ccmK1;ortholog	PROPANEDIOL UTILIZATION PROTEIN PDUA (PTHR33941:SF11)		Synechocystis
+SYNY3|Gene=BAA10448|UniProtKB=Q55366	nirA	Ferredoxin--nitrite reductase;nirA;ortholog	FERREDOXIN--NITRITE REDUCTASE, CHLOROPLASTIC (PTHR32439:SF0)		Synechocystis
+SYNY3|EnsemblGenome=BAA10653|UniProtKB=Q55891	pcyA	Phycocyanobilin:ferredoxin oxidoreductase;pcyA;ortholog	PHYTOCHROMOBILIN:FERREDOXIN OXIDOREDUCTASE, CHLOROPLASTIC (PTHR34557:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA16835|UniProtKB=P80046	icd	Isocitrate dehydrogenase [NADP];icd;ortholog	ISOCITRATE DEHYDROGENASE [NADP] (PTHR43504:SF1)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA17230|UniProtKB=P73204	cpcC2	Phycobilisome 32.1 kDa linker polypeptide, phycocyanin-associated, rod 2;cpcC2;ortholog	PHYCOBILISOME 32.1 KDA LINKER POLYPEPTIDE, PHYCOCYANIN-ASSOCIATED, ROD 2 (PTHR34011:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA16869|UniProtKB=P72854	sir	Sulfite reductase [ferredoxin];sir;ortholog	SULFITE REDUCTASE [NADPH] SUBUNIT BETA (PTHR11493:SF47)		Synechocystis
+SYNY3|Gene=BAA10049|UniProtKB=Q55551	ycf37	Ycf37 gene product;ycf37;ortholog	TETRATRICOPEPTIDE REPEAT PROTEIN 5 (PTHR26312:SF87)		Synechocystis
+SYNY3|EnsemblGenome=BAA18299|UniProtKB=P74208	pyrG	CTP synthase;pyrG;ortholog	CTP SYNTHASE-RELATED (PTHR11550:SF0)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA10553|UniProtKB=Q55801	rnhA	Ribonuclease HI;rnhA;ortholog	RIBONUCLEASE H1 (PTHR10642:SF23)	endoribonuclease(PC00094)	Synechocystis
+SYNY3|EnsemblGenome=BAA10610|UniProtKB=Q55854	cysR	Regulatory protein CysR homolog;cysR;ortholog	REGULATORY PROTEIN CYSR HOMOLOG (PTHR24567:SF65)	winged helix/forkhead transcription factor(PC00246)	Synechocystis
+SYNY3|Gene=BAA16622|UniProtKB=P72620	hypD	Hydrogenase isoenzymes formation protein HypD;hypD;ortholog	HYDROGENASE MATURATION FACTOR HYPD (PTHR30149:SF0)		Synechocystis
+SYNY3|Gene=pstS|UniProtKB=P73785	pstS	Phosphate-binding protein;pstS;ortholog	PHOSPHATE-BINDING PROTEIN PSTS (PTHR42996:SF1)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|EnsemblGenome=BAA16774|UniProtKB=P72759	ccmL	Carbon dioxide concentrating mechanism protein CcmL;ccmL;ortholog	ETHANOLAMINE UTILIZATION PROTEIN EUTN (PTHR36539:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10139|UniProtKB=Q55626	folD	Bifunctional protein FolD;folD;ortholog	C-1-TETRAHYDROFOLATE SYNTHASE, CYTOPLASMIC (PTHR48099:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA17188|UniProtKB=P73162	ackA	Acetate kinase;ackA;ortholog	PROPIONATE KINASE-RELATED (PTHR21060:SF15)		Synechocystis
+SYNY3|Gene=rfbD|UniProtKB=P72621	rfbD	dTDP-4-dehydrorhamnose reductase;rfbD;ortholog	METHIONINE ADENOSYLTRANSFERASE 2 SUBUNIT BETA (PTHR10491:SF4)		Synechocystis
+SYNY3|EnsemblGenome=BAA17417|UniProtKB=P23350	rpl10	50S ribosomal protein L10;rplJ;ortholog	39S RIBOSOMAL PROTEIN L10, MITOCHONDRIAL (PTHR11560:SF8)		Synechocystis
+SYNY3|EnsemblGenome=BAA17568|UniProtKB=P73528	psbZ	Photosystem II reaction center protein Z;psbZ;ortholog	PHOTOSYSTEM II REACTION CENTER PROTEIN Z (PTHR34971:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA17166|UniProtKB=P51634	chlI	Magnesium-chelatase subunit ChlI;chlI;ortholog	MAGNESIUM-CHELATASE SUBUNIT CHLI-2, CHLOROPLASTIC (PTHR32039:SF9)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA10844|UniProtKB=P52276	asnS	Asparagine--tRNA ligase;asnS;ortholog	ASPARAGINE--TRNA LIGASE, MITOCHONDRIAL-RELATED (PTHR22594:SF34)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|EnsemblGenome=BAA16727|UniProtKB=P72720	glmS	Glutamine--fructose-6-phosphate aminotransferase [isomerizing];glmS;ortholog	GH12731P-RELATED (PTHR10937:SF0)	transaminase(PC00216)	Synechocystis
+SYNY3|EnsemblGenome=BAA16654|UniProtKB=P72652	cpcF	Phycocyanin alpha phycocyanobilin lyase CpcF;cpcF;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA10183|UniProtKB=Q55663	dxr	1-deoxy-D-xylulose 5-phosphate reductoisomerase;dxr;ortholog	1-DEOXY-D-XYLULOSE 5-PHOSPHATE REDUCTOISOMERASE, CHLOROPLASTIC (PTHR30525:SF0)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|Gene=BAA16722|UniProtKB=P72715	phoA	Alkaline phosphatase;phoA;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA10881|UniProtKB=Q55522	valS	Valine--tRNA ligase;valS;ortholog	VALYL-TRNA SYNTHETASE, ISOFORM C (PTHR11946:SF93)		Synechocystis
+SYNY3|EnsemblGenome=BAA17545|UniProtKB=P73505	ileS	Isoleucine--tRNA ligase;ileS;ortholog	ISOLEUCINE--TRNA LIGASE, MITOCHONDRIAL (PTHR42765:SF1)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|EnsemblGenome=BAA18017|UniProtKB=P73950	plsX	Phosphate acyltransferase;plsX;ortholog	PHOSPHATE ACYLTRANSFERASE (PTHR30100:SF1)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA18683|UniProtKB=P74576	speA	Biosynthetic arginine decarboxylase 1;speA1;ortholog	ARGININE DECARBOXYLASE 1-RELATED (PTHR43295:SF1)	decarboxylase(PC00089)	Synechocystis
+SYNY3|Gene=hisC|UniProtKB=P73417	hisC	Histidinol-phosphate aminotransferase;hisC;ortholog	THREONINE-PHOSPHATE DECARBOXYLASE (PTHR42885:SF1)		Synechocystis
+SYNY3|Gene=BAA10280|UniProtKB=Q55144	trpG	Anthranilate synthase component II;trpG;ortholog	MULTIFUNCTIONAL TRYPTOPHAN BIOSYNTHESIS PROTEIN (PTHR43418:SF4)	lyase(PC00144);transferase(PC00220)	Synechocystis
+SYNY3|Gene=BAA17535|UniProtKB=P73495	menB	1,4-dihydroxy-2-naphthoyl-CoA synthase;menB;ortholog	1,4-DIHYDROXY-2-NAPHTHOYL-COA SYNTHASE, PEROXISOMAL (PTHR43113:SF1)	epimerase/racemase(PC00096)	Synechocystis
+SYNY3|EnsemblGenome=BAA18181|UniProtKB=Q79EF2	ctaB	Protoheme IX farnesyltransferase;ctaB;ortholog	PROTOHEME IX FARNESYLTRANSFERASE (PTHR43448:SF7)	acyltransferase(PC00042)	Synechocystis
+SYNY3|EnsemblGenome=BAA16764|UniProtKB=P72749	typA	GTP-binding protein TypA/BipA homolog;typA;ortholog	ELONGATION FACTOR TYPA-LIKE SVR3, CHLOROPLASTIC-RELATED (PTHR42908:SF8)	translation elongation factor(PC00222)	Synechocystis
+SYNY3|EnsemblGenome=BAA18088|UniProtKB=P26533	atpE,atpC	ATP synthase epsilon chain;atpC;ortholog	ATP SYNTHASE EPSILON CHAIN, CHLOROPLASTIC (PTHR13822:SF10)	ATP synthase(PC00002)	Synechocystis
+SYNY3|Gene=BAA18264|UniProtKB=P74175	hlyD	HlyD family of secretion proteins;hlyD;ortholog	EFFLUX SYSTEM COMPONENT YHBJ-RELATED (PTHR30386:SF0)	transporter(PC00227)	Synechocystis
+SYNY3|Gene=BAA10151|UniProtKB=Q55635	rfbW	Mannosyl transferase;rfbW;ortholog	GLYCOSYLTRANSFERASE WBBK-RELATED (PTHR46401:SF2)		Synechocystis
+SYNY3|Gene=BAA10782|UniProtKB=Q55440	sps	Sucrose phosphate synthase;sps;ortholog	SUCROSE-PHOSPHATE SYNTHASE 3-RELATED (PTHR46039:SF5)		Synechocystis
+SYNY3|EnsemblGenome=BAA10763|UniProtKB=P74810	petM	Cytochrome b6-f complex subunit 7;petM;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA17932|UniProtKB=P73870	kdpD	Putative sensor protein KdpD;kdpD;ortholog	SENSOR PROTEIN KDPD (PTHR45569:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA17875|UniProtKB=Q01952	apcB	Allophycocyanin beta chain;apcB;ortholog	ALLOPHYCOCYANIN BETA CHAIN (PTHR34011:SF3)		Synechocystis
+SYNY3|Gene=BAA18399|UniProtKB=P74305	pqqE	Protease;pqqE;ortholog	STROMAL PROCESSING PEPTIDASE, CHLOROPLASTIC-RELATED (PTHR43690:SF17)	metalloprotease(PC00153)	Synechocystis
+SYNY3|EnsemblGenome=BAA16741|UniProtKB=P27196	atpI	ATP synthase protein I;atpI;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA16708|UniProtKB=P72701	psbM	Photosystem II reaction center protein M;psbM;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA17490|UniProtKB=P73450	nrtC	Nitrate import ATP-binding protein NrtC;nrtC;ortholog	ALIPHATIC SULFONATES IMPORT ATP-BINDING PROTEIN SSUB (PTHR42788:SF7)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|EnsemblGenome=BAA18466|UniProtKB=P74371	cpcT	Chromophore lyase CpcT/CpeT;cpcT;ortholog	CHROMOPHORE LYASE CRL, CHLOROPLASTIC (PTHR35137:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10276|UniProtKB=Q55141	ilvN	Acetolactate synthase small subunit;ilvH;ortholog	ACETOLACTATE SYNTHASE ISOZYME 3 SMALL SUBUNIT (PTHR30239:SF0)	transferase(PC00220)	Synechocystis
+SYNY3|Gene=BAA18095|UniProtKB=P74022	hoxU	Hydrogenase subunit;hoxU;ortholog	HYDROGENASE SUBUNIT (PTHR11615:SF225)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA10824|UniProtKB=P54224	hemE	Uroporphyrinogen decarboxylase;hemE;ortholog	UROPORPHYRINOGEN DECARBOXYLASE 2, CHLOROPLASTIC (PTHR21091:SF172)		Synechocystis
+SYNY3|EnsemblGenome=BAA10812|UniProtKB=Q55467	chlM	Magnesium-protoporphyrin O-methyltransferase;chlM;ortholog	MAGNESIUM PROTOPORPHYRIN IX METHYLTRANSFERASE, CHLOROPLASTIC-RELATED (PTHR43591:SF32)	methyltransferase(PC00155)	Synechocystis
+SYNY3|EnsemblGenome=BAA17332|UniProtKB=P73303	rpl15	50S ribosomal protein L15;rplO;ortholog	39S RIBOSOMAL PROTEIN L15, MITOCHONDRIAL (PTHR12934:SF11)	ribosomal protein(PC00202)	Synechocystis
+SYNY3|Gene=ctaE|UniProtKB=Q06475	ctaE	Cytochrome c oxidase subunit 3;ctaE;ortholog	CYTOCHROME C OXIDASE SUBUNIT 3 (PTHR11403:SF7)	oxidase(PC00175)	Synechocystis
+SYNY3|Gene=BAA16678|UniProtKB=P72676	nifS	NifS protein;nifS;ortholog	CYSTEINE DESULFURASE, MITOCHONDRIAL (PTHR11601:SF34)	lyase(PC00144)	Synechocystis
+SYNY3|EnsemblGenome=BAA10768|UniProtKB=Q55986	mraY	Phospho-N-acetylmuramoyl-pentapeptide-transferase;mraY;ortholog	PHOSPHO-N-ACETYLMURAMOYL-PENTAPEPTIDE-TRANSFERASE HOMOLOG (PTHR22926:SF5)	glycosyltransferase(PC00111)	Synechocystis
+SYNY3|EnsemblGenome=BAA17785|UniProtKB=P73737	murI	Glutamate racemase;murI;ortholog	GLUTAMATE RACEMASE (PTHR21198:SF2)		Synechocystis
+SYNY3|Gene=BAA17984|UniProtKB=P73918	ilvB	Acetolactate synthase;ilvB;ortholog	ACETOLACTATE SYNTHASE (PTHR18968:SF129)	ligase(PC00142)	Synechocystis
+SYNY3|EnsemblGenome=BAA10227|UniProtKB=P21697	petE	Plastocyanin;petE;ortholog	PLASTOCYANIN MAJOR ISOFORM, CHLOROPLASTIC-RELATED (PTHR34192:SF10)		Synechocystis
+SYNY3|Gene=rfbW|UniProtKB=Q55745	rfbW	Mannosyl transferase;rfbW;ortholog	GLYCOSYLTRANSFERASE WBBK-RELATED (PTHR46401:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA18008|UniProtKB=P73942	proS	Proline--tRNA ligase;proS;ortholog	PROLINE--TRNA LIGASE, MITOCHONDRIAL-RELATED (PTHR42753:SF2)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|Gene=BAA18091|UniProtKB=P74018	hoxH	Hydrogenase large subunit;hoxH;ortholog	HYDROGENASE LARGE SUBUNIT (PTHR43600:SF2)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA17580|UniProtKB=P73540	lspA	Lipoprotein signal peptidase;lspA;ortholog	LIPOPROTEIN SIGNAL PEPTIDASE (PTHR33695:SF1)	aspartic protease(PC00053)	Synechocystis
+SYNY3|EnsemblGenome=BAA16736|UniProtKB=P27180	atpH,atpD	ATP synthase subunit delta;atpH;ortholog	ATP SYNTHASE SUBUNIT O, MITOCHONDRIAL (PTHR11910:SF1)	ATP synthase(PC00002)	Synechocystis
+SYNY3|EnsemblGenome=BAA17572|UniProtKB=P73532	recF	DNA replication and repair protein RecF;recF;ortholog	DNA REPLICATION AND REPAIR PROTEIN RECF (PTHR32182:SF0)	DNA binding protein(PC00009)	Synechocystis
+SYNY3|EnsemblGenome=BAA17783|UniProtKB=P73735	ndbB	Demethylphylloquinone reductase NdbB;ndbB;ortholog	ALTERNATIVE NAD(P)H-UBIQUINONE OXIDOREDUCTASE C1, CHLOROPLASTIC/MITOCHONDRIAL (PTHR42913:SF4)		Synechocystis
+SYNY3|EnsemblGenome=BAA17813|UniProtKB=P73761	pyrF	Orotidine 5'-phosphate decarboxylase;pyrF;ortholog	OROTIDINE 5'-PHOSPHATE DECARBOXYLASE (PTHR32119:SF2)		Synechocystis
+SYNY3|Gene=BAA18263|UniProtKB=P74174	petC	Cytochrome b6/f complex iron-sulfur subunit;petC;ortholog	CYTOCHROME B-C1 COMPLEX SUBUNIT RIESKE, MITOCHONDRIAL-RELATED (PTHR10134:SF20)		Synechocystis
+SYNY3|EnsemblGenome=BAA10611|UniProtKB=Q55855	glk	Glucokinase;glk;ortholog	GLUCOKINASE (PTHR47363:SF1)	carbohydrate kinase(PC00065)	Synechocystis
+SYNY3|EnsemblGenome=BAA10251|UniProtKB=Q55119	efp	Elongation factor P;efp;ortholog	ELONGATION FACTOR P (EF-P) FAMILY PROTEIN (PTHR30053:SF12)	translation elongation factor(PC00222)	Synechocystis
+SYNY3|Gene=BAA17547|UniProtKB=P73507	dnaX	DNA polymerase III subunit;dnaX;ortholog	PROTEIN STICHEL-LIKE 2 (PTHR11669:SF0)	DNA-directed DNA polymerase(PC00018)	Synechocystis
+SYNY3|Gene=BAA17970|UniProtKB=P73906	tyrA	Prephenate dehydrogenase;tyrA;ortholog	PREPHENATE DEHYDROGENASE [NADP(+)] (PTHR21363:SF0)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|Gene=BAA10760|UniProtKB=Q55981	ycf35	Ycf35;ycf35;ortholog	YCF35 (PTHR39638:SF1)		Synechocystis
+SYNY3|Gene=BAA16802|UniProtKB=P72787	thiL	Thiamine-monophosphate kinase;thiL;ortholog	THIAMINE-MONOPHOSPHATE KINASE (PTHR30270:SF0)	kinase(PC00137)	Synechocystis
+SYNY3|EnsemblGenome=BAA18208|UniProtKB=P74122	argJ	Arginine biosynthesis bifunctional protein ArgJ;argJ;ortholog	ARGININE BIOSYNTHESIS BIFUNCTIONAL PROTEIN ARGJ, MITOCHONDRIAL (PTHR23100:SF0)	acetyltransferase(PC00038)	Synechocystis
+SYNY3|EnsemblGenome=BAA17380|UniProtKB=P73349	mutL	DNA mismatch repair protein MutL;mutL;ortholog	MISMATCH REPAIR ENDONUCLEASE PMS2-RELATED (PTHR10073:SF52)	DNA binding protein(PC00009)	Synechocystis
+SYNY3|Gene=amiA|UniProtKB=P73581	amiA	N-acetylmuramoyl-L-alanine amidase;amiA;ortholog	N-ACETYLMURAMOYL-L-ALANINE AMIDASE AMIB (PTHR30404:SF0)	hydrolase(PC00121)	Synechocystis
+SYNY3|EnsemblGenome=BAA18172|UniProtKB=P42351	cytM	Cytochrome c-553-like;cytM;ortholog	CYTOCHROME C-553-LIKE (PTHR37823:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA16791|UniProtKB=P72776	pdxJ	Pyridoxine 5'-phosphate synthase;pdxJ;ortholog	PYRIDOXINE 5'-PHOSPHATE SYNTHASE (PTHR30456:SF0)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA18236|UniProtKB=P74149	petG	Cytochrome b6-f complex subunit 5;petG;ortholog			Synechocystis
+SYNY3|EnsemblGenome=BAA10848|UniProtKB=Q55498	purE	N5-carboxyaminoimidazole ribonucleotide mutase;purE;ortholog	PHOSPHORIBOSYLAMINOIMIDAZOLE CARBOXYLASE FAMILY PROTEIN / AIR CARBOXYLASE FAMILY PROTEIN (PTHR23046:SF2)	lyase(PC00144)	Synechocystis
+SYNY3|EnsemblGenome=BAA10154|UniProtKB=Q55638	hypF	Carbamoyltransferase HypF;hypF;ortholog	CARBAMOYLTRANSFERASE HYPF (PTHR42959:SF1)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA10664|UniProtKB=Q55901	minC	Probable septum site-determining protein MinC;minC;ortholog	SEPTUM SITE-DETERMINING PROTEIN MINC (PTHR34108:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA18167|UniProtKB=P74089	cysE	Serine acetyltransferase;cysE;ortholog	SERINE ACETYLTRANSFERASE-RELATED (PTHR42811:SF5)	acetyltransferase(PC00038)	Synechocystis
+SYNY3|Gene=BAA17393|UniProtKB=P73362	cobN	CobN protein;cobN;ortholog	AEROBIC COBALTOCHELATASE SUBUNIT COBN (PTHR44119:SF6)		Synechocystis
+SYNY3|EnsemblGenome=BAA17437|UniProtKB=P29254	psaA	Photosystem I P700 chlorophyll a apoprotein A1;psaA;ortholog	PHOTOSYSTEM I P700 CHLOROPHYLL A APOPROTEIN A2 (PTHR30128:SF65)		Synechocystis
+SYNY3|EnsemblGenome=BAA16886|UniProtKB=P72870	apcD	Allophycocyanin subunit alpha-B;apcD;ortholog	ALLOPHYCOCYANIN ALPHA CHAIN (PTHR34011:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA18577|UniProtKB=P74476	prfB	Peptide chain release factor 2;prfB;ortholog	PEPTIDE CHAIN RELEASE FACTOR PRFB1, CHLOROPLASTIC-RELATED (PTHR43116:SF3)	translation release factor(PC00225)	Synechocystis
+SYNY3|Gene=tyrS|UniProtKB=P73144	tyrS	Tyrosyl tRNA synthetase;tyrS;ortholog	TYROSINE--TRNA LIGASE, MITOCHONDRIAL (PTHR11766:SF0)	aminoacyl-tRNA synthetase(PC00047)	Synechocystis
+SYNY3|EnsemblGenome=BAA18663|UniProtKB=P28371	fus	Elongation factor G 1;fusA;ortholog	ELONGATION FACTOR G 1 (PTHR43261:SF5)	translation elongation factor(PC00222)	Synechocystis
+SYNY3|Gene=BAA18033|UniProtKB=P73965	hflX	GTPase HflX;hflX;ortholog	GTP-BINDING PROTEIN 6-RELATED (PTHR10229:SF0)		Synechocystis
+SYNY3|Gene=BAA17695|UniProtKB=P73650	livF	High-affinity branched-chain amino acid transport ATP-binding protein BraG;livF;ortholog	HIGH-AFFINITY BRANCHED-CHAIN AMINO ACID TRANSPORT ATP-BINDING PROTEIN BRAG (PTHR43820:SF3)	ATP-binding cassette (ABC) transporter(PC00003)	Synechocystis
+SYNY3|Gene=cobN|UniProtKB=P74110	cobN	CobN protein;cobN;ortholog			Synechocystis
+SYNY3|Gene=BAA18275|UniProtKB=P74186	pilM	Membrane protein;pilM;ortholog	ETHANOLAMINE UTILIZATION PROTEIN EUTJ (PTHR32432:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA10813|UniProtKB=P52997	panB	3-methyl-2-oxobutanoate hydroxymethyltransferase;panB;ortholog	3-METHYL-2-OXOBUTANOATE HYDROXYMETHYLTRANSFERASE (PTHR20881:SF0)	transferase(PC00220)	Synechocystis
+SYNY3|EnsemblGenome=BAA18814|UniProtKB=P74696	truB	tRNA pseudouridine synthase B;truB;ortholog	TRNA PSEUDOURIDINE SYNTHASE 1-RELATED (PTHR13767:SF2)	isomerase(PC00135)	Synechocystis
+SYNY3|Gene=BAA17185|UniProtKB=P73159	cydA	Cytochrome oxidase d subunit I;cydA;ortholog	CYTOCHROME BD2 SUBUNIT I (PTHR30365:SF14)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA10118|UniProtKB=Q55610	secD	Protein translocase subunit SecD;secD;ortholog	PROTEIN TRANSLOCASE SUBUNIT SECD (PTHR30081:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10197|UniProtKB=P27320	fer,petF	Ferredoxin-1;petF;ortholog	FERREDOXIN-2, CHLOROPLASTIC (PTHR43112:SF3)	reductase(PC00198)	Synechocystis
+SYNY3|EnsemblGenome=BAA18769|UniProtKB=P74653	vte5	Phytol kinase;vte5;ortholog	PHYTOL KINASE 1, CHLOROPLASTIC (PTHR32523:SF8)		Synechocystis
+SYNY3|EnsemblGenome=BAA10793|UniProtKB=Q55450	gatC	Glutamyl-tRNA(Gln) amidotransferase subunit C;gatC;ortholog	GLUTAMYL-TRNA(GLN) AMIDOTRANSFERASE SUBUNIT C, MITOCHONDRIAL (PTHR15004:SF0)		Synechocystis
+SYNY3|EnsemblGenome=BAA18357|UniProtKB=P74263	hypA	Hydrogenase maturation factor HypA 1;hypA1;ortholog	HYDROGENASE MATURATION FACTOR HYPA (PTHR34535:SF3)		Synechocystis
+SYNY3|Gene=BAA10696|UniProtKB=Q55931	umuC	UmuC protein;umuC;ortholog	PROTEIN UMUC (PTHR11076:SF34)		Synechocystis
+SYNY3|EnsemblGenome=BAA17611|UniProtKB=P73571	aat	Leucyl/phenylalanyl-tRNA--protein transferase;aat;ortholog	LEUCYL/PHENYLALANYL-TRNA--PROTEIN TRANSFERASE (PTHR30098:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA18625|UniProtKB=P74521	glgA	Glycogen synthase 1;glgA1;ortholog	GRANULE-BOUND STARCH SYNTHASE 1, CHLOROPLASTIC/AMYLOPLASTIC (PTHR45825:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA10438|UniProtKB=Q55786	metH	Methionine synthase;metH;ortholog	METHIONINE SYNTHASE (PTHR45833:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10406|UniProtKB=Q55759	folE	GTP cyclohydrolase 1;folE;ortholog	GTP CYCLOHYDROLASE 1 (PTHR11109:SF7)	hydrolase(PC00121)	Synechocystis
+SYNY3|EnsemblGenome=BAA17947|UniProtKB=P27319	isiB	Flavodoxin;isiB;ortholog	FLAVODOXIN 2 (PTHR42809:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA10473|UniProtKB=Q59989	pth	Peptidyl-tRNA hydrolase;pth;ortholog	PEPTIDYL-TRNA HYDROLASE-RELATED (PTHR17224:SF1)	esterase(PC00097)	Synechocystis
+SYNY3|EnsemblGenome=BAA16721|UniProtKB=P72714	ndhB	NAD(P)H-quinone oxidoreductase subunit 2;ndhB;ortholog	NADH-QUINONE OXIDOREDUCTASE SUBUNIT N (PTHR22773:SF86)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|EnsemblGenome=BAA10219|UniProtKB=Q55690	glyS	Glycine--tRNA ligase beta subunit;glyS;ortholog	GLYCINE--TRNA LIGASE, CHLOROPLASTIC/MITOCHONDRIAL 2 (PTHR30075:SF2)		Synechocystis
+SYNY3|Gene=BAA18089|UniProtKB=P74016	ymxG	Processing protease;ymxG;ortholog	PROCESSING PROTEASE (PTHR43690:SF21)	metalloprotease(PC00153)	Synechocystis
+SYNY3|Gene=BAA10102|UniProtKB=Q55596	fabG	3-ketoacyl-acyl carrier protein reductase;fabG;ortholog	RH59310P (PTHR43899:SF13)		Synechocystis
+SYNY3|EnsemblGenome=BAA18639|UniProtKB=P74533	recR	Recombination protein RecR;recR;ortholog	RECOMBINATION PROTEIN RECR (PTHR30446:SF0)		Synechocystis
+SYNY3|Gene=BAA17383|UniProtKB=P73352	lacF	Lactose transport system permease protein LacF;lacF;ortholog	INNER MEMBRANE ABC TRANSPORTER PERMEASE PROTEIN YCJO (PTHR30193:SF37)		Synechocystis
+SYNY3|EnsemblGenome=BAA17533|UniProtKB=P73493	gshB	Glutathione synthetase;gshB;ortholog	GLUTATHIONE SYNTHETASE (PTHR21621:SF4)	ribosomal protein(PC00202)	Synechocystis
+SYNY3|EnsemblGenome=BAA17053|UniProtKB=P73033	gpsA	Glycerol-3-phosphate dehydrogenase [NAD(P)+];gpsA;ortholog	GLYCEROL-3-PHOSPHATE DEHYDROGENASE [NAD(+)] 2, CHLOROPLASTIC (PTHR11728:SF1)	dehydrogenase(PC00092)	Synechocystis
+SYNY3|Gene=cobA|UniProtKB=Q55749	cobA	Uroporphyrinogen-III C-methyltransferase;cobA;ortholog	UROPORPHYRINOGEN-III C-METHYLTRANSFERASE (PTHR45790:SF8)	methyltransferase(PC00155)	Synechocystis
+SYNY3|EnsemblGenome=BAA18168|UniProtKB=P52983	pgi	Glucose-6-phosphate isomerase;pgi;ortholog	GLUCOSE-6-PHOSPHATE ISOMERASE (PTHR11469:SF1)	isomerase(PC00135)	Synechocystis
+SYNY3|EnsemblGenome=BAA10604|UniProtKB=Q55848	kprS	Ribose-phosphate pyrophosphokinase;prs;ortholog	RIBOSE-PHOSPHATE PYROPHOSPHOKINASE 2 (PTHR10210:SF32)	nucleotide kinase(PC00172)	Synechocystis
+SYNY3|EnsemblGenome=BAA17874|UniProtKB=Q01951	apcA	Allophycocyanin alpha chain;apcA;ortholog	ALLOPHYCOCYANIN ALPHA CHAIN (PTHR34011:SF2)		Synechocystis
+SYNY3|Gene=hypB|UniProtKB=P74218	hypB	Hydrogenase maturation factor HypB;hypB;ortholog	HYDROGENASE MATURATION FACTOR HYPB (PTHR30134:SF2)	transfer/carrier protein(PC00219)	Synechocystis
+SYNY3|Gene=BAA17530|UniProtKB=P73490	todF	2-hydroxy-6-oxohepta-2,4-dienoate hydrolase;todF;ortholog	ABHYDROLASE DOMAIN CONTAINING HOMOLOG (PTHR43689:SF8)	serine protease(PC00203)	Synechocystis
+SYNY3|Gene=BAA17561|UniProtKB=P73521	cscK	Fructokinase;cscK;ortholog	KETOHEXOKINASE (PTHR43085:SF1)	carbohydrate kinase(PC00065)	Synechocystis
+SYNY3|EnsemblGenome=BAA10558|UniProtKB=Q55805	hisH	Imidazole glycerol phosphate synthase subunit HisH;hisH;ortholog	IMIDAZOLE GLYCEROL PHOSPHATE SYNTHASE SUBUNIT HISH (PTHR42701:SF1)	lyase(PC00144);hydrolase(PC00121)	Synechocystis
+SYNY3|EnsemblGenome=BAA18844|UniProtKB=P74724	purK	N5-carboxyaminoimidazole ribonucleotide synthase;purK;ortholog	PHOSPHORIBOSYLAMINOIMIDAZOLE CARBOXYLASE (PTHR11609:SF5)	ligase(PC00142)	Synechocystis
+SYNY3|Gene=BAA18566|UniProtKB=P74465	pilC	Pilin biogenesis protein;pilC;ortholog	TYPE II SECRETION SYSTEM PROTEIN F-RELATED (PTHR30012:SF0)	transporter(PC00227)	Synechocystis
+SYNY3|EnsemblGenome=BAA18087|UniProtKB=P26527	atpB,atpD	ATP synthase subunit beta;atpD;ortholog	ATP SYNTHASE SUBUNIT BETA, MITOCHONDRIAL (PTHR15184:SF58)	ATP synthase(PC00002)	Synechocystis
+SYNY3|EnsemblGenome=BAA17594|UniProtKB=P73554	ruvA	Holliday junction ATP-dependent DNA helicase RuvA;ruvA;ortholog	HOLLIDAY JUNCTION ATP-DEPENDENT DNA HELICASE RUVA (PTHR33796:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA16693|UniProtKB=P72686	phoU	Phosphate-specific transport system accessory protein PhoU homolog;phoU;ortholog	PHOSPHATE-SPECIFIC TRANSPORT SYSTEM ACCESSORY PROTEIN PHOU (PTHR42930:SF3)	protein-binding activity modulator(PC00095)	Synechocystis
+SYNY3|EnsemblGenome=BAA16843|UniProtKB=P72828	trmD	tRNA (guanine-N(1)-)-methyltransferase;trmD;ortholog	TRNA (GUANINE-N(1)-)-METHYLTRANSFERASE (PTHR46417:SF1)		Synechocystis
+SYNY3|Gene=BAA18094|UniProtKB=P74021	hoxY	Hydrogenase small subunit;hoxY;ortholog	F420-NON-REDUCING HYDROGENASE VHU SUBUNIT G (PTHR42845:SF1)	oxidoreductase(PC00176)	Synechocystis
+SYNY3|EnsemblGenome=BAA17095|UniProtKB=P73070	psbJ	Photosystem II reaction center protein J;psbJ;ortholog	PHOTOSYSTEM II REACTION CENTER PROTEIN J (PTHR34812:SF3)		Synechocystis
+SYNY3|EnsemblGenome=BAA17463|UniProtKB=P73423	cbiD	Cobalt-precorrin-5B C(1)-methyltransferase;cbiD;ortholog	COBALT-PRECORRIN-5B C(1)-METHYLTRANSFERASE (PTHR35863:SF1)		Synechocystis
+SYNY3|EnsemblGenome=BAA16787|UniProtKB=P72772	chlD	Magnesium-chelatase subunit ChlD;chlD;ortholog	MAGNESIUM-CHELATASE SUBUNIT CHLD, CHLOROPLASTIC (PTHR43473:SF2)		Synechocystis
+SYNY3|EnsemblGenome=BAA18481|UniProtKB=P74384	purB	Adenylosuccinate lyase;purB;ortholog	ADENYLOSUCCINATE LYASE (PTHR43172:SF1)	lyase(PC00144)	Synechocystis
+SYNY3|EnsemblGenome=BAA18773|UniProtKB=P37277	psaL	Photosystem I reaction center subunit XI;psaL;ortholog	PHOTOSYSTEM I REACTION CENTER SUBUNIT XI, CHLOROPLASTIC (PTHR34803:SF2)		Synechocystis
+SYNY3|Gene=nifS|UniProtKB=Q55602	nifS	Cysteine desulfurase IscS;nifS;ortholog	CYSTEINE DESULFURASE, MITOCHONDRIAL (PTHR11601:SF34)	lyase(PC00144)	Synechocystis
+SYNY3|EnsemblGenome=BAA10803|UniProtKB=Q55460	cmpA	Bicarbonate-binding protein CmpA;cmpA;ortholog	NITRATE/NITRITE BINDING PROTEIN NRTA (PTHR30024:SF7)		Synechocystis
+SYNY3|EnsemblGenome=BAA17089|UniProtKB=P73067	dxs	1-deoxy-D-xylulose-5-phosphate synthase;dxs;ortholog	1-DEOXY-D-XYLULOSE-5-PHOSPHATE SYNTHASE, CHLOROPLASTIC (PTHR43322:SF5)	transferase(PC00220)	Synechocystis
+SYNY3|Gene=BAA17527|UniProtKB=P73487	codA	Cytosine deaminase;codA;ortholog	CYTOSINE DEAMINASE (PTHR32027:SF0)	hydrolase(PC00121)	Synechocystis
+SYNY3|EnsemblGenome=BAA17735|UniProtKB=P73689	sppA	Protease 4;sppA;ortholog	SERINE PROTEASE SPPA, CHLOROPLASTIC (PTHR33209:SF1)	serine protease(PC00203)	Synechocystis
+SYNY3|EnsemblGenome=BAA10748|UniProtKB=Q55971	polA	DNA polymerase I;polA;ortholog	DNA POLYMERASE THETA (PTHR10133:SF27)	DNA-directed DNA polymerase(PC00018)	Synechocystis
+SYNY3|EnsemblGenome=BAA10159|UniProtKB=Q55643	lytB	4-hydroxy-3-methylbut-2-enyl diphosphate reductase;ispH;ortholog	4-HYDROXY-3-METHYLBUT-2-ENYL DIPHOSPHATE REDUCTASE, CHLOROPLASTIC (PTHR31619:SF5)		Synechocystis
