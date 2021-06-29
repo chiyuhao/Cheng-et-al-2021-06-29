@@ -187,8 +187,8 @@ for(i in 1:(length(species) - 1))
           
           res_fishertest = fisher.test(id_cir1,id_cir2)
           or <- or + res_fishertest$estimate
-          print(res_fishertest$p.value)
-          print(res_fishertest$estimate)
+          #print(res_fishertest$p.value)
+          #print(res_fishertest$estimate)
         }
       }
       gene1_num <- gene1_num / num

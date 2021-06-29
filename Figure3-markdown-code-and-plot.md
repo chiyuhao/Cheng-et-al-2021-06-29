@@ -5,11 +5,6 @@ Wanglab
 
 ``` r
 library(ggplot2)
-```
-
-    ## Warning: package 'ggplot2' was built under R version 4.0.5
-
-``` r
 library(ggpubr)
 library(cowplot)
 ```
@@ -41,8 +36,6 @@ library("VennDiagram")
 library("ggeffects")
 ```
 
-    ## Warning: package 'ggeffects' was built under R version 4.0.5
-
     ## 
     ## Attaching package: 'ggeffects'
 
@@ -54,15 +47,8 @@ library("ggeffects")
 library("ggplot2")
 library("cowplot")
 library("ggplotify")
-```
-
-    ## Warning: package 'ggplotify' was built under R version 4.0.5
-
-``` r
 library(dplyr)
 ```
-
-    ## Warning: package 'dplyr' was built under R version 4.0.5
 
     ## 
     ## Attaching package: 'dplyr'
@@ -77,11 +63,6 @@ library(dplyr)
 
 ``` r
 library(forcats)
-```
-
-    ## Warning: package 'forcats' was built under R version 4.0.5
-
-``` r
 library(hexbin)
 
 arrangebycol = function(list1,...){
@@ -1165,11 +1146,3 @@ ggarrange(plotlist = arrangebycol(plot_list1,plot_list2,plot_list3,plot_list4,pl
 ```
 
 ![](Figure3-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
-
-``` r
-ggsave(file="mygraph.pdf",width=10,height=20)
-```
-
-``` r
-# #D9D9D9
-```

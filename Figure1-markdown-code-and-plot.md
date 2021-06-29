@@ -6,22 +6,10 @@ Wanglab
 ``` r
 library(pheatmap)
 library(ggplot2)
-```
-
-    ## Warning: package 'ggplot2' was built under R version 4.0.5
-
-``` r
 library(cowplot)
 library(ggplotify)
-```
-
-    ## Warning: package 'ggplotify' was built under R version 4.0.5
-
-``` r
 library(dplyr)
 ```
-
-    ## Warning: package 'dplyr' was built under R version 4.0.5
 
     ## 
     ## Attaching package: 'dplyr'
@@ -44,11 +32,6 @@ library(VennDiagram)
 
 ``` r
 library(forcats)
-```
-
-    ## Warning: package 'forcats' was built under R version 4.0.5
-
-``` r
 plot_heatmap_list <- list()
 
 draw_heatmap_function <- function(exp_data_name, range1, range2, photo_name){
