@@ -12,7 +12,7 @@ Usage:
 ===
 Cycling gene calculation: 
 ---
-All species expect yeast:
+All species expect yeast and neurospora:
 
 meta2d(infile=input_file, filestyle=“csv”, outdir=output_file,timepoints=“Line1”,outRawData=TRUE,minper=20,maxper=28, cycMethod = c(“ARS”, “JTK”, “LS”))
 
@@ -22,12 +22,16 @@ meta2d(infile=input_file, filestyle=“csv”, outdir=output_file,timepoints=“
 
 Yeast low glucose:
 
- meta2d(infile=input_file, filestyle=“csv”, outdir=output_file,timepoints=“Line1”,outRawData=TRUE,minper=5,maxper=15, cycMethod = c(“ARS”, “JTK”, “LS”),ARSdefaultPer=360,ARSmle=“nomle”)
+meta2d(infile=input_file, filestyle=“csv”, outdir=output_file,timepoints=“Line1”,outRawData=TRUE,minper=5,maxper=15, cycMethod = c(“ARS”, “JTK”, “LS”),ARSdefaultPer=360,ARSmle=“nomle”)
+
+Neurospora:
+
+meta2d(infile=input_file, filestyle="csv", outdir=output_file,outRawData=TRUE,minper=18,maxper=26, cycMethod = c("ARS", "JTK", "LS"))
  
- Data contained in this paper:
- ---
- All data in this paper can be found at 'ContainedData' file
- 
- Code in this paper:
- ---
- All code in this paper can be found in all .md files
+Data contained in this paper:
+---
+All data in this paper can be found at 'ContainedData' file
+
+Code in this paper:
+---
+All code in this paper can be found in all .md files
