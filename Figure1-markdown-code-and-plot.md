@@ -46,7 +46,14 @@ draw_heatmap_function <- function(exp_data_name, range1, range2, photo_name){
 }
 
 
+draw_heatmap_function('ContainedData/Meta2dResult/AllSpecies/Human_blood_for_heatmap.csv',  19,28,"Human blood")
+```
 
+``` r
+draw_heatmap_function('ContainedData/Meta2dResult/AllSpecies/Human_skin_for_heatmap.csv',  19,22,"Human skin")
+```
+
+``` r
 draw_heatmap_function('ContainedData/Meta2dResult/AllSpecies/Mouse_LIV.csv',  24,35, "Mouse liver")
 ```
 
@@ -60,14 +67,6 @@ draw_heatmap_function('ContainedData/Meta2dResult/AllSpecies/Fly_old.csv',  24,3
 
 ``` r
 draw_heatmap_function('ContainedData/Meta2dResult/AllSpecies/Fly_young.csv',  24,35, "Fly young")
-```
-
-``` r
-draw_heatmap_function('ContainedData/Meta2dResult/AllSpecies/Human_blood_for_heatmap.csv',  19,28,"Human blood")
-```
-
-``` r
-draw_heatmap_function('ContainedData/Meta2dResult/AllSpecies/Human_skin_for_heatmap.csv',  19,22,"Human skin")
 ```
 
 ``` r
@@ -127,12 +126,12 @@ for(i in 1:(length(species) - 1))
 {
   for(j in (i+1):length(species))
   {
-    current_file_name <- paste(paste(paste(paste("E:/circidian_algorithm/orthoFinder_result/new_result_longest_true/protein2gene_20210122/",species[i],sep=""),'__v__',sep=""), species[j],sep=""),".txt",sep="")
+    current_file_name <- paste(paste(paste(paste("ContainedData/Plot_required_file/protein2gene_20210122/",species[i],sep=""),'__v__',sep=""), species[j],sep=""),".txt",sep="")
     if (file.exists(current_file_name))
     {
       gene_list <- unique(read.table(current_file_name))
-      current_file_gene1_name <- paste(paste("E:/circidian_algorithm/BeforeCommit/final_cycling data_8 species/tissue14/circidian_gene/",species[i],sep=""),"_gene.csv",sep="")
-      current_file_gene2_name <- paste(paste("E:/circidian_algorithm/BeforeCommit/final_cycling data_8 species/tissue14/circidian_gene/",species[j],sep=""),"_gene.csv",sep="")
+      current_file_gene1_name <- paste(paste("ContainedData/Plot_required_file/tissue14/circidian_gene/",species[i],sep=""),"_gene.csv",sep="")
+      current_file_gene2_name <- paste(paste("ContainedData/Plot_required_file/tissue14/circidian_gene/",species[j],sep=""),"_gene.csv",sep="")
       gene1 <- read.csv(current_file_gene1_name,header = T)
       gene2 <- read.csv(current_file_gene2_name,header = T)
       
@@ -178,10 +177,10 @@ for(i in 1:(length(species) - 1))
       gene_num_list <- rbind(gene_num_list,c(species[j],length(unique(gene2_total_num))))
     }else
     {
-      current_file_name <- paste(paste(paste(paste("E:/circidian_algorithm/orthoFinder_result/new_result_longest_true/protein2gene_20210122/",species[j],sep=""),'__v__',sep=""), species[i],sep=""),".txt",sep="")
+      current_file_name <- paste(paste(paste(paste("ContainedData/Plot_required_file/protein2gene_20210122/",species[j],sep=""),'__v__',sep=""), species[i],sep=""),".txt",sep="")
       gene_list <- unique(read.table(current_file_name))
-      current_file_gene1_name <- paste(paste("E:/circidian_algorithm/BeforeCommit/final_cycling data_8 species/tissue14/circidian_gene/",species[j],sep=""),"_gene.csv",sep="")
-      current_file_gene2_name <- paste(paste("E:/circidian_algorithm/BeforeCommit/final_cycling data_8 species/tissue14/circidian_gene/",species[i],sep=""),"_gene.csv",sep="")
+      current_file_gene1_name <- paste(paste("ContainedData/Plot_required_file/tissue14/circidian_gene/",species[j],sep=""),"_gene.csv",sep="")
+      current_file_gene2_name <- paste(paste("ContainedData/Plot_required_file/tissue14/circidian_gene/",species[i],sep=""),"_gene.csv",sep="")
       gene1 <- read.csv(current_file_gene1_name,header = T)
       gene2 <- read.csv(current_file_gene2_name,header = T)
       gene1_num <- 0
@@ -226,7 +225,7 @@ gene_num_list <- data.frame(0,0)
 colnames(gene_num_list) <- c("species","gene_num")
 for(i in 1:length(species))
 {
-  current_file_gene_name <- paste(paste("E:/circidian_algorithm/BeforeCommit/final_cycling data_8 species/tissue14/circidian_gene/",species[i],sep=""),"_gene.csv",sep="")
+  current_file_gene_name <- paste(paste("ContainedData/Plot_required_file/tissue14/circidian_gene/",species[i],sep=""),"_gene.csv",sep="")
   current_data_gene <- read.csv(current_file_gene_name)
   for(j in 1:ncol(current_data_gene))
   {
@@ -247,9 +246,8 @@ for(i in 1:length(species))
 gene_num_list <- gene_num_list[-1,]
 gene_num_list$gene_num <- as.numeric(gene_num_list$gene_num)
 venn_data_new <- venn_data[2:nrow(venn_data),]
-#write.csv(venn_data_new,"E:/cyclingdata/final_ cycling data/venn_data.csv")
 ######draw venn plots
-#venn_data_new <- read.csv("E:/cyclingdata/final_ cycling data/venn_data.csv")
+
 plot_list = list()
 for(i in 1:nrow(venn_data_new))
 {
@@ -282,8 +280,7 @@ for(i in 1:nrow(venn_data_new))
     scaled = T,
     sep.dist = 0.01,
     set.maxcircle = T,
-    maxcirclearea = 7000,
-    # inverted = T,
+    maxcirclearea = 7000
   )
   plot_list <- c(plot_list, list(temp_plot))
 }
@@ -340,23 +337,23 @@ number
 ```
 
     ##               Human&Mouse                 Human&Fly               Human&Yeast 
-    ##                  6.356711                  5.869049                  6.397037 
+    ##                  7.849529                  6.822694                  8.028355 
     ##          Human&Neurospora         Human&Arabidopsis          Human&Green alga 
-    ##                  1.463415                  6.449933                  6.596887 
+    ##                  1.780415                  7.809316                  8.177474 
     ##       Human&Cyanobacteria                 Mouse&Fly               Mouse&Yeast 
-    ##                  7.638889                 10.984147                 18.509364 
+    ##                  8.167770                 13.848252                 30.311483 
     ##          Mouse&Neurospora         Mouse&Arabidopsis          Mouse&Green alga 
-    ##                  1.434720                 16.010648                 16.319489 
+    ##                  2.656203                 22.895362                 25.387736 
     ##       Mouse&Cyanobacteria                 Fly&Yeast            Fly&Neurospora 
-    ##                 14.802065                 13.623661                  2.664693 
+    ##                 20.196353                 15.475840                  3.047091 
     ##           Fly&Arabidopsis            Fly&Green alga         Fly&Cyanobacteria 
-    ##                 12.608512                 12.961343                 11.185682 
+    ##                 13.259531                 13.839208                 10.352423 
     ##          Yeast&Neurospora         Yeast&Arabidopsis          Yeast&Green alga 
-    ##                  2.004742                 20.269849                 41.945423 
+    ##                  2.360034                 21.564937                 49.816924 
     ##       Yeast&Cyanobacteria    Neurospora&Arabidopsis     Neurospora&Green alga 
-    ##                 23.521682                  2.591748                  1.749871 
+    ##                 25.000000                  2.971708                  2.160494 
     ##  Neurospora&Cyanobacteria    Arabidopsis&Green alga Arabidopsis&Cyanobacteria 
-    ##                  1.604278                 18.568189                 16.396845 
+    ##                  1.595745                 18.568189                 16.396845 
     ##  Green alga&Cyanobacteria 
     ##                 20.253165
 

@@ -7,8 +7,6 @@ Wanglab
 library(dplyr)
 ```
 
-    ## Warning: package 'dplyr' was built under R version 4.0.5
-
     ## 
     ## Attaching package: 'dplyr'
 
@@ -22,11 +20,6 @@ library(dplyr)
 
 ``` r
 library(venn)
-```
-
-    ## Warning: package 'venn' was built under R version 4.0.5
-
-``` r
 library(gplots)
 ```
 
@@ -54,17 +47,7 @@ library(plotrix)
 
 ``` r
 library(tidyr)
-```
-
-    ## Warning: package 'tidyr' was built under R version 4.0.5
-
-``` r
 library(ggplot2)
-```
-
-    ## Warning: package 'ggplot2' was built under R version 4.0.5
-
-``` r
 source("FunctionForCodeNew.R")
 result<- YeastCalculateCost()
 SG <- result[[1]]
@@ -92,9 +75,6 @@ abline(v = log10(S0),lty = 2,lwd = 2)
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 ``` r
-# ggplot(data = data.frame(yeastSG = log10(na.omit(rowrange(SG)))),aes(x = yeastSG))+geom_density(fill = '#AA3377')
-
-
 sum(rowrange(SG) > S0)
 ```
 
@@ -164,10 +144,6 @@ abline(v = 65,lty = 2,lwd = 2)
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-1-4.png)<!-- -->
 
 ``` r
-# ggplot(data = data.frame(yeastphase = xxxtmp$meta2d_phase[id_cir]*13),aes(x = yeastphase))+geom_density(fill = '#AA3377')
-```
-
-``` r
 id_cir = matrix_MetaExpr$meta2d_BH.Q<0.05
 id_BoolEarlyPeak = id_cir & matrix_MetaExpr$meta2d_phase<5
 id_BoolLatePeak = id_cir & matrix_MetaExpr$meta2d_phase>=5
@@ -184,7 +160,6 @@ SG_LatePeak = SG[id_BoolLatePeak,vector_TimeLatePeak]
 id_SelectEarlyPeak = rowrange(SG_EarlyPeak)>S0
 id_SelectLatePeak = rowrange(SG_LatePeak)>S0
 id_select = rowrange(SG)>S0
-# library(gplots)
 library(venn)
 input = list(circadian = which(id_BoolEarlyPeak),CostSelected = which(id_select))
 venn(input)
@@ -220,12 +195,6 @@ for (i in 1:10) {
   }) %>% mean()
   vector_ProbSeleDiffNumb[i] = res_ProbSeleDiffNumb
 }
-# barplot(height = vector_ProbSeleDiffNumb
-#         ,names.arg = 1:10
-#         ,ylab = 'probability to be selected',xlab = 'gene number',main = 'mouse liver early peak'
-#         ,col = 'blue')
-# abline(h = 0.95,lty = 2,lwd = 2)
-# text(1,0.9,0.95,cex = 1.2)
 
 
 vector_SGRange = rowrange(SG_LatePeak)
@@ -238,12 +207,6 @@ for (i in 1:10) {
   }) %>% mean()
   vector_ProbSeleDiffNumb[i] = res_ProbSeleDiffNumb
 }
-# barplot(height = vector_ProbSeleDiffNumb
-#         ,names.arg = 1:10
-#         ,ylab = 'probability to be selected',xlab = 'gene number',main = 'mouse liver late peak'
-#         ,col = 'blue')
-# abline(h = 0.95,lty = 2,lwd = 2)
-# text(1,0.9,0.95,cex = 1.2)
 ```
 
 ``` r

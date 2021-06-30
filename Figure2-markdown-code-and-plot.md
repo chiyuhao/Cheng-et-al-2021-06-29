@@ -200,7 +200,6 @@ file_dir <- "ContainedData/Plot_required_file/tissue14/enrich/"
 species <- c("Human","Mouse","Fly","Yeast","Neurospora","Arabidopsis","Green alga","Cyanobacteria")
 
 species_sort <- c('human','mouse','fly','arabidopsis','yeast','neurospora','cyanobacteria','chlamydomonas')
-#species <- c('human','mouse','fly','yeast','neurospora','arabidopsis','cyanobacteria','chlamydomonas')
 gene_num_list <- data.frame(0,0)
 colnames(gene_num_list) <- c("species","gene_num") 
 
@@ -326,7 +325,6 @@ venn_data <- get_or_gene()
 
 venn_data_new <- venn_data[2:nrow(venn_data),]
 
-
 # calculate orthologue gene in different species
 #calculate overlap percentage of gene ontology terms in different species
 file_dir <- "ContainedData/Plot_required_file/tissue14/enrich/"
@@ -344,13 +342,11 @@ for(i in 1:(length(species)-1))
     current_file1_background_name <- paste(file_dir_background, species[i],".txt",sep="")
     current_file2_background_name <- paste(file_dir_background, species[j],".txt",sep="")
     
-    
     current_file1 <- read.csv(current_file1_name)
     current_file2 <- read.csv(current_file2_name)
     
     current_file1_background <- read.table(current_file1_background_name)$V1
     current_file2_background <- read.table(current_file2_background_name)$V1
-    
     
     species1_term_num <- 0
     species2_term_num <- 0
@@ -386,8 +382,6 @@ for(i in 1:(length(species)-1))
         species2_term_num_new <- species2_term_num_new + length(current_data2_new)
         overlap_num_new <- overlap_num_new + length(intersect(current_data1_new, current_data2_new))
         background <- background + length(intersect_go)
-        #print(res_fishertest$p.value)
-        #print(res_fishertest$estimate)
       }
     }
     temp_row <- c(species[i], species[j], species1_term_num/num, species2_term_num/num, overlap_num/num, species1_term_num_new/num, species2_term_num_new/num, overlap_num_new/num, background/num, or/num)
@@ -396,8 +390,8 @@ for(i in 1:(length(species)-1))
   }
 }
 term_venn_data <- term_venn_data[-1,]
-circadian_gene <- log(as.numeric(venn_data_new$or))
-term_percentage <- log(as.numeric(term_venn_data$X0.9))
+circadian_gene <- log10(as.numeric(venn_data_new$or))
+term_percentage <- log10(as.numeric(term_venn_data$X0.9))
 
 data <- data.frame(c(circadian_gene, term_percentage), c(rep("Gene", length(circadian_gene)), rep("Term", length(term_percentage))))
 colnames(data) <- c("Overlap_percentage", "Group")

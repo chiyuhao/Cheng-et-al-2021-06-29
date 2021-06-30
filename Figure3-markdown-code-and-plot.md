@@ -270,8 +270,6 @@ draw_exp_range_boxplot <- function(exp_data_name, range1, range2, exp_plot_name,
     theme(axis.line.x = element_line(size=1, colour = "black"))+    
     theme(axis.line.y = element_line(size=1, colour = "black"))+    
     labs(x=NULL, y=NULL)+
-    # coord_cartesian(ylim = ylim1*1.1)+
-    # scale_y_continuous(breaks = c(-2:4))+
     theme(legend.position = 'none')+
     scale_color_brewer(palette = 'Dark2')+
     scale_fill_brewer(palette = 'Dark2')
@@ -485,19 +483,19 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Neurospora.csv',  
     ##  Welch Two Sample t-test
     ## 
     ## data:  cir_input_new and non_cir_input_new
-    ## t = 2.1456, df = 175.36, p-value = 0.03328
+    ## t = 2.3774, df = 214.82, p-value = 0.01831
     ## alternative hypothesis: true difference in means is not equal to 0
     ## 95 percent confidence interval:
-    ##   176.5393 4226.3957
+    ##   351.4008 3760.5842
     ## sample estimates:
     ## mean of x mean of y 
-    ##  3263.350  1061.883 
+    ##  3112.645  1056.653 
     ## 
     ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
-    ## W = 1113639, p-value = 4.978e-15
+    ## W = 1335557, p-value < 2.2e-16
     ## alternative hypothesis: true location shift is not equal to 0
 
 ``` r
@@ -859,7 +857,6 @@ draw_range_percentage_plot <- function(exp_data_name, range1, range2, plot_name,
   groupaan2 = c("0-20%","20-40%","40-60%","60-80%","80-100%")
   aan2 <- data.frame(aan, groupaan2)
   colnames(aan2) <- c("data","group")
-  # aan2$group = factor(aan2$group,levels = groupaan2[5:1])
   
   colcol = brewer.pal(n = 6,name = 'Dark2')[4]
   
@@ -881,7 +878,6 @@ draw_range_percentage_plot <- function(exp_data_name, range1, range2, plot_name,
     scale_y_continuous(limits = c(0,0.5),breaks = c(0,0.2,0.4))+
     # coord_flip()+
     theme(legend.position = 'none')
-
   
   plot_list4 <<- c(plot_list4, list(a2))
 }
@@ -984,15 +980,11 @@ draw_dotplot_exp_amp <- function(exp_data_name, range1, range2, plot_name, plot_
 
   print((cor.test(data$expression, data$amplitude)$estimate)^2)
      p5 <- ggplot(data, aes(x=amplitude, y=expression)) +
-     # geom_point(size = 0.4,color = colcol)+
        geom_bin2d(bins = 24)+
-       # geom_hex(bins = 15)+
        scale_fill_gradient(low = colcol,high = "#E8F5F1")+
 
      stat_smooth(method='lm',formula = y~x+ I(x^2),colour=colcolline,size = 1,se = F) +
-
     theme_bw() + 
-    # theme(axis.text.x = element_text(size = 15, face = "bold"))+
     theme(axis.text.y = element_text(size = 15, face = "bold"))+
     theme(panel.grid =element_blank()) +   
     theme(axis.text = element_blank()) +   
@@ -1001,11 +993,8 @@ draw_dotplot_exp_amp <- function(exp_data_name, range1, range2, plot_name, plot_
     theme(axis.line.x= element_line(size=1, colour = "black"))+   
     theme(axis.line.y= element_line(size=1, colour = "black"))+   
     labs(x=NULL, y=NULL)+
-
     theme(legend.position = 'none')
 
-  
-  
   plot_list5 <<- c(plot_list5, list(p5))
 }
 ```
@@ -1081,8 +1070,8 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Neurospora.csv',  24
                      "Neurospora","#FC8D62")
 ```
 
-    ##     cor 
-    ## 0.91526
+    ##       cor 
+    ## 0.9175987
 
 ``` r
 draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD LEAF.csv',  24,35,"amplitude_expression_arabidopsis_sd leaf.pdf",
@@ -1133,8 +1122,6 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Simulation.csv',  24
     ## 0.8723273
 
 ``` r
-# temp_plot <- plot_grid(plotlist = plot_list[61:75],nrow=15, ncol=1, axis="bl",rel_widths=c(1,1,1))
-# temp_plot
 ggarrange(plotlist = plot_list5,nrow=15,ncol = 1,align = 'v')
 ```
 
