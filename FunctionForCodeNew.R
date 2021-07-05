@@ -58,6 +58,11 @@ MouseCalculateCost <- function(){
   # CC_RNA，向量 -------------------------------------------------
   # 已保存CM_RNA与CC_RNA，可直接读取
   load("ContainedData/EnergyCost/CC_RNA.RData")
+  # 重新计算CC_RNA,WANG et al 的计算结果已保存在csv文件里
+  matrixseqcostmouse = read.csv("ContainedData/EnergyCost/matrixseqcostmouse.csv",row.names = 1)
+  CC_RNA = matrixseqcostmouse$fulllength
+  names(CC_RNA) = matrixseqcostmouse$ID
+  # CM_RNA = 
   # LPRE_RNA，向量 ----------------------------------------------------
   LPRE_RNA = LMAT_RNA
   # D_RNA，向量 ---------------------------------------------------------
@@ -177,6 +182,12 @@ MouseCalculateCost <- function(){
   # CC_PRO，向量 ---------------------------------------------------------
   # 已保存CM_PRO与CC_PRO，可直接读取
   load("ContainedData/EnergyCost/CC_PRO.RData")
+  # 重新计算CC_PRO,WANG et al 的计算结果已保存在csv文件里
+  matrixseqcostmouse = read.csv("ContainedData/EnergyCost/matrixseqcostmouse.csv",row.names = 1)
+  CC_PRO = matrixseqcostmouse$protein
+  names(CC_PRO) = matrixseqcostmouse$ID
+  # CM_PRO = 
+  
   # LPRE_PRO，向量 ----------------------------------------------
   LPRE_PRO = LMAT_PRO
   # D_PRO，向量 ----------------------------------------------------
@@ -498,6 +509,12 @@ YeastCalculateCost <- function(){
     CC_RNA = c(CC_RNA,sum(tmp*CM_RNA[names(tmp)]))
   }
   names(CC_RNA) = sequence_list_name_DNA
+  
+  # 重新计算CC_PRO,WANG et al 的计算结果已保存在csv文件里
+  matrixseqcostyeast = read.csv("ContainedData/EnergyCost/matrixseqcostyeast.csv",row.names = 1)
+  CC_RNA = matrixseqcostyeast$fulllength
+  names(CC_RNA) = matrixseqcostyeast$ID
+  # CM_RNA = 
   # LPRE_RNA，向量 ----------------------------------------------------
   tmp = read.table("ContainedData/EnergyCost/mart_export_transcript_length.txt",
                    header = T,sep = '\t')
@@ -532,27 +549,6 @@ YeastCalculateCost <- function(){
   for (i in 1:ncol(R_RNA)) {
     F_S_RNA[i] = R_RNA[i]*D_RNA
   }
-  
-  tmp = R_RNA[3:20] - R_RNA[1:18]
-  tmp = cbind(R_RNA[2]-R_RNA[20],tmp,R_RNA[1]-R_RNA[19])
-  tmp = tmp/(26/60)
-  colnames(tmp) = colnames(R_RNA)
-  F_US1_RNA = F_S_RNA + tmp
-  
-  tmp_id = F_US1_RNA<0
-  tmp_id1 = rowSums(tmp_id)<=2
-  tmp_id2 = rowSums(tmp_id) >2
-  tmp_id[tmp_id2,] = F
-  F_US1_RNA[tmp_id] = 0.1
-  # 若一行中负数个数>2，则该行整体加常数至最低值达到0.1
-  tmp = apply(F_US1_RNA, 1, min)
-  tmp = (-tmp)+0.1
-  tmp[tmp_id1] = 0
-  for (i in 1:20) {
-    F_US1_RNA[i] = F_US1_RNA[i] + tmp
-  }
-  
-  
   # F_US1_RNA
   # F_US2_RNA
   # PRO --------------------------------------------------------------
@@ -582,6 +578,12 @@ YeastCalculateCost <- function(){
     CC_PRO = c(CC_PRO,sum(tmp*CM_PRO[names(tmp)]))
   }
   names(CC_PRO) = sequence_list_name_PRO
+  
+  # 重新计算CC_PRO,WANG et al 的计算结果已保存在csv文件里
+  matrixseqcostyeast = read.csv("ContainedData/EnergyCost/matrixseqcostyeast.csv",row.names = 1)
+  CC_PRO = matrixseqcostyeast$protein
+  names(CC_PRO) = matrixseqcostyeast$ID
+  # CM_PRO = 
   # LPRE_PRO，向量 ----------------------------------------------
   LPRE_PRO = LMAT_PRO
   # D_PRO，向量 ----------------------------------------------------
@@ -681,7 +683,7 @@ YeastCalculateCost <- function(){
   # F*(2.17*LPRE+sigma*CC)
   # F*(5*L+sigma*CC)
   {
-    F_RNA = F_US1_RNA
+    F_RNA = F_S_RNA
     F_PRO = F_S_PRO
     sigma_RNA = 0.5
     sigma_PRO = 0.5

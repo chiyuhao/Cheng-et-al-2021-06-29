@@ -1,0 +1,166 @@
+---
+title: "Figure4 markdown code and plot"
+author: "Wanglab"
+date: "2021.2.19"
+output: rmarkdown::github_document
+---
+
+```{r,warning=FALSE}
+library(ggplot2)
+library(dplyr)
+set.seed(1)
+range1 <- c(19,19,24,24,24,24,24,24,24,24,24,24,19,19)
+range2 <- c(28,22,35,35,35,35,43,47,35,35,35,35,26,28)
+
+path_DirEightSpieces = 'ContainedData/Meta2dResult/AllSpecies/'
+  vector_FilenameAllTissues = c("Human_blood.csv","Human_skin.csv","Mouse_LIV.csv","Mouse_KID.csv","Fly_old.csv","Fly_young.csv","Yeast_high.csv","Yeast_low.csv","Neurospora.csv","Arabidopsis_SD LEAF.csv","Arabidopsis_SD M.csv",
+                                "Arabidopsis_SD VA.csv","Chlamydomounas.csv","Cyanobacteria.csv")
+  vector_NameAllTissues = c("Human_blood","Human_skin","Mouse_LIV","Mouse_KID","Fly_old","Fly_young","Yeast_high","Yeast_low","Neurospora","Arabidopsis_SD LEAF","Arabidopsis_SD M",
+                            "Arabidopsis_SD VA","Chlamydomounas","Cyanobacteria")
+  id_ShowNumAllTissues = c(1:14)
+{
+  par(mfrow = c(4,4))
+  table2 = c()
+  set.seed(1)
+  for(i in id_ShowNumAllTissues)
+  {
+    {
+      expr = read.csv(paste0(path_DirEightSpieces,vector_FilenameAllTissues[i]))
+      ind_pc = expr$CycID != "#N/A"
+      expr = expr[ind_pc,]   
+      expr_mean = log(expr$meta2d_Base)
+      expr_amp = log(expr$meta2d_AMP)
+      expr_range <- apply(expr[,c(range1[i]:range2[i])],1, function(x){return(max(x) - min(x))})
+      expr_ramp = log(expr$meta2d_rAMP)
+      ind_bhq005 = expr$meta2d_BH.Q<0.05
+    }
+    ind_cir = 'ind_bhq005'
+    aa0 = cbind(expr_mean,expr_range,ind_bhq005)
+    aa = aa0[order(aa0[,'expr_range'],decreasing = T),];thresh_ind =
+      which(aa[,ind_cir]==1)[round(sum(aa[,ind_cir])*0.95)];aa = aa[1:thresh_ind,]
+    table1 = c(nrow(aa0),nrow(aa),round(nrow(aa)/nrow(aa0),2),
+               sum(aa0[,ind_cir]),sum(aa[,ind_cir]),round(sum(aa[,ind_cir])/sum(aa0[,ind_cir]),2))
+    aa = aa[order(aa[,'expr_mean']),]
+    dd = exp(aa[,'expr_mean'])
+    ee = replicate(1000,{
+      # print(a <<- a+1)
+      ind_simu = sample(1:nrow(aa),size = sum(aa[,ind_cir]),prob = dd)
+      sum(aa[ind_simu,ind_cir])
+    })
+    ee1 = replicate(1000,{
+      ind_simu = sample(1:nrow(aa0),size = sum(aa0[,ind_cir]))
+      sum(aa0[ind_simu,ind_cir])
+    })
+    if (i==19) {
+      ee1 = ee1+abs(rnorm(length(ee1),0,0.5))
+    }
+    m = sum(aa0[,ind_cir])
+    n = nrow(aa0) - sum(aa0[,ind_cir])
+    k = sum(aa0[,ind_cir])
+    dhydata = dhyper(0:m,m,n,k) 
+    plot(
+      density(ee)
+      ,xlim = c(min(ee1),max(ee))
+      ,ylim = c(0,max(table(ee)/length(ee),dhydata[dhydata>0.001]))
+      ,xlab = NA,main = vector_NameAllTissues[i],ylab = 'frequency'
+      ,type = 'l',xaxt = 'n')
+    abline(v=mean(ee),lty = 2)
+    axis(side = 1)
+    lines(density(ee1),col='red')
+    abline(v=mean(ee1),lty = 2,col='red')
+    table1 = c(table1,c(round(mean(ee),2),round(m^2/(m+n),2),wilcox.test(ee,mu = round(m^2/(m+n),2))$p.value,max(ee)))
+    table2 = rbind(table2,table1)
+    print(vector_NameAllTissues[i])
+    print(table1)
+  }
+  rownames(table2) = vector_NameAllTissues[id_ShowNumAllTissues]
+  colnames(table2) = c('num_all','num_sele','ratio','cir_all','cir_sele','ratio_cir','cir_real','cir_simu','wilcox-test.p','cir_RealMax')
+  print(table2)
+  #write.csv(table2,'table2.csv')
+  par(mfcol = c(1,1))
+} 
+```
+
+```{r,warning=FALSE}
+library(plyr)
+library(ggpubr)
+set.seed(1)
+path_DirEightSpieces = 'ContainedData/Meta2dResult/AllSpecies/'
+  vector_FilenameAllTissues = c("Human_blood.csv","Human_skin.csv","Mouse_LIV.csv","Mouse_KID.csv","Fly_old.csv","Fly_young.csv","Yeast_high.csv","Yeast_low.csv","Neurospora.csv","Arabidopsis_SD LEAF.csv","Arabidopsis_SD M.csv",
+                                "Arabidopsis_SD VA.csv","Chlamydomounas.csv","Cyanobacteria.csv")
+vector_NameAllTissues = c("Human_blood","Human_skin","Mouse_LIV","Mouse_KID","Fly_old","Fly_young","Yeast_high","Yeast_low","Neurospora","Arabidopsis_SD LEAF","Arabidopsis_SD M",
+                            "Arabidopsis_SD VA","Chlamydomounas","Cyanobacteria")
+id_ShowNumAllTissues = c(1:14)
+range1 <- c(19,19,24,24,24,24,24,24,24,24,24,24,19,19)
+range2 <- c(28,22,35,35,35,35,43,47,35,35,35,35,26,28)
+p = list()
+table2 = c()
+set.seed(1)
+for(i in id_ShowNumAllTissues)
+{
+  {
+    expr = read.csv(paste0(path_DirEightSpieces,vector_FilenameAllTissues[i]))
+    ind_pc = expr$CycID != "#N/A"
+    expr = expr[ind_pc,]    
+    expr_mean = log(expr$meta2d_Base)
+    expr_amp = log(expr$meta2d_AMP)
+    expr_range <- log(apply(expr[,c(range1[i]:range2[i])],1, function(x){return(max(x) - min(x))}))
+    #expr_ramp = log(expr$meta2d_rAMP)
+    expr_ramp = log(expr$meta2d_rAMP)
+    ind_bhq005 = expr$meta2d_BH.Q<0.05
+  }
+ 
+  ind_cir = 'ind_bhq005'
+  aa0 = cbind(expr_mean,expr_range,ind_bhq005)
+
+  aa = aa0[order(aa0[,'expr_range'],decreasing = T),];thresh_ind = 
+    which(aa[,ind_cir]==1)[round(sum(aa[,ind_cir])*0.95)];aa = aa[1:thresh_ind,]
+  
+  table1 = c(nrow(aa0),nrow(aa),round(nrow(aa)/nrow(aa0),2),
+             sum(aa0[,ind_cir]),sum(aa[,ind_cir]),round(sum(aa[,ind_cir])/sum(aa0[,ind_cir]),2))
+
+  aa = aa[order(aa[,'expr_mean']),]
+  dd = exp(aa[,'expr_mean'])
+  ee = replicate(1000,{
+    ind_simu = sample(1:nrow(aa),size = sum(aa[,ind_cir]),prob = dd)
+    sum(aa[ind_simu,ind_cir])
+  })
+  ee1 = replicate(1000,{
+    # print(a <<- a+1)
+    ind_simu = sample(1:nrow(aa0),size = sum(aa0[,ind_cir]))
+    sum(aa0[ind_simu,ind_cir])
+  })
+  # points(density(ee1),col='red',pch = '.')
+  if (i==9) {
+    ee1 = ee1+abs(rnorm(length(ee1),0,0.5))
+    ee = ee+abs(rnorm(length(ee),0,0.5))
+  }
+  m = sum(aa0[,ind_cir])
+  n = nrow(aa0) - sum(aa0[,ind_cir])
+  k = sum(aa0[,ind_cir])
+  dhydata = dhyper(0:m,m,n,k)
+  df = data.frame(
+    overlap = c(ee,ee1)
+    ,method = rep(c('simulation','random'),c(length(ee),length(ee1))))
+  mu <- ddply(df, "method", summarise, grp.mean=mean(overlap))
+  p_i <- ggplot(df, aes(x=overlap, fill=method)) +
+    geom_density(alpha=0.4) + 
+    geom_vline(data=mu, aes(xintercept=grp.mean, color=method),
+               linetype="dashed")+ 
+    labs(title = vector_NameAllTissues[i])+
+    theme(plot.title=element_text(hjust=0.5))
+  p[[i]] = p_i
+  
+  table1 = c(table1,c(round(mean(ee),2),round(m^2/(m+n),2),wilcox.test(ee,mu = round(m^2/(m+n),2))$p.value,max(ee)))
+  table2 = rbind(table2,table1)
+  print(vector_NameAllTissues[i])
+  print(table1)
+}
+ggarrange(plotlist = p[id_ShowNumAllTissues]
+          ,ncol = 4,nrow = 4
+          # ,labels = vector_NameAllTissues[id_ShowNumAllTissues]
+          ,labels = LETTERS[1:14]
+          ,font.label = list(size = 12,face='bold',col='black')
+          ,common.legend = T)
+
+```

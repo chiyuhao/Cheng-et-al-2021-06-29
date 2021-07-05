@@ -86,7 +86,7 @@ gene_len_codon %>% density() %>% plot(
 ``` r
 #gene codon
 set.seed(1)
-baseT=c('T','C','A','G')
+baseT=c('U','C','A','G')
 codonT=c()
 for(i in baseT){
   for(j in baseT){
@@ -95,8 +95,8 @@ for(i in baseT){
     }
   }
 }
-CM_RNA = c(49.7,46.7,50.7,45.7)
-names(CM_RNA) = c('A','C','G','T') 
+CM_RNA = c(48.5,49.5,48.5,51.5)
+names(CM_RNA) = c('A','C','G','U') 
 sequence_list = rep('a',gene_num)
 cost_c = rep(0,gene_num)
 system.time(
@@ -108,7 +108,7 @@ system.time(
     cost_c[i] = CM_RNA[id_M] %>% sum()
   })
 ##    user  system elapsed 
-##    1.11    0.00    1.11
+##    1.02    0.00    1.01
 ```
 
 ``` r
@@ -469,6 +469,40 @@ cost_IncrementRandBool = sign(cost_IncrementRand)
 ```
 
 ``` r
+# f_cir_para = function(xx){
+#   # calculateexpr_constrained
+#   sele_strength = xx
+#   cost_IncrementConsAbs = exp(log(1+cost_IncrementRandAbs)*(1 - sele_strength))-1 #再映射到expr上去
+#   expr_IncrementCons = cost_IncrementConsAbs/cost_IncrementRandAbs * expr_IncrementRand
+#   expr_constrained = expr_need + expr_IncrementCons
+# 
+#   # set.seed(1)
+#   # expr_constrained = expr_constrained+runif(720000,min = 0,max = 1)
+#   timelist = 1:72
+#   expr_out = expr_constrained
+#   write.csv(as.data.frame(expr_out), file = paste0("E:/circidian_algorithm/Select_strength_result/cycMouseHypoRNA",xx,".csv"), row.names=T)
+#   metatest = meta2d(infile=paste0("E:/circidian_algorithm/Select_strength_result/cycMouseHypoRNA",xx,".csv"), filestyle="csv",
+#                     outdir = 'E:/circidian_algorithm/Select_strength_result/',outputFile = F,
+#                     minper = 20,maxper = 28,
+#                     timepoints=timelist
+#   )
+#   return(sum(metatest$meta$meta2d_BH.Q<0.05))
+# }
+# sele_strength_seq = seq(0.01,0.2,by = 0.01)
+# 
+# 
+# 
+# res = single_parallel(func = f_cir_para
+#                       ,iterable = sele_strength_seq
+#                       ,env_val = c('cost_IncrementRandAbs','expr_IncrementRand','expr_need')
+#                       ,packages = c('MetaCycle','dplyr'))
+# 
+# cbind(sele_strength_seq,res)
+# plot(sele_strength_seq,res
+#      ,xlab = 'sele_strength',ylab = 'circadian number')
+```
+
+``` r
 #select select strength
 sele_strength = 0.05
 cost_IncrementConsAbs = exp(log(1+cost_IncrementRandAbs)*(1 - sele_strength))-1 
@@ -502,32 +536,30 @@ write.csv(as.data.frame(expr_out), file = paste0("cycMouseHypoRNA",sele_strength
 system.time({
   metatest = meta2d(infile=paste0("cycMouseHypoRNA",sele_strength,".csv"), filestyle="csv",
                     outdir = 'example',outputFile = F,
-                    minper = 24,maxper = 24,
+                    minper = 20,maxper = 28,
                     timepoints=timelist
   )
 })
 ```
 
-    ## The ARS is in process from  15:47:48 06-29-2021 
-    ## The analysis by ARS is finished at  15:51:15 06-29-2021 
-    ## The JTK is in process from  15:51:15 06-29-2021 
-    ## The analysis by JTK is finished at  15:52:02 06-29-2021 
-    ## The LS is in process from  15:52:02 06-29-2021 
-    ## The analysis by LS is finished at  15:54:47 06-29-2021 
+    ## The ARS is in process from  13:52:16 07-04-2021 
+    ## The analysis by ARS is finished at  13:55:54 07-04-2021 
+    ## The JTK is in process from  13:55:54 07-04-2021 
+    ## The analysis by JTK is finished at  14:01:16 07-04-2021 
+    ## The LS is in process from  14:01:16 07-04-2021 
+    ## The analysis by LS is finished at  14:04:03 07-04-2021 
     ## DONE! The analysis about ' cycMouseHypoRNA0.05.csv '  has been finished.
-    ##                                 user.self             sys.self 
-    ##         "Time used:"             "429.34" "0.0900000000000001" 
-    ##              elapsed           user.child            sys.child 
-    ##             "429.73"                   NA                   NA
+    ##                 user.self     sys.self      elapsed   user.child    sys.child 
+    ## "Time used:"     "715.29"       "1.68"     "717.38"           NA           NA
 
     ##    user  system elapsed 
-    ##  429.47    0.09  429.86
+    ##  715.44    1.68  717.52
 
 ``` r
 sum(metatest$meta$meta2d_BH.Q<0.05) %>% print()
 ```
 
-    ## [1] 3232
+    ## [1] 2806
 
 ``` r
 # observe features of simulation data
@@ -571,7 +603,7 @@ summary(expr_constrained %>% as.vector())
 ```
 
     ##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-    ##    0.0003  246.6021  517.8909  598.0506  883.8002 2734.1871
+    ##    0.0003  246.5405  517.7798  597.9094  883.6015 2733.5185
 
 ``` r
 id_cir = metatest$meta$meta2d_BH.Q<0.05
@@ -664,13 +696,13 @@ cor.test(log10(tmp2[tmp1!=0]),tmp1[tmp1!=0])
     ##  Pearson's product-moment correlation
     ## 
     ## data:  log10(tmp2[tmp1 != 0]) and tmp1[tmp1 != 0]
-    ## t = -5.6226, df = 983, p-value = 2.45e-08
+    ## t = -6.3137, df = 977, p-value = 4.13e-10
     ## alternative hypothesis: true correlation is not equal to 0
     ## 95 percent confidence interval:
-    ##  -0.2363751 -0.1153258
+    ##  -0.2574540 -0.1370383
     ## sample estimates:
     ##        cor 
-    ## -0.1765178
+    ## -0.1979931
 
 ``` r
 id_tmp = sample(gene_num,sum(metatest$meta$meta2d_BH.Q<0.05))
@@ -702,13 +734,13 @@ cor.test(log10(tmp2[tmp1!=0]),tmp1[tmp1!=0])
     ##  Pearson's product-moment correlation
     ## 
     ## data:  log10(tmp2[tmp1 != 0]) and tmp1[tmp1 != 0]
-    ## t = -4.7636, df = 990, p-value = 2.186e-06
+    ## t = -5.008, df = 987, p-value = 6.512e-07
     ## alternative hypothesis: true correlation is not equal to 0
     ## 95 percent confidence interval:
-    ##  -0.20997738 -0.08827089
+    ##  -0.21762125 -0.09602501
     ## sample estimates:
     ##        cor 
-    ## -0.1496911
+    ## -0.1574197
 
 ``` r
 plot(colSums(matrix_func_time_bool),type = 'l')

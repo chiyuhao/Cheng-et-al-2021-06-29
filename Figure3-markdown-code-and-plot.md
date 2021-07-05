@@ -76,7 +76,7 @@ arrangebycol = function(list1,...){
 
 ``` r
 #draw first row of the plot
-
+p_value_list <- c()
 
 
 draw_exp_range_lineplot <- function(exp_data_name, range1, range2, exp_plot_name, range_plot_name, heatmap_plot_name)
@@ -94,6 +94,9 @@ draw_exp_range_lineplot <- function(exp_data_name, range1, range2, exp_plot_name
   rownames(expr_tmp) = tmp$CycID
   expr_tmp = expr_tmp[,range1:range2]
   expr_tmp = as.matrix(expr_tmp)
+  
+
+  
   id_tmp = rowSums(expr_tmp<=0, na.rm = TRUE)==0
   tmp = tmp[id_tmp,]
   expr_mouse = tmp
@@ -111,6 +114,8 @@ draw_exp_range_lineplot <- function(exp_data_name, range1, range2, exp_plot_name
   }
   cir_input <- rowMeans(circ_exp)
   non_cir_input <- rowMeans(non_circ_exp)
+  
+  print(wilcox.test(cir_input, non_cir_input, alternative = "greater")$p.value)
 
   circ_exp_mean <- c()
   circ_exp_sd <- c()
@@ -120,6 +125,14 @@ draw_exp_range_lineplot <- function(exp_data_name, range1, range2, exp_plot_name
     circ_exp_mean[i] <- mean(circ_exp[,i])
     circ_exp_sd[i] <- sd(circ_exp[,i])
     non_circ_exp_mean[i] <- mean(non_circ_exp[,i])
+    
+    temp_p <- wilcox.test(circ_exp[,i], non_circ_exp[,i])$p.value
+    p_value_list <<- c(p_value_list, temp_p)
+    # if(temp_p > 0.05){
+    #   print(exp_data_name)
+    #   print(i)
+    # }
+      
     non_circ_exp_sd[i] <- sd(non_circ_exp[,i])
   }
   dataset_list <- c(rep("Circidian", length(circ_exp_mean)), rep("Not circidian", length(non_circ_exp_mean)))
@@ -156,49 +169,107 @@ plot_list1 = list()
 # 1
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Human_blood_for_heatmap.csv',  19,28,"exp_boxplot_human_blood.pdf",
                         "range_boxplot_human_blood.pdf","pvalue_heatmap_human_blood.pdf")
+```
+
+    ## [1] 1.803791e-247
+
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Human_skin_for_heatmap.csv',  19,22,"exp_boxplot_human_skin.pdf",
                         "range_boxplot_human_skin.pdf","pvalue_heatmap_human_skin.pdf")
+```
 
+    ## [1] 5.178441e-161
+
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Mouse_LIV.csv',  24,35,"exp_boxplot_mouse_liver.pdf",
                         "range_boxplot_mouse_liver.pdf","pvalue_heatmap_mouse_liver.pdf")
+```
+
+    ## [1] 0
+
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Mouse_KID.csv',  24,35,"exp_boxplot_mouse_kidney.pdf",
                         "range_boxplot_mouse_kidney.pdf","pvalue_heatmap_mouse_kidney.pdf")
+```
 
+    ## [1] 0
 
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Fly_old.csv',  24,35,"exp_boxplot_fly_old.pdf",
                         "range_boxplot_fly_old.pdf","pvalue_heatmap_fly_old.pdf")
+```
+
+    ## [1] 7.635003e-28
+
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Fly_young.csv',  24,35,"exp_boxplot_fly_young.pdf",
                         "range_boxplot_fly_young.pdf","pvalue_heatmap_fly_young.pdf")
+```
 
+    ## [1] 7.122695e-44
 
-
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Yeast_high.csv',  24,43,"exp_boxplot_yeast_high.pdf",
                         "range_boxplot_yeast_high.pdf","pvalue_heatmap_yeast_high.pdf")
+```
+
+    ## [1] 3.95831e-49
+
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Yeast_low.csv',  24,47,"exp_boxplot_yeast_low.pdf",
                         "range_boxplot_yeast_low.pdf","pvalue_heatmap_yeast_low.pdf")
+```
 
+    ## [1] 3.24301e-25
+
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Neurospora.csv',  24,35,"exp_boxplot_neurospora.pdf",
                         "range_boxplot_neurospora.pdf","pvalue_heatmap_neurospora.pdf")
+```
 
+    ## [1] 2.63036e-12
 
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD LEAF.csv',  24,35,"exp_boxplot_arabidopsis_Sd leaf.pdf",
                         "range_boxplot_arabidopsis_sd leaf.pdf","pvalue_heatmap_arabidopsis_sd leaf.pdf")
+```
+
+    ## [1] 0
+
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD M.csv',  24,35,"exp_boxplot_arabidopsis_sd m.pdf",
                         "range_boxplot_arabidopsis_sd m.pdf","pvalue_heatmap_arabidopsis_sd m.pdf")
+```
+
+    ## [1] 0
+
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD VA.csv',  24,35,"exp_boxplot_arabidopsis_sd va.pdf",
                         "range_boxplot_arabidopsis_sd va.pdf","pvalue_heatmap_arabidopsis_sd va.pdf")
+```
 
+    ## [1] 0
 
-
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Chlamydomounas_for_heatmap.csv',  19,26,"exp_boxplot_chlam.pdf",
                         "range_boxplot_chlam.pdf","pvalue_heatmap_chlam.pdf")
+```
 
+    ## [1] 3.657084e-70
+
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Cyanobacteria_for_heatmap.csv',  19,28,"exp_boxplot_cyano.pdf",
                         "range_boxplot_cyano.pdf","pvalue_heatmap_cyano.pdf")
+```
 
+    ## [1] 6.713867e-29
+
+``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Simulation.csv',  24,95,"exp_boxplot_simulation.pdf",
                         "range_boxplot_simulation.pdf","pvalue_heatmap_simulation.pdf")
 ```
+
+    ## [1] 1.137016e-81
 
 ``` r
 ggarrange(plotlist = plot_list1,nrow=15,ncol = 1,align = 'v')
@@ -251,8 +322,7 @@ draw_exp_range_boxplot <- function(exp_data_name, range1, range2, exp_plot_name,
   data <- data.frame(c(cir_input_new, non_cir_input_new), 
                      c(rep("Circidian", length(cir_input_new)), rep("Not circidian", length(non_cir_input_new))))
   colnames(data) <- c("Expression", "Group")
-  print(t.test(cir_input_new, non_cir_input_new))
-  print(wilcox.test(cir_input_new, non_cir_input_new))
+  print(wilcox.test(cir_input_new, non_cir_input_new), alternative = "greater")
   ylim1 = boxplot.stats(log10(data$Expression))$stats[c(1, 5)]
 
   
@@ -288,18 +358,6 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Human_blood_for_he
 ```
 
     ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 7.7363, df = 2269.9, p-value = 1.528e-14
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##  491.0739 824.5629
-    ## sample estimates:
-    ## mean of x mean of y 
-    ##  971.1590  313.3406 
-    ## 
-    ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
@@ -311,18 +369,6 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Human_skin_for_hea
                         "range_boxplot_human_skin.pdf","pvalue_heatmap_human_skin.pdf")
 ```
 
-    ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 10.259, df = 1150.5, p-value < 2.2e-16
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##  17.52685 25.81619
-    ## sample estimates:
-    ## mean of x mean of y 
-    ##  35.33229  13.66077 
-    ## 
     ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
@@ -336,18 +382,6 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Mouse_LIV.csv',  2
 ```
 
     ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 36.057, df = 5783.9, p-value < 2.2e-16
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##  264.8904 295.3496
-    ## sample estimates:
-    ## mean of x mean of y 
-    ##  383.2329  103.1129 
-    ## 
-    ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
@@ -359,18 +393,6 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Mouse_KID.csv',  2
                         "range_boxplot_mouse_kidney.pdf","pvalue_heatmap_mouse_kidney.pdf")
 ```
 
-    ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 31.627, df = 6415.5, p-value < 2.2e-16
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##   91.9711 104.1258
-    ## sample estimates:
-    ## mean of x mean of y 
-    ## 153.70765  55.65919 
-    ## 
     ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
@@ -384,18 +406,6 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Fly_old.csv',  24,
 ```
 
     ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 1.3352, df = 2591.3, p-value = 0.1819
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##  -2.953021 15.557553
-    ## sample estimates:
-    ## mean of x mean of y 
-    ##  33.17124  26.86898 
-    ## 
-    ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
@@ -407,18 +417,6 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Fly_young.csv',  2
                         "range_boxplot_fly_young.pdf","pvalue_heatmap_fly_young.pdf")
 ```
 
-    ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 1.4361, df = 5947.1, p-value = 0.151
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##  -1.687509 10.933019
-    ## sample estimates:
-    ## mean of x mean of y 
-    ##  28.09915  23.47640 
-    ## 
     ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
@@ -432,22 +430,10 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Yeast_high.csv',  
 ```
 
     ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 12.51, df = 5791.6, p-value < 2.2e-16
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##  142.1722 195.0099
-    ## sample estimates:
-    ## mean of x mean of y 
-    ## 226.20204  57.61099 
-    ## 
-    ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
-    ## W = 4501016, p-value < 2.2e-16
+    ## W = 4326046, p-value < 2.2e-16
     ## alternative hypothesis: true location shift is not equal to 0
 
 ``` r
@@ -456,22 +442,10 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Yeast_low.csv',  2
 ```
 
     ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 7.9182, df = 5742.9, p-value = 2.872e-15
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##  118.6410 196.7174
-    ## sample estimates:
-    ## mean of x mean of y 
-    ##  260.5675  102.8883 
-    ## 
-    ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
-    ## W = 5226945, p-value < 2.2e-16
+    ## W = 5098572, p-value < 2.2e-16
     ## alternative hypothesis: true location shift is not equal to 0
 
 ``` r
@@ -479,18 +453,6 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Neurospora.csv',  
                         "range_boxplot_neurospora.pdf","pvalue_heatmap_neurospora.pdf")
 ```
 
-    ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 2.3774, df = 214.82, p-value = 0.01831
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##   351.4008 3760.5842
-    ## sample estimates:
-    ## mean of x mean of y 
-    ##  3112.645  1056.653 
-    ## 
     ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
@@ -504,18 +466,6 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD LEA
 ```
 
     ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 23.438, df = 6786, p-value < 2.2e-16
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##  70.81164 83.73770
-    ## sample estimates:
-    ## mean of x mean of y 
-    ##  98.61732  21.34265 
-    ## 
-    ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
@@ -527,18 +477,6 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD M.c
                         "range_boxplot_arabidopsis_sd m.pdf","pvalue_heatmap_arabidopsis_sd m.pdf")
 ```
 
-    ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 16.966, df = 2724.2, p-value < 2.2e-16
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##   93.59926 118.06166
-    ## sample estimates:
-    ## mean of x mean of y 
-    ## 143.71647  37.88601 
-    ## 
     ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
@@ -552,18 +490,6 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD VA.
 ```
 
     ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 15.697, df = 3165.6, p-value < 2.2e-16
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##  54.47926 70.03242
-    ## sample estimates:
-    ## mean of x mean of y 
-    ##  86.07343  23.81759 
-    ## 
-    ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
@@ -575,18 +501,6 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Chlamydomounas_for
                         "range_boxplot_chlam.pdf","pvalue_heatmap_chlam.pdf")
 ```
 
-    ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 5.6049, df = 15588, p-value = 2.119e-08
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##   6.403263 13.290416
-    ## sample estimates:
-    ## mean of x mean of y 
-    ##  25.39718  15.55034 
-    ## 
     ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
@@ -600,18 +514,6 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Cyanobacteria_for_
 ```
 
     ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 10.857, df = 674.67, p-value < 2.2e-16
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##  350.3726 505.0773
-    ## sample estimates:
-    ## mean of x mean of y 
-    ##  718.7705  291.0455 
-    ## 
-    ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
@@ -624,22 +526,10 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Simulation.csv',  
 ```
 
     ## 
-    ##  Welch Two Sample t-test
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## t = 20.072, df = 5788.5, p-value < 2.2e-16
-    ## alternative hypothesis: true difference in means is not equal to 0
-    ## 95 percent confidence interval:
-    ##   97.73645 118.89371
-    ## sample estimates:
-    ## mean of x mean of y 
-    ##  543.3038  434.9887 
-    ## 
-    ## 
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
-    ## W = 13408519, p-value < 2.2e-16
+    ## W = 13419729, p-value < 2.2e-16
     ## alternative hypothesis: true location shift is not equal to 0
 
 ``` r
@@ -977,7 +867,7 @@ draw_dotplot_exp_amp <- function(exp_data_name, range1, range2, plot_name, plot_
   
   colcol = brewer.pal(n = 3,name = 'Dark2')[1]
   colcolline = brewer.pal(n = 6,name = 'Set1')[4]
-
+  print(cor.test(data$expression, data$amplitude)$p.value)
   print((cor.test(data$expression, data$amplitude)$estimate)^2)
      p5 <- ggplot(data, aes(x=amplitude, y=expression)) +
        geom_bin2d(bins = 24)+
@@ -1007,6 +897,7 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Human_blood.csv',  1
                      "Human blood","#FC8D62")
 ```
 
+    ## [1] 0
     ##       cor 
     ## 0.9334137
 
@@ -1015,6 +906,7 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Human_skin.csv',  19
                      "Human skin","#FC8D62")
 ```
 
+    ## [1] 0
     ##       cor 
     ## 0.8099745
 
@@ -1022,6 +914,7 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Human_skin.csv',  19
 draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Mouse_LIV.csv',  24,35,"amplitude_expression_mouse_liver.pdf", "Mouse liver","#FC8D62")
 ```
 
+    ## [1] 0
     ##       cor 
     ## 0.8239072
 
@@ -1030,6 +923,7 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Mouse_KID.csv',  24,
                      "Mouse kidney","#FC8D62")
 ```
 
+    ## [1] 0
     ##       cor 
     ## 0.8154836
 
@@ -1038,6 +932,7 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Fly_old.csv',  24,35
                      "Fly old","#FC8D62")
 ```
 
+    ## [1] 0
     ##       cor 
     ## 0.8839659
 
@@ -1046,6 +941,7 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Fly_young.csv',  24,
                      "Fly young","#FC8D62")
 ```
 
+    ## [1] 0
     ##       cor 
     ## 0.8834392
 
@@ -1054,22 +950,25 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Yeast_high.csv',  24
                      "Yeast high","#FC8D62")
 ```
 
+    ## [1] 0
     ##       cor 
-    ## 0.7263861
+    ## 0.7238207
 
 ``` r
 draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Yeast_low.csv',  24,47,"amplitude_expression_yeast_low.pdf",
                      "Yeast low","#FC8D62")
 ```
 
-    ##       cor 
-    ## 0.7292183
+    ## [1] 0
+    ##      cor 
+    ## 0.725391
 
 ``` r
 draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Neurospora.csv',  24,35,"amplitude_expression_neurospora.pdf",
                      "Neurospora","#FC8D62")
 ```
 
+    ## [1] 1.042372e-114
     ##       cor 
     ## 0.9175987
 
@@ -1078,6 +977,7 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD LEAF.
                      "Arabidopsis sd leaf","#FC8D62")
 ```
 
+    ## [1] 0
     ##       cor 
     ## 0.9010238
 
@@ -1086,6 +986,7 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD M.csv
                      "Arabidopsis sd m","#FC8D62")
 ```
 
+    ## [1] 0
     ##       cor 
     ## 0.9197196
 
@@ -1094,6 +995,7 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD VA.cs
                      "Arabidopsis sd va","#FC8D62")
 ```
 
+    ## [1] 0
     ##       cor 
     ## 0.9012845
 
@@ -1102,6 +1004,7 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Chlamydomounas.csv',
                      "Green alga","#FC8D62")
 ```
 
+    ## [1] 0
     ##       cor 
     ## 0.8584871
 
@@ -1110,6 +1013,7 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Cyanobacteria.csv', 
                      "Cyanobacteria","#FC8D62")
 ```
 
+    ## [1] 1.26304e-138
     ##       cor 
     ## 0.6680911
 
@@ -1118,8 +1022,9 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Simulation.csv',  24
                      "Simulation","#FC8D62")
 ```
 
+    ## [1] 0
     ##       cor 
-    ## 0.8723273
+    ## 0.8723342
 
 ``` r
 ggarrange(plotlist = plot_list5,nrow=15,ncol = 1,align = 'v')

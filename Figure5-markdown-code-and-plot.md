@@ -61,9 +61,9 @@ table(rowSums(na.omit(SG)>S0))
 
     ## 
     ##    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15 
-    ##  575   24   15   19   12    9   14   17    9   16   20   20   18   16   30   39 
+    ##  384   40   28    9   11   14   11   13   13   14   14   12   12   13   17   21 
     ##   16   17   18   19   20 
-    ##   64  115  228  682 4196
+    ##   28   22   49   77 5266
 
 ``` r
 plot(density(log10(na.omit(rowrange(SG)))),
@@ -78,7 +78,7 @@ abline(v = log10(S0),lty = 2,lwd = 2)
 sum(rowrange(SG) > S0)
 ```
 
-    ## [1] 5528
+    ## [1] 5606
 
 ``` r
 matrix_MetaExpr = read.csv(
@@ -108,10 +108,10 @@ res_fishertest
     ## p-value < 2.2e-16
     ## alternative hypothesis: true odds ratio is not equal to 1
     ## 95 percent confidence interval:
-    ##   9.540538 14.195056
+    ##   7.835287 12.136262
     ## sample estimates:
     ## odds ratio 
-    ##   11.61459
+    ##   9.731228
 
 ``` r
 library(venn)
@@ -144,26 +144,31 @@ abline(v = 65,lty = 2,lwd = 2)
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-1-4.png)<!-- -->
 
 ``` r
-id_cir = matrix_MetaExpr$meta2d_BH.Q<0.05
-id_BoolEarlyPeak = id_cir & matrix_MetaExpr$meta2d_phase<5
-id_BoolLatePeak = id_cir & matrix_MetaExpr$meta2d_phase>=5
+early_matrix = matrix_MetaExpr[matrix_MetaExpr$meta2d_phase<5,]
+late_matrix = matrix_MetaExpr[matrix_MetaExpr$meta2d_phase>=5,]
+id_cir_early = early_matrix$meta2d_BH.Q<0.05
+id_cir_late = late_matrix$meta2d_BH.Q<0.05
+id_BoolEarlyPeak = id_cir_early & early_matrix$meta2d_phase<5
+id_BoolLatePeak = id_cir_late & late_matrix$meta2d_phase>=5
 
 
 timelist = 0:19
 
 vector_TimeEarlyPeak = timelist %in% c(0:4,10:14)
 vector_TimeLatePeak = timelist %in% c(5:9,15:19)
-matrix_MetaExprEarlyPeak = matrix_MetaExpr[,24:43][id_BoolEarlyPeak,vector_TimeEarlyPeak]
-matrix_MetaExprLatePeak = matrix_MetaExpr[,24:43][id_BoolLatePeak,vector_TimeLatePeak]
-SG_EarlyPeak = SG[id_BoolEarlyPeak,vector_TimeEarlyPeak]
-SG_LatePeak = SG[id_BoolLatePeak,vector_TimeLatePeak]
+matrix_MetaExprEarlyPeak = early_matrix[,24:43][id_BoolEarlyPeak,vector_TimeEarlyPeak]
+matrix_MetaExprLatePeak = late_matrix[,24:43][id_BoolLatePeak,vector_TimeLatePeak]
+SG_early = SG[rownames(early_matrix),]
+SG_late = SG[rownames(late_matrix),]
+SG_EarlyPeak = SG_early[,vector_TimeEarlyPeak]
+SG_LatePeak = SG_late[,vector_TimeLatePeak]
 id_SelectEarlyPeak = rowrange(SG_EarlyPeak)>S0
 id_SelectLatePeak = rowrange(SG_LatePeak)>S0
 id_select = rowrange(SG)>S0
 library(venn)
-input = list(circadian = which(id_BoolEarlyPeak),CostSelected = which(id_select))
+input = list(circadian = which(id_BoolEarlyPeak),CostSelected = which(id_SelectEarlyPeak))
 venn(input)
-res_fishertest = fisher.test(id_BoolEarlyPeak,id_select)
+res_fishertest = fisher.test(id_BoolEarlyPeak,id_SelectEarlyPeak)
 text(1,200,paste0('fisher.test',
                   '\n','p = ',round(res_fishertest$p.value,2), 
                   '\n','OR = ',round(res_fishertest$estimate,2)
@@ -173,9 +178,9 @@ text(1,200,paste0('fisher.test',
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 ``` r
-input = list(circadian = which(id_BoolLatePeak),CostSelected = which(id_select))
+input = list(circadian = which(id_BoolLatePeak),CostSelected = which(id_SelectLatePeak))
 venn(input)
-res_fishertest = fisher.test(id_BoolLatePeak,id_select)
+res_fishertest = fisher.test(id_BoolLatePeak,id_SelectLatePeak)
 text(1,200,paste0('fisher.test',
                   '\n','p = ',round(res_fishertest$p.value,2), 
                   '\n','OR = ',round(res_fishertest$estimate,2)
@@ -216,7 +221,7 @@ SG <- MouseCalculateCost()
 print(max(SG))
 ```
 
-    ## [1] 0.0048849
+    ## [1] 0.002776215
 
 ``` r
 Ne_mouse = c(25000,120000)
@@ -227,7 +232,7 @@ S0 = 4/Ne
 sum(rowrange(SG) > S0)
 ```
 
-    ## [1] 1177
+    ## [1] 716
 
 ``` r
 plot(density(log10(na.omit(rowrange(SG)))),
@@ -263,10 +268,10 @@ res_fishertest
     ## p-value < 2.2e-16
     ## alternative hypothesis: true odds ratio is not equal to 1
     ## 95 percent confidence interval:
-    ##  5.450287 7.029094
+    ##  4.467703 6.136579
     ## sample estimates:
     ## odds ratio 
-    ##   6.185863
+    ##   5.232214
 
 ``` r
 library(venn)
@@ -312,6 +317,52 @@ abline(v = 12,lty = 2,lwd = 2)
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ``` r
+early_matrix = matrix_MetaExpr[matrix_MetaExpr$meta2d_phase<12,]
+late_matrix = matrix_MetaExpr[matrix_MetaExpr$meta2d_phase>=12,]
+id_cir_early = early_matrix$meta2d_BH.Q<0.05
+id_cir_late = late_matrix$meta2d_BH.Q<0.05
+id_BoolEarlyPeak = id_cir_early & early_matrix$meta2d_phase<12
+id_BoolLatePeak = id_cir_late & late_matrix$meta2d_phase>=12
+
+
+timelist = seq(18,64,by = 2)
+
+vector_TimeEarlyPeak = timelist %in% c(1:12,25:36,49:60)
+vector_TimeLatePeak = timelist %in% c(13:24,37:48,61:72)
+matrix_MetaExprEarlyPeak = matrix_MetaExpr[,24:47][id_BoolEarlyPeak,vector_TimeEarlyPeak]
+matrix_MetaExprLatePeak = matrix_MetaExpr[,24:47][id_BoolLatePeak,vector_TimeLatePeak]
+SG_early = SG[early_matrix$CycID,]
+SG_late = SG[late_matrix$CycID,]
+SG_EarlyPeak = SG_early[,vector_TimeEarlyPeak]
+SG_LatePeak = SG_late[,vector_TimeLatePeak]
+id_SelectEarlyPeak = rowrange(SG_EarlyPeak)>S0
+id_SelectLatePeak = rowrange(SG_LatePeak)>S0
+id_select = rowrange(SG)>S0
+library(venn)
+input = list(circadian = which(id_BoolEarlyPeak),CostSelected = which(id_SelectEarlyPeak))
+venn(input)
+res_fishertest = fisher.test(id_BoolEarlyPeak,id_SelectEarlyPeak)
+text(1,200,paste0('fisher.test',
+                  '\n','p = ',round(res_fishertest$p.value,2), 
+                  '\n','OR = ',round(res_fishertest$estimate,2)
+),pos = 4)
+```
+
+![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
+``` r
+input = list(circadian = which(id_BoolLatePeak),CostSelected = which(id_SelectLatePeak))
+venn(input)
+res_fishertest = fisher.test(id_BoolLatePeak,id_SelectLatePeak)
+text(1,200,paste0('fisher.test',
+                  '\n','p = ',round(res_fishertest$p.value,2), 
+                  '\n','OR = ',round(res_fishertest$estimate,2)
+),pos = 4)
+```
+
+![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-5-2.png)<!-- -->
+
+``` r
 id_cir = matrix_MetaExpr$meta2d_BH.Q<0.05
 id_BoolEarlyPeak = id_cir & matrix_MetaExpr$meta2d_phase<12
 id_BoolLatePeak = id_cir & matrix_MetaExpr$meta2d_phase>=12
@@ -328,36 +379,12 @@ SG_LatePeak = SG[id_BoolLatePeak,vector_TimeLatePeak]
 id_SelectEarlyPeak = rowrange(SG_EarlyPeak)>S0
 id_SelectLatePeak = rowrange(SG_LatePeak)>S0
 id_select = rowrange(SG)>S0
-# library(gplots)
-library(venn)
-input = list(circadian = which(id_BoolEarlyPeak),CostSelected = which(id_select))
-venn(input)
-res_fishertest = fisher.test(id_BoolEarlyPeak,id_select)
-text(1,200,paste0('fisher.test',
-                  '\n','p = ',round(res_fishertest$p.value,2), 
-                  '\n','OR = ',round(res_fishertest$estimate,2)
-),pos = 4)
-```
 
-![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-``` r
-input = list(circadian = which(id_BoolLatePeak),CostSelected = which(id_select))
-venn(input)
-res_fishertest = fisher.test(id_BoolLatePeak,id_select)
-text(1,200,paste0('fisher.test',
-                  '\n','p = ',round(res_fishertest$p.value,2), 
-                  '\n','OR = ',round(res_fishertest$estimate,2)
-),pos = 4)
-```
-
-![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-5-2.png)<!-- -->
-
-``` r
 vector_SGRange = rowrange(SG_EarlyPeak)
-vector_ProbSeleDiffNumb = 1:10
+vector_ProbSeleDiffNumb = 1:12
 set.seed(1)
-for (i in 1:10) {
+for (i in 1:12) {
   res_ProbSeleDiffNumb = replicate(1000,{
     id_NumSample = sample(nrow(SG_EarlyPeak),i)
     sum(vector_SGRange[id_NumSample]) > S0
@@ -365,7 +392,7 @@ for (i in 1:10) {
   vector_ProbSeleDiffNumb[i] = res_ProbSeleDiffNumb
 }
 barplot(height = vector_ProbSeleDiffNumb
-        ,names.arg = 1:10
+        ,names.arg = 1:12
         ,ylab = 'probability to be selected',xlab = 'gene number',main = 'mouse liver early peak'
         ,col = 'blue')
 abline(h = 0.95,lty = 2,lwd = 2)
@@ -376,9 +403,9 @@ text(1,0.9,0.95,cex = 1.2)
 
 ``` r
 vector_SGRange = rowrange(SG_LatePeak)
-vector_ProbSeleDiffNumb = 1:10
+vector_ProbSeleDiffNumb = 1:12
 set.seed(1)
-for (i in 1:10) {
+for (i in 1:12) {
   res_ProbSeleDiffNumb = replicate(1000,{
     id_NumSample = sample(nrow(SG_LatePeak),i)
     sum(vector_SGRange[id_NumSample]) > S0
@@ -386,7 +413,7 @@ for (i in 1:10) {
   vector_ProbSeleDiffNumb[i] = res_ProbSeleDiffNumb
 }
 barplot(height = vector_ProbSeleDiffNumb
-        ,names.arg = 1:10
+        ,names.arg = 1:12
         ,ylab = 'probability to be selected',xlab = 'gene number',main = 'mouse liver late peak'
         ,col = 'blue')
 abline(h = 0.95,lty = 2,lwd = 2)

@@ -402,10 +402,20 @@ data_summary <- function(x) {
   ymax <- m+sd(x)
   return(c(y=m,ymin=ymin,ymax=ymax))
 }
+wilcox.test(as.numeric(venn_data_new$or), as.numeric(term_venn_data$X0.9))
+```
+
+    ## 
+    ##  Wilcoxon rank sum test with continuity correction
+    ## 
+    ## data:  as.numeric(venn_data_new$or) and as.numeric(term_venn_data$X0.9)
+    ## W = 140, p-value = 3.743e-05
+    ## alternative hypothesis: true location shift is not equal to 0
+
+``` r
 pf2c2 = ggplot(data, aes(x=Group, y=Overlap_percentage, fill = Group)) +
   geom_dotplot(binaxis='y', stackdir='center', stackratio=1.5, dotsize=1.2)+
   stat_summary(fun.data =  data_summary, colour = "red", size = 1.5) +
-  stat_compare_means(method = "wilcox.test", label.x = 1.2)+
   theme(panel.grid.major =element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank(),axis.line = element_line(colour = "black"))+scale_y_continuous(n.breaks = 3)+
   theme(legend.position="none")
 pf2c2
