@@ -54,8 +54,9 @@ draw_exp_range_lineplot <- function(exp_data_name, range1, range2, exp_plot_name
   
 
   
-  id_tmp = rowSums(expr_tmp<=0, na.rm = TRUE)==0
-  tmp = tmp[id_tmp,]
+  # id_tmp = rowSums(expr_tmp<=0, na.rm = TRUE)==0
+  # tmp = tmp[id_tmp,]
+  # expr_mouse = tmp
   expr_mouse = tmp
   rownames(expr_mouse) = tmp$CycID
   expr_mouse = expr_mouse[,range1:range2]
@@ -85,10 +86,10 @@ draw_exp_range_lineplot <- function(exp_data_name, range1, range2, exp_plot_name
     
     temp_p <- wilcox.test(circ_exp[,i], non_circ_exp[,i])$p.value
     p_value_list <<- c(p_value_list, temp_p)
-    # if(temp_p > 0.05){
-    #   print(exp_data_name)
-    #   print(i)
-    # }
+    if(temp_p > 0.05){
+      print(exp_data_name)
+      print(i)
+    }
       
     non_circ_exp_sd[i] <- sd(non_circ_exp[,i])
   }
@@ -194,7 +195,7 @@ draw_exp_range_boxplot <- function(exp_data_name, range1, range2, exp_plot_name,
   rownames(expr_tmp) = tmp$CycID
   expr_tmp = expr_tmp[,range1:range2]
   expr_tmp = as.matrix(expr_tmp)
-  id_tmp = rowSums(expr_tmp<=0)==0
+  id_tmp = rowSums(expr_tmp<0)==0
   tmp = tmp[id_tmp,]
   expr_mouse = tmp
   rownames(expr_mouse) = tmp$CycID

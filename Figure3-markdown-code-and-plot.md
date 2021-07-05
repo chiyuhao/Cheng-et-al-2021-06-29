@@ -97,8 +97,9 @@ draw_exp_range_lineplot <- function(exp_data_name, range1, range2, exp_plot_name
   
 
   
-  id_tmp = rowSums(expr_tmp<=0, na.rm = TRUE)==0
-  tmp = tmp[id_tmp,]
+  # id_tmp = rowSums(expr_tmp<=0, na.rm = TRUE)==0
+  # tmp = tmp[id_tmp,]
+  # expr_mouse = tmp
   expr_mouse = tmp
   rownames(expr_mouse) = tmp$CycID
   expr_mouse = expr_mouse[,range1:range2]
@@ -128,10 +129,10 @@ draw_exp_range_lineplot <- function(exp_data_name, range1, range2, exp_plot_name
     
     temp_p <- wilcox.test(circ_exp[,i], non_circ_exp[,i])$p.value
     p_value_list <<- c(p_value_list, temp_p)
-    # if(temp_p > 0.05){
-    #   print(exp_data_name)
-    #   print(i)
-    # }
+    if(temp_p > 0.05){
+      print(exp_data_name)
+      print(i)
+    }
       
     non_circ_exp_sd[i] <- sd(non_circ_exp[,i])
   }
@@ -199,28 +200,28 @@ draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Fly_old.csv',  24
                         "range_boxplot_fly_old.pdf","pvalue_heatmap_fly_old.pdf")
 ```
 
-    ## [1] 7.635003e-28
+    ## [1] 8.935845e-54
 
 ``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Fly_young.csv',  24,35,"exp_boxplot_fly_young.pdf",
                         "range_boxplot_fly_young.pdf","pvalue_heatmap_fly_young.pdf")
 ```
 
-    ## [1] 7.122695e-44
+    ## [1] 5.039825e-78
 
 ``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Yeast_high.csv',  24,43,"exp_boxplot_yeast_high.pdf",
                         "range_boxplot_yeast_high.pdf","pvalue_heatmap_yeast_high.pdf")
 ```
 
-    ## [1] 3.95831e-49
+    ## [1] 1.348447e-96
 
 ``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Yeast_low.csv',  24,47,"exp_boxplot_yeast_low.pdf",
                         "range_boxplot_yeast_low.pdf","pvalue_heatmap_yeast_low.pdf")
 ```
 
-    ## [1] 3.24301e-25
+    ## [1] 5.951693e-54
 
 ``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Neurospora.csv',  24,35,"exp_boxplot_neurospora.pdf",
@@ -255,7 +256,7 @@ draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Chlamydomounas_fo
                         "range_boxplot_chlam.pdf","pvalue_heatmap_chlam.pdf")
 ```
 
-    ## [1] 3.657084e-70
+    ## [1] 1.72668e-100
 
 ``` r
 draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Cyanobacteria_for_heatmap.csv',  19,28,"exp_boxplot_cyano.pdf",
@@ -296,7 +297,7 @@ draw_exp_range_boxplot <- function(exp_data_name, range1, range2, exp_plot_name,
   rownames(expr_tmp) = tmp$CycID
   expr_tmp = expr_tmp[,range1:range2]
   expr_tmp = as.matrix(expr_tmp)
-  id_tmp = rowSums(expr_tmp<=0)==0
+  id_tmp = rowSums(expr_tmp<0)==0
   tmp = tmp[id_tmp,]
   expr_mouse = tmp
   rownames(expr_mouse) = tmp$CycID
@@ -409,7 +410,7 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Fly_old.csv',  24,
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
-    ## W = 7751132, p-value < 2.2e-16
+    ## W = 9317325, p-value < 2.2e-16
     ## alternative hypothesis: true location shift is not equal to 0
 
 ``` r
@@ -421,7 +422,7 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Fly_young.csv',  2
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
-    ## W = 8307909, p-value < 2.2e-16
+    ## W = 10055452, p-value < 2.2e-16
     ## alternative hypothesis: true location shift is not equal to 0
 
 ``` r
@@ -433,7 +434,7 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Yeast_high.csv',  
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
-    ## W = 4326046, p-value < 2.2e-16
+    ## W = 5295358, p-value < 2.2e-16
     ## alternative hypothesis: true location shift is not equal to 0
 
 ``` r
@@ -445,7 +446,7 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Yeast_low.csv',  2
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
-    ## W = 5098572, p-value < 2.2e-16
+    ## W = 5956683, p-value < 2.2e-16
     ## alternative hypothesis: true location shift is not equal to 0
 
 ``` r
@@ -505,7 +506,7 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Chlamydomounas_for
     ##  Wilcoxon rank sum test with continuity correction
     ## 
     ## data:  cir_input_new and non_cir_input_new
-    ## W = 36946410, p-value < 2.2e-16
+    ## W = 40245932, p-value < 2.2e-16
     ## alternative hypothesis: true location shift is not equal to 0
 
 ``` r
