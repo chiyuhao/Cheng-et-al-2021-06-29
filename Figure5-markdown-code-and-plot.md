@@ -61,9 +61,9 @@ table(rowSums(na.omit(SG)>S0))
 
     ## 
     ##    0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15 
-    ##  384   40   28    9   11   14   11   13   13   14   14   12   12   13   17   21 
+    ##  368   38   20    9   12   18   10    8   14   16   10   18   12   10   19   17 
     ##   16   17   18   19   20 
-    ##   28   22   49   77 5266
+    ##   25   23   42   68 5311
 
 ``` r
 plot(density(log10(na.omit(rowrange(SG)))),
@@ -78,7 +78,7 @@ abline(v = log10(S0),lty = 2,lwd = 2)
 sum(rowrange(SG) > S0)
 ```
 
-    ## [1] 5606
+    ## [1] 5625
 
 ``` r
 matrix_MetaExpr = read.csv(
@@ -95,6 +95,15 @@ point_pcc(matrix_MetaExpr$meta2d_Base %>% log10(),rowrange(SG) %>% log10()
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-1-2.png)<!-- -->
 
 ``` r
+point_pcc(matrix_MetaExpr[matrix_MetaExpr$meta2d_BH.Q<0.05,]$meta2d_Base %>% log10(),rowrange(SG[matrix_MetaExpr$meta2d_BH.Q<0.05,]) %>% log10()
+          ,xlab = 'log10(expression level)',ylab = 'log10(selection pressure)'
+          ,main = 'yeast'
+          ,textx = -1,text1y = -2,text2y = -3)
+```
+
+![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-1-3.png)<!-- -->
+
+``` r
 id_cir = matrix_MetaExpr$meta2d_BH.Q<0.05
 id_select = rowrange(SG)>S0
 res_fishertest = fisher.test(id_cir,id_select)
@@ -108,10 +117,10 @@ res_fishertest
     ## p-value < 2.2e-16
     ## alternative hypothesis: true odds ratio is not equal to 1
     ## 95 percent confidence interval:
-    ##   7.835287 12.136262
+    ##   8.671305 13.692621
     ## sample estimates:
     ## odds ratio 
-    ##   9.731228
+    ##   10.86615
 
 ``` r
 library(venn)
@@ -124,7 +133,7 @@ text(1,200,paste0('fisher.test',
 ),pos = 4)
 ```
 
-![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-1-3.png)<!-- -->
+![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-1-4.png)<!-- -->
 
 ``` r
 # 
@@ -141,7 +150,7 @@ plot(xxxtmp$meta2d_phase[id_cir] %>% density(),
 abline(v = 65,lty = 2,lwd = 2)
 ```
 
-![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-1-4.png)<!-- -->
+![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-1-5.png)<!-- -->
 
 ``` r
 early_matrix = matrix_MetaExpr[matrix_MetaExpr$meta2d_phase<5,]
@@ -255,6 +264,15 @@ point_pcc(matrix_MetaExpr$meta2d_Base %>% log10(),rowrange(SG) %>% log10()
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-3-2.png)<!-- -->
 
 ``` r
+point_pcc(matrix_MetaExpr[matrix_MetaExpr$meta2d_BH.Q<0.05,]$meta2d_Base %>% log10(),rowrange(SG[matrix_MetaExpr$meta2d_BH.Q<0.05,]) %>% log10()
+          ,xlab = 'log10(expression level)',ylab = 'log10(selection pressure)'
+          ,main = 'mouse liver'
+          ,textx = 1.5,text1y = -3,text2y = -3.5)
+```
+
+![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-3-3.png)<!-- -->
+
+``` r
 id_cir = matrix_MetaExpr$meta2d_BH.Q<0.05
 id_select = rowrange(SG)>S0
 res_fishertest = fisher.test(id_cir,id_select)
@@ -283,7 +301,7 @@ text(1,200,paste0('fisher.test',
 ),pos = 4)
 ```
 
-![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-3-3.png)<!-- -->
+![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-3-4.png)<!-- -->
 
 ``` r
 vector_SGRange = rowrange(SG)
@@ -304,7 +322,7 @@ abline(h = 0.95,lwd = 2,lty = 2)
 text(1,0.9,0.95,cex = 1.2)
 ```
 
-![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-3-4.png)<!-- -->
+![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-3-5.png)<!-- -->
 
 ``` r
 plot(matrix_MetaExpr$meta2d_phase[id_cir] %>% density(),
