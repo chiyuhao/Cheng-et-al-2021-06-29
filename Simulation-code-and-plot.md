@@ -4,6 +4,7 @@ Wanglab
 2021.6.28
 
 ``` r
+set.seed(1)
 library(parallel)
 library(MetaCycle)
 library(dplyr)
@@ -95,20 +96,44 @@ for(i in baseT){
     }
   }
 }
+codonAA = c("F","F","L","L",
+            "S","S","S","S",
+            "Y","Y","*","*",
+            "C","C","*","W",
+            "L","L","L","L",
+            "P","P","P","P",
+            "H","H","Q","Q",
+            "R","R","R","R",
+            "I","I","I","M",
+            "T","T","T","T",
+            "N","N","K","K",
+            "S","S","R","R",
+            "V","V","V","V",
+            "A","A","A","A",
+            "D","D","E","E",
+            "G","G","G","G")
 CM_RNA = c(48.5,49.5,48.5,51.5)
 names(CM_RNA) = c('A','C','G','U') 
+CM_PRO = c(29.075,14.5,20.5,18.5,15.5,26.5,10.5,9.5,14.5,29,38,37,36,36.5,61,14.5,14.5,21.5,75.5,59,29)
+names(CM_PRO) = c('X','A','R','N','D','C','Q','E','G','H','I','L','K','M','F','P','S','T','W','Y','V')
 sequence_list = rep('a',gene_num)
+sequence_list_pro = rep('a',gene_num)
 cost_c = rep(0,gene_num)
+cost_cpro = rep(0,gene_num)
 system.time(
   for (i in 1:gene_num) {
     tmp = sample((1:64)[-c(11,12,15)],gene_len_codon[i],replace = T)
     tmp = c(36,tmp)
     sequence_list[i] = codonT[tmp] %>% paste0(collapse = '')
+    sequence_list_pro[i] = codonAA[tmp] %>% paste0(collapse = '')
     id_M = strsplit(sequence_list[i],'')[[1]]
+    id_Mpro = strsplit(sequence_list_pro[i],'')[[1]]
     cost_c[i] = CM_RNA[id_M] %>% sum()
+    cost_cpro[i] = CM_PRO[id_Mpro] %>% sum()
   })
 ##    user  system elapsed 
-##    1.02    0.00    1.01
+##    4.00    0.00    4.32
+cost_cpro = cost_cpro+4*gene_len_codon+3
 ```
 
 ``` r
@@ -469,44 +494,88 @@ cost_IncrementRandBool = sign(cost_IncrementRand)
 ```
 
 ``` r
-# f_cir_para = function(xx){
-#   # calculateexpr_constrained
-#   sele_strength = xx
-#   cost_IncrementConsAbs = exp(log(1+cost_IncrementRandAbs)*(1 - sele_strength))-1 #再映射到expr上去
-#   expr_IncrementCons = cost_IncrementConsAbs/cost_IncrementRandAbs * expr_IncrementRand
-#   expr_constrained = expr_need + expr_IncrementCons
-# 
-#   # set.seed(1)
-#   # expr_constrained = expr_constrained+runif(720000,min = 0,max = 1)
-#   timelist = 1:72
-#   expr_out = expr_constrained
-#   write.csv(as.data.frame(expr_out), file = paste0("E:/circidian_algorithm/Select_strength_result/cycMouseHypoRNA",xx,".csv"), row.names=T)
-#   metatest = meta2d(infile=paste0("E:/circidian_algorithm/Select_strength_result/cycMouseHypoRNA",xx,".csv"), filestyle="csv",
-#                     outdir = 'E:/circidian_algorithm/Select_strength_result/',outputFile = F,
-#                     minper = 20,maxper = 28,
-#                     timepoints=timelist
-#   )
-#   return(sum(metatest$meta$meta2d_BH.Q<0.05))
-# }
-# sele_strength_seq = seq(0.01,0.2,by = 0.01)
-# 
-# 
-# 
-# res = single_parallel(func = f_cir_para
-#                       ,iterable = sele_strength_seq
-#                       ,env_val = c('cost_IncrementRandAbs','expr_IncrementRand','expr_need')
-#                       ,packages = c('MetaCycle','dplyr'))
-# 
-# cbind(sele_strength_seq,res)
-# plot(sele_strength_seq,res
-#      ,xlab = 'sele_strength',ylab = 'circadian number')
+set.seed(1)
+#pro_num_ratio = sample(x = 10:100,size = gene_num,replace = T)
+pro_num_ratio = 100
 ```
+
+``` r
+#calculate of cost
+expr_IncrementRand_pro = expr_IncrementRand * pro_num_ratio
+cost_IncrementRand_pro = expr_IncrementRand_pro * cost_cpro
+cost_IncrementRandAbs_pro = abs(cost_IncrementRand_pro)
+cost_IncrementRandBool_pro = sign(cost_IncrementRand_pro)
+
+cost_IncrementRandAbs_rpall = cost_IncrementRandAbs + cost_IncrementRandAbs_pro
+cost_IncrementRandBool_rpall = cost_IncrementRandBool
+```
+
+``` r
+f_cir_para = function(xx){
+  # calculateexpr_constrained
+  sele_strength = xx
+  cost_IncrementConsAbs_rpall = exp(log(1+cost_IncrementRandAbs_rpall)*(1 - sele_strength))-1 
+  expr_IncrementCons = cost_IncrementConsAbs_rpall/cost_IncrementRandAbs_rpall * expr_IncrementRand
+  expr_constrained = expr_need + expr_IncrementCons
+
+  # set.seed(1)
+  # expr_constrained = expr_constrained+runif(720000,min = 0,max = 1)
+  timelist = 1:72
+  expr_out = expr_constrained
+  write.csv(as.data.frame(expr_out), file = paste0("E:/circidian_algorithm/Select_strength_result/cycMouseHypoRNA",xx,".csv"), row.names=T)
+  metatest = meta2d(infile=paste0("E:/circidian_algorithm/Select_strength_result/cycMouseHypoRNA",xx,".csv"), filestyle="csv",
+                    outdir = 'E:/circidian_algorithm/Select_strength_result/',outputFile = F,
+                    minper = 20,maxper = 28,
+                    timepoints=timelist
+  )
+  return(sum(metatest$meta$meta2d_BH.Q<0.05))
+}
+sele_strength_seq = seq(0.01,0.2,by = 0.01)
+
+
+
+res = single_parallel(func = f_cir_para
+                      ,iterable = sele_strength_seq
+                      ,env_val = c('cost_IncrementRandAbs_rpall','expr_IncrementRand','expr_need')
+                      ,packages = c('MetaCycle','dplyr'))
+
+cbind(sele_strength_seq,res)
+```
+
+    ##       sele_strength_seq  res
+    ##  [1,]              0.01  324
+    ##  [2,]              0.02  865
+    ##  [3,]              0.03 1659
+    ##  [4,]              0.04 2585
+    ##  [5,]              0.05 3407
+    ##  [6,]              0.06 4031
+    ##  [7,]              0.07 4423
+    ##  [8,]              0.08 4677
+    ##  [9,]              0.09 4842
+    ## [10,]              0.10 4954
+    ## [11,]              0.11 5033
+    ## [12,]              0.12 5079
+    ## [13,]              0.13 5121
+    ## [14,]              0.14 5147
+    ## [15,]              0.15 5169
+    ## [16,]              0.16 5183
+    ## [17,]              0.17 5193
+    ## [18,]              0.18 5196
+    ## [19,]              0.19 5203
+    ## [20,]              0.20 5199
+
+``` r
+plot(sele_strength_seq,res
+     ,xlab = 'sele_strength',ylab = 'circadian number')
+```
+
+![](Simulation-code-and-plot_files/figure-gfm/calculate%20for%20different%20select%20strength-1.png)<!-- -->
 
 ``` r
 #select select strength
 sele_strength = 0.05
-cost_IncrementConsAbs = exp(log(1+cost_IncrementRandAbs)*(1 - sele_strength))-1 
-expr_IncrementCons = cost_IncrementConsAbs/cost_IncrementRandAbs * expr_IncrementRand
+cost_IncrementConsAbs_rpall = exp(log(1+cost_IncrementRandAbs_rpall)*(1 - sele_strength))-1 
+expr_IncrementCons = cost_IncrementConsAbs_rpall/cost_IncrementRandAbs_rpall * expr_IncrementRand
 expr_constrained = expr_need + expr_IncrementCons
 ```
 
@@ -542,24 +611,35 @@ system.time({
 })
 ```
 
-    ## The ARS is in process from  13:52:16 07-04-2021 
-    ## The analysis by ARS is finished at  13:55:54 07-04-2021 
-    ## The JTK is in process from  13:55:54 07-04-2021 
-    ## The analysis by JTK is finished at  14:01:16 07-04-2021 
-    ## The LS is in process from  14:01:16 07-04-2021 
-    ## The analysis by LS is finished at  14:04:03 07-04-2021 
+    ## The ARS is in process from  15:25:35 07-09-2021 
+    ## The analysis by ARS is finished at  15:28:54 07-09-2021 
+    ## The JTK is in process from  15:28:54 07-09-2021 
+    ## The analysis by JTK is finished at  15:33:47 07-09-2021 
+    ## The LS is in process from  15:33:47 07-09-2021 
+    ## The analysis by LS is finished at  15:36:29 07-09-2021 
     ## DONE! The analysis about ' cycMouseHypoRNA0.05.csv '  has been finished.
-    ##                 user.self     sys.self      elapsed   user.child    sys.child 
-    ## "Time used:"     "715.29"       "1.68"     "717.38"           NA           NA
+    ##                             user.self           sys.self            elapsed 
+    ##       "Time used:"           "663.48"              "0.6" "664.559999999999" 
+    ##         user.child          sys.child 
+    ##                 NA                 NA
 
     ##    user  system elapsed 
-    ##  715.44    1.68  717.52
+    ##  663.62    0.60  664.70
 
 ``` r
+# system.time({
+#   metatest = meta2d(infile=paste0("cycMouseHypoRNA",sele_strength,".csv"), filestyle="csv",
+#                     outdir = 'example',outputFile = T,outRawData=TRUE,
+#                     minper = 20,maxper = 28,
+#                     timepoints=timelist
+#   )
+# })
+
+
 sum(metatest$meta$meta2d_BH.Q<0.05) %>% print()
 ```
 
-    ## [1] 2806
+    ## [1] 3407
 
 ``` r
 # observe features of simulation data
@@ -603,7 +683,7 @@ summary(expr_constrained %>% as.vector())
 ```
 
     ##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-    ##    0.0003  246.5405  517.7798  597.9094  883.6015 2733.5185
+    ##    0.0002  238.9343  504.4027  583.1394  863.5309 2669.2088
 
 ``` r
 id_cir = metatest$meta$meta2d_BH.Q<0.05
@@ -621,7 +701,7 @@ text(70,300
      ,cex = 1.2)
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-26-1.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-28-1.png)<!-- -->
 
 ``` r
 matrix_gene_func_BoolCir %>% colSums() %>% table() %>%
@@ -632,7 +712,7 @@ text(40,150
      ,cex = 1.2)
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-26-2.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-28-2.png)<!-- -->
 
 ``` r
 matrix_gene_func_bool %>% rowSums() %>% table() %>%
@@ -643,7 +723,7 @@ text(12,2500
      ,cex = 1.2)
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-26-3.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-28-3.png)<!-- -->
 
 ``` r
 matrix_gene_func_BoolCir %>% rowSums() %>% table() %>%
@@ -654,7 +734,7 @@ text(12,300
      ,cex = 1.2)
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-26-4.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-28-4.png)<!-- -->
 
 ``` r
 (matrix_gene_func_BoolCir %>% rowSums() %>% table() /
@@ -665,7 +745,7 @@ text(12,300
   )
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-27-1.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-29-1.png)<!-- -->
 
 ``` r
 tmp1 = (matrix_gene_func_bool[metatest$meta$meta2d_BH.Q<0.05,] %>% colSums())
@@ -675,7 +755,7 @@ point_pcc(log10(tmp2[tmp1!=0]),log10(tmp1[tmp1!=0])
           ,textx = 0.1,text1y = 2,text2y = 1.6)
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-27-2.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-29-2.png)<!-- -->
 
 ``` r
 tmp1 = (matrix_gene_func_bool[metatest$meta$meta2d_BH.Q<0.05,] %>% colSums()) /
@@ -686,7 +766,7 @@ point_pcc(log10(tmp2[tmp1!=0]),tmp1[tmp1!=0]
           ,textx = 0,text1y = 0.2,text2y = 0.1)
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-27-3.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-29-3.png)<!-- -->
 
 ``` r
 cor.test(log10(tmp2[tmp1!=0]),tmp1[tmp1!=0])
@@ -696,13 +776,13 @@ cor.test(log10(tmp2[tmp1!=0]),tmp1[tmp1!=0])
     ##  Pearson's product-moment correlation
     ## 
     ## data:  log10(tmp2[tmp1 != 0]) and tmp1[tmp1 != 0]
-    ## t = -6.3137, df = 977, p-value = 4.13e-10
+    ## t = -5.833, df = 984, p-value = 7.382e-09
     ## alternative hypothesis: true correlation is not equal to 0
     ## 95 percent confidence interval:
-    ##  -0.2574540 -0.1370383
+    ##  -0.2424785 -0.1217722
     ## sample estimates:
     ##        cor 
-    ## -0.1979931
+    ## -0.1828142
 
 ``` r
 id_tmp = sample(gene_num,sum(metatest$meta$meta2d_BH.Q<0.05))
@@ -713,7 +793,7 @@ point_pcc(log10(tmp2[tmp1!=0]),log10(tmp1[tmp1!=0])
           ,textx = 0.1,text1y = 2,text2y = 1.6)
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-27-4.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-29-4.png)<!-- -->
 
 ``` r
 tmp1 = (matrix_gene_func_bool[id_tmp,] %>% colSums()) /
@@ -724,7 +804,7 @@ point_pcc(log10(tmp2[tmp1!=0]),tmp1[tmp1!=0]
           ,textx = 0,text1y = 0.2,text2y = 0.1)
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-27-5.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-29-5.png)<!-- -->
 
 ``` r
 cor.test(log10(tmp2[tmp1!=0]),tmp1[tmp1!=0])
@@ -734,19 +814,19 @@ cor.test(log10(tmp2[tmp1!=0]),tmp1[tmp1!=0])
     ##  Pearson's product-moment correlation
     ## 
     ## data:  log10(tmp2[tmp1 != 0]) and tmp1[tmp1 != 0]
-    ## t = -5.008, df = 987, p-value = 6.512e-07
+    ## t = -0.46997, df = 987, p-value = 0.6385
     ## alternative hypothesis: true correlation is not equal to 0
     ## 95 percent confidence interval:
-    ##  -0.21762125 -0.09602501
+    ##  -0.07722263  0.04742366
     ## sample estimates:
-    ##        cor 
-    ## -0.1574197
+    ##         cor 
+    ## -0.01495759
 
 ``` r
 plot(colSums(matrix_func_time_bool),type = 'l')
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-28-1.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-30-1.png)<!-- -->
 
 ``` r
 id_cir = metatest$meta$meta2d_BH.Q<0.05
@@ -754,14 +834,14 @@ plot(metatest$meta$meta2d_Base,metatest$meta$meta2d_AMP,log = 'xy',
      xlab = 'log(expr)',ylab = 'log(amp)')
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-28-2.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-30-2.png)<!-- -->
 
 ``` r
 plot(metatest$meta$meta2d_Base[id_cir],metatest$meta$meta2d_AMP[id_cir],log = 'xy',
      xlab = 'log(expr)',ylab = 'log(amp)')
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-28-3.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-30-3.png)<!-- -->
 
 ``` r
 rowmean_cost = rowMeans(expr_constrained)
@@ -769,7 +849,7 @@ plot(metatest$meta$meta2d_Base[id_cir],rowmean_cost[id_cir],log = 'xy',
      xlab = 'log(expr)',ylab = 'log(cost)')
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-28-4.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-30-4.png)<!-- -->
 
 ``` r
 plot(n_level_num(data = rowMeans(expr_constrained),id = id_cir)
@@ -777,11 +857,11 @@ plot(n_level_num(data = rowMeans(expr_constrained),id = id_cir)
      ylab = 'circadian gene number')
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-28-5.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-30-5.png)<!-- -->
 
 ``` r
 tmp = n_level_num(apply(expr_constrained, 1, function(x){max(x) - min(x)}) %>% unlist,id = id_cir)
 plot(tmp,type = 'l',ylab = 'circadian gene number')
 ```
 
-![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-28-6.png)<!-- -->
+![](Simulation-code-and-plot_files/figure-gfm/unnamed-chunk-30-6.png)<!-- -->

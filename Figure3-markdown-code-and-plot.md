@@ -270,7 +270,7 @@ draw_exp_range_lineplot('ContainedData/Meta2dResult/AllSpecies/Simulation.csv', 
                         "range_boxplot_simulation.pdf","pvalue_heatmap_simulation.pdf")
 ```
 
-    ## [1] 1.137016e-81
+    ## [1] 1.362463e-102
 
 ``` r
 ggarrange(plotlist = plot_list1,nrow=15,ncol = 1,align = 'v')
@@ -323,7 +323,7 @@ draw_exp_range_boxplot <- function(exp_data_name, range1, range2, exp_plot_name,
   data <- data.frame(c(cir_input_new, non_cir_input_new), 
                      c(rep("Circidian", length(cir_input_new)), rep("Not circidian", length(non_cir_input_new))))
   colnames(data) <- c("Expression", "Group")
-  print(wilcox.test(cir_input_new, non_cir_input_new), alternative = "greater")
+  print(wilcox.test(cir_input_new, non_cir_input_new, alternative = "greater")$p.value)
   ylim1 = boxplot.stats(log10(data$Expression))$stats[c(1, 5)]
 
   
@@ -358,180 +358,105 @@ draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Human_blood_for_he
                         "range_boxplot_human_blood.pdf","pvalue_heatmap_human_blood.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 23263224, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 0
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Human_skin_for_heatmap.csv',  19,22,"exp_boxplot_human_skin.pdf",
                         "range_boxplot_human_skin.pdf","pvalue_heatmap_human_skin.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 13818674, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 1.10304e-240
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Mouse_LIV.csv',  24,35,"exp_boxplot_mouse_liver.pdf",
                         "range_boxplot_mouse_liver.pdf","pvalue_heatmap_mouse_liver.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 61291496, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 0
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Mouse_KID.csv',  24,35,"exp_boxplot_mouse_kidney.pdf",
                         "range_boxplot_mouse_kidney.pdf","pvalue_heatmap_mouse_kidney.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 58786117, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 0
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Fly_old.csv',  24,35,"exp_boxplot_fly_old.pdf",
                         "range_boxplot_fly_old.pdf","pvalue_heatmap_fly_old.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 9317325, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 6.344436e-64
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Fly_young.csv',  24,35,"exp_boxplot_fly_young.pdf",
                         "range_boxplot_fly_young.pdf","pvalue_heatmap_fly_young.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 10055452, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 4.139273e-101
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Yeast_high.csv',  24,43,"exp_boxplot_yeast_high.pdf",
                         "range_boxplot_yeast_high.pdf","pvalue_heatmap_yeast_high.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 5295358, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 5.623986e-223
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Yeast_low.csv',  24,47,"exp_boxplot_yeast_low.pdf",
                         "range_boxplot_yeast_low.pdf","pvalue_heatmap_yeast_low.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 5956683, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 5.398403e-148
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Neurospora.csv',  24,35,"exp_boxplot_neurospora.pdf",
                         "range_boxplot_neurospora.pdf","pvalue_heatmap_neurospora.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 1335557, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 3.924381e-17
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD LEAF.csv',  24,35,"exp_boxplot_arabidopsis_Sd leaf.pdf",
                         "range_boxplot_arabidopsis_sd leaf.pdf","pvalue_heatmap_arabidopsis_sd leaf.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 67223242, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 0
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD M.csv',  24,35,"exp_boxplot_arabidopsis_sd m.pdf",
                         "range_boxplot_arabidopsis_sd m.pdf","pvalue_heatmap_arabidopsis_sd m.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 33822768, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 0
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Arabidopsis_SD VA.csv',  24,35,"exp_boxplot_arabidopsis_sd va.pdf",
                         "range_boxplot_arabidopsis_sd va.pdf","pvalue_heatmap_arabidopsis_sd va.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 38171019, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 0
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Chlamydomounas_for_heatmap.csv',  19,26,"exp_boxplot_chlam.pdf",
                         "range_boxplot_chlam.pdf","pvalue_heatmap_chlam.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 40245932, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 2.322549e-293
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Cyanobacteria_for_heatmap.csv',  19,28,"exp_boxplot_cyano.pdf",
                         "range_boxplot_cyano.pdf","pvalue_heatmap_cyano.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 859311, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 1.600484e-94
 
 ``` r
 draw_exp_range_boxplot('ContainedData/Meta2dResult/AllSpecies/Simulation.csv',  24,95,"exp_boxplot_simulation.pdf",
                         "range_boxplot_simulation.pdf","pvalue_heatmap_simulation.pdf")
 ```
 
-    ## 
-    ##  Wilcoxon rank sum test with continuity correction
-    ## 
-    ## data:  cir_input_new and non_cir_input_new
-    ## W = 13419729, p-value < 2.2e-16
-    ## alternative hypothesis: true location shift is not equal to 0
+    ## [1] 3.610349e-138
 
 ``` r
 # 
@@ -1024,8 +949,8 @@ draw_dotplot_exp_amp('ContainedData/Meta2dResult/AllSpecies/Simulation.csv',  24
 ```
 
     ## [1] 0
-    ##       cor 
-    ## 0.8723342
+    ##     cor 
+    ## 0.83889
 
 ``` r
 ggarrange(plotlist = plot_list5,nrow=15,ncol = 1,align = 'v')

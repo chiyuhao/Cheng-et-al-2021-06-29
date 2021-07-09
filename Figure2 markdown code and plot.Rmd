@@ -338,7 +338,8 @@ data_summary <- function(x) {
   ymax <- m+sd(x)
   return(c(y=m,ymin=ymin,ymax=ymax))
 }
-wilcox.test(as.numeric(venn_data_new$or), as.numeric(term_venn_data$X0.9))
+new_term_venn_Data_without_inf <- as.numeric(term_venn_data$X0.9[c(1:12,14:26,28)])
+wilcox.test(as.numeric(venn_data_new$or), new_term_venn_Data_without_inf)
 pf2c2 = ggplot(data, aes(x=Group, y=Overlap_percentage, fill = Group)) +
   geom_dotplot(binaxis='y', stackdir='center', stackratio=1.5, dotsize=1.2)+
   stat_summary(fun.data =  data_summary, colour = "red", size = 1.5) +

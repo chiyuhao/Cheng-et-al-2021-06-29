@@ -49,6 +49,15 @@ library(plotrix)
 library(tidyr)
 library(ggplot2)
 source("FunctionForCodeNew.R")
+source("plot_functions.R")
+```
+
+    ## Loading required package: grid
+
+    ## Loading required package: futile.logger
+
+``` r
+source("draw_pairwise_venn_pro_function.R")
 result<- YeastCalculateCost()
 SG <- result[[1]]
 genename <- result[[2]]
@@ -128,9 +137,31 @@ library(venn)
 input = list(circadian = which(id_cir),CostSelected = which(id_select))
 venn(input)
 text(1,200,paste0('fisher.test',
-                  '\n','p = ',round(res_fishertest$p.value,2), 
+                  '\n','p = ',res_fishertest$p.value, 
                   '\n','OR = ',round(res_fishertest$estimate,2)
 ),pos = 4)
+
+
+
+temp_plot <- draw.pairwise.venn(
+    area1 = sum(id_cir),
+    area2 = sum(id_select),
+    cross.area = sum(id_cir&id_select),
+    filename=NULL,
+    rotation.degree = 180, 
+    resolution =300,
+    col="black", 
+    fill=c(colors()[38], 'steelblue2'),
+    lwd=c(1, 1),
+    cex = 0,
+    cat.dist=c(-0.07, -0.07),
+    cat.pos=c(60, 300),
+    ext.percent = 0,
+    euler.d = T,
+    scaled = T,
+    sep.dist = 0.01,
+    set.maxcircle = T
+  )
 ```
 
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-1-4.png)<!-- -->
@@ -179,9 +210,31 @@ input = list(circadian = which(id_BoolEarlyPeak),CostSelected = which(id_SelectE
 venn(input)
 res_fishertest = fisher.test(id_BoolEarlyPeak,id_SelectEarlyPeak)
 text(1,200,paste0('fisher.test',
-                  '\n','p = ',round(res_fishertest$p.value,2), 
+                  '\n','p = ',res_fishertest$p.value, 
                   '\n','OR = ',round(res_fishertest$estimate,2)
 ),pos = 4)
+
+
+
+temp_plot <- draw.pairwise.venn(
+    area1 = sum(id_BoolEarlyPeak),
+    area2 = sum(id_SelectEarlyPeak),
+    cross.area = sum(id_BoolEarlyPeak&id_SelectEarlyPeak),
+    filename=NULL,
+    rotation.degree = 180, 
+    resolution =300,
+    col="black", 
+    fill=c(colors()[38], 'steelblue2'),
+    lwd=c(1, 1),
+    cex = 0,
+    cat.dist=c(-0.07, -0.07),
+    cat.pos=c(60, 300),
+    ext.percent = 0,
+    euler.d = T,
+    scaled = T,
+    sep.dist = 0.01,
+    set.maxcircle = T
+  )
 ```
 
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
@@ -191,9 +244,33 @@ input = list(circadian = which(id_BoolLatePeak),CostSelected = which(id_SelectLa
 venn(input)
 res_fishertest = fisher.test(id_BoolLatePeak,id_SelectLatePeak)
 text(1,200,paste0('fisher.test',
-                  '\n','p = ',round(res_fishertest$p.value,2), 
+                  '\n','p = ',res_fishertest$p.value, 
                   '\n','OR = ',round(res_fishertest$estimate,2)
 ),pos = 4)
+
+
+
+
+
+temp_plot <- draw.pairwise.venn(
+    area1 = sum(id_BoolLatePeak),
+    area2 = sum(id_SelectLatePeak),
+    cross.area = sum(id_BoolLatePeak&id_SelectLatePeak),
+    filename=NULL,
+    rotation.degree = 180, 
+    resolution =300,
+    col="black", 
+    fill=c(colors()[38], 'steelblue2'),
+    lwd=c(1, 1),
+    cex = 0,
+    cat.dist=c(-0.07, -0.07),
+    cat.pos=c(60, 300),
+    ext.percent = 0,
+    euler.d = T,
+    scaled = T,
+    sep.dist = 0.01,
+    set.maxcircle = T
+  )
 ```
 
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-2-2.png)<!-- -->
@@ -296,9 +373,32 @@ library(venn)
 input = list(circadian = which(id_cir),CostSelected = which(id_select))
 venn(input)
 text(1,200,paste0('fisher.test',
-                  '\n','p = ',round(res_fishertest$p.value,2), 
+                  '\n','p = ',res_fishertest$p.value, 
                   '\n','OR = ',round(res_fishertest$estimate,2)
 ),pos = 4)
+
+
+
+
+
+temp_plot <- draw.pairwise.venn(
+    area1 = sum(id_cir),
+    area2 = sum(id_select),
+    cross.area = sum(id_cir&id_select),
+    filename=NULL,
+    resolution =300,
+    col="black", 
+    fill=c(colors()[38], 'steelblue2'),
+    lwd=c(1, 1),
+    cex = 0,
+    cat.dist=c(-0.07, -0.07),
+    cat.pos=c(60, 300),
+    ext.percent = 0,
+    euler.d = T,
+    scaled = T,
+    sep.dist = 0.01,
+    set.maxcircle = T
+  )
 ```
 
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-3-4.png)<!-- -->
@@ -361,9 +461,31 @@ input = list(circadian = which(id_BoolEarlyPeak),CostSelected = which(id_SelectE
 venn(input)
 res_fishertest = fisher.test(id_BoolEarlyPeak,id_SelectEarlyPeak)
 text(1,200,paste0('fisher.test',
-                  '\n','p = ',round(res_fishertest$p.value,2), 
+                  '\n','p = ',res_fishertest$p.value, 
                   '\n','OR = ',round(res_fishertest$estimate,2)
 ),pos = 4)
+
+
+
+
+temp_plot <- draw.pairwise.venn(
+    area1 = sum(id_BoolEarlyPeak),
+    area2 = sum(id_SelectEarlyPeak),
+    cross.area = sum(id_BoolEarlyPeak&id_SelectEarlyPeak),
+    filename=NULL,
+    resolution =300,
+    col="black", 
+    fill=c(colors()[38], 'steelblue2'),
+    lwd=c(1, 1),
+    cex = 0,
+    cat.dist=c(-0.07, -0.07),
+    cat.pos=c(60, 300),
+    ext.percent = 0,
+    euler.d = T,
+    scaled = T,
+    sep.dist = 0.01,
+    set.maxcircle = T
+  )
 ```
 
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
@@ -373,9 +495,31 @@ input = list(circadian = which(id_BoolLatePeak),CostSelected = which(id_SelectLa
 venn(input)
 res_fishertest = fisher.test(id_BoolLatePeak,id_SelectLatePeak)
 text(1,200,paste0('fisher.test',
-                  '\n','p = ',round(res_fishertest$p.value,2), 
+                  '\n','p = ',res_fishertest$p.value, 
                   '\n','OR = ',round(res_fishertest$estimate,2)
 ),pos = 4)
+
+
+
+
+temp_plot <- draw.pairwise.venn(
+    area1 = sum(id_BoolLatePeak),
+    area2 = sum(id_SelectLatePeak),
+    cross.area = sum(id_BoolLatePeak&id_SelectLatePeak),
+    filename=NULL,
+    resolution =300,
+    col="black", 
+    fill=c(colors()[38], 'steelblue2'),
+    lwd=c(1, 1),
+    cex = 0,
+    cat.dist=c(-0.07, -0.07),
+    cat.pos=c(60, 300),
+    ext.percent = 0,
+    euler.d = T,
+    scaled = T,
+    sep.dist = 0.01,
+    set.maxcircle = T
+  )
 ```
 
 ![](Figure5-markdown-code-and-plot_files/figure-gfm/unnamed-chunk-5-2.png)<!-- -->

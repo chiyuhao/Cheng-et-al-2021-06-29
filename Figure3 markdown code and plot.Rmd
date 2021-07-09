@@ -221,7 +221,7 @@ draw_exp_range_boxplot <- function(exp_data_name, range1, range2, exp_plot_name,
   data <- data.frame(c(cir_input_new, non_cir_input_new), 
                      c(rep("Circidian", length(cir_input_new)), rep("Not circidian", length(non_cir_input_new))))
   colnames(data) <- c("Expression", "Group")
-  print(wilcox.test(cir_input_new, non_cir_input_new), alternative = "greater")
+  print(wilcox.test(cir_input_new, non_cir_input_new, alternative = "greater")$p.value)
   ylim1 = boxplot.stats(log10(data$Expression))$stats[c(1, 5)]
 
   

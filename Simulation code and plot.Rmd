@@ -6,6 +6,7 @@ output: rmarkdown::github_document
 ---
 
 ```{r ,message=FALSE,warning=FALSE}
+set.seed(1)
 library(parallel)
 library(MetaCycle)
 library(dplyr)
@@ -96,18 +97,42 @@ for(i in baseT){
     }
   }
 }
+codonAA = c("F","F","L","L",
+            "S","S","S","S",
+            "Y","Y","*","*",
+            "C","C","*","W",
+            "L","L","L","L",
+            "P","P","P","P",
+            "H","H","Q","Q",
+            "R","R","R","R",
+            "I","I","I","M",
+            "T","T","T","T",
+            "N","N","K","K",
+            "S","S","R","R",
+            "V","V","V","V",
+            "A","A","A","A",
+            "D","D","E","E",
+            "G","G","G","G")
 CM_RNA = c(48.5,49.5,48.5,51.5)
 names(CM_RNA) = c('A','C','G','U') 
+CM_PRO = c(29.075,14.5,20.5,18.5,15.5,26.5,10.5,9.5,14.5,29,38,37,36,36.5,61,14.5,14.5,21.5,75.5,59,29)
+names(CM_PRO) = c('X','A','R','N','D','C','Q','E','G','H','I','L','K','M','F','P','S','T','W','Y','V')
 sequence_list = rep('a',gene_num)
+sequence_list_pro = rep('a',gene_num)
 cost_c = rep(0,gene_num)
+cost_cpro = rep(0,gene_num)
 system.time(
   for (i in 1:gene_num) {
     tmp = sample((1:64)[-c(11,12,15)],gene_len_codon[i],replace = T)
     tmp = c(36,tmp)
     sequence_list[i] = codonT[tmp] %>% paste0(collapse = '')
+    sequence_list_pro[i] = codonAA[tmp] %>% paste0(collapse = '')
     id_M = strsplit(sequence_list[i],'')[[1]]
+    id_Mpro = strsplit(sequence_list_pro[i],'')[[1]]
     cost_c[i] = CM_RNA[id_M] %>% sum()
+    cost_cpro[i] = CM_PRO[id_Mpro] %>% sum()
   })
+cost_cpro = cost_cpro+4*gene_len_codon+3
 ```
 
 
@@ -442,8 +467,6 @@ expr_IncrementRandFlex = expr_IncrementMaxFlex * tmp
 expr_rand = expr_minlimit + expr_IncrementRandFlex
 ```
 
-
-
 ```{r}
 #calculate of cost
 expr_IncrementRand = expr_rand - expr_need
@@ -452,12 +475,34 @@ cost_IncrementRandAbs = abs(cost_IncrementRand)
 cost_IncrementRandBool = sign(cost_IncrementRand)
 ```
 
+
+
+
+```{r}
+set.seed(1)
+#pro_num_ratio = sample(x = 10:100,size = gene_num,replace = T)
+pro_num_ratio = 100
+```
+
+```{r}
+#calculate of cost
+expr_IncrementRand_pro = expr_IncrementRand * pro_num_ratio
+cost_IncrementRand_pro = expr_IncrementRand_pro * cost_cpro
+cost_IncrementRandAbs_pro = abs(cost_IncrementRand_pro)
+cost_IncrementRandBool_pro = sign(cost_IncrementRand_pro)
+
+cost_IncrementRandAbs_rpall = cost_IncrementRandAbs + cost_IncrementRandAbs_pro
+cost_IncrementRandBool_rpall = cost_IncrementRandBool
+```
+
+
+
 ```{r calculate for different select strength}
 # f_cir_para = function(xx){
 #   # calculateexpr_constrained
 #   sele_strength = xx
-#   cost_IncrementConsAbs = exp(log(1+cost_IncrementRandAbs)*(1 - sele_strength))-1 #再映射到expr上去
-#   expr_IncrementCons = cost_IncrementConsAbs/cost_IncrementRandAbs * expr_IncrementRand
+#   cost_IncrementConsAbs_rpall = exp(log(1+cost_IncrementRandAbs_rpall)*(1 - sele_strength))-1
+#   expr_IncrementCons = cost_IncrementConsAbs_rpall/cost_IncrementRandAbs_rpall * expr_IncrementRand
 #   expr_constrained = expr_need + expr_IncrementCons
 # 
 #   # set.seed(1)
@@ -478,7 +523,7 @@ cost_IncrementRandBool = sign(cost_IncrementRand)
 # 
 # res = single_parallel(func = f_cir_para
 #                       ,iterable = sele_strength_seq
-#                       ,env_val = c('cost_IncrementRandAbs','expr_IncrementRand','expr_need')
+#                       ,env_val = c('cost_IncrementRandAbs_rpall','expr_IncrementRand','expr_need')
 #                       ,packages = c('MetaCycle','dplyr'))
 # 
 # cbind(sele_strength_seq,res)
@@ -490,8 +535,8 @@ cost_IncrementRandBool = sign(cost_IncrementRand)
 ```{r}
 #select select strength
 sele_strength = 0.05
-cost_IncrementConsAbs = exp(log(1+cost_IncrementRandAbs)*(1 - sele_strength))-1 
-expr_IncrementCons = cost_IncrementConsAbs/cost_IncrementRandAbs * expr_IncrementRand
+cost_IncrementConsAbs_rpall = exp(log(1+cost_IncrementRandAbs_rpall)*(1 - sele_strength))-1 
+expr_IncrementCons = cost_IncrementConsAbs_rpall/cost_IncrementRandAbs_rpall * expr_IncrementRand
 expr_constrained = expr_need + expr_IncrementCons
 ```
 
@@ -520,13 +565,23 @@ library(MetaCycle)
 expr_out = expr_constrained
 timelist = 1:72
 write.csv(as.data.frame(expr_out), file = paste0("cycMouseHypoRNA",sele_strength,".csv"), row.names=T)
+# system.time({
+#   metatest = meta2d(infile=paste0("cycMouseHypoRNA",sele_strength,".csv"), filestyle="csv",
+#                     outdir = 'example',outputFile = F,
+#                     minper = 20,maxper = 28,
+#                     timepoints=timelist
+#   )
+# })
+
 system.time({
   metatest = meta2d(infile=paste0("cycMouseHypoRNA",sele_strength,".csv"), filestyle="csv",
-                    outdir = 'example',outputFile = F,
+                    outdir = 'example',outputFile = T,outRawData=TRUE,
                     minper = 20,maxper = 28,
                     timepoints=timelist
   )
 })
+
+
 sum(metatest$meta$meta2d_BH.Q<0.05) %>% print()
 ```
 
